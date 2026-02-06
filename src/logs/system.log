@@ -1,0 +1,704 @@
+2026-02-02 17:20:56,901 | INFO | Metrics: {'cpu_usage': 6.0, 'memory_usage': 40.5, 'latency': 69.72918936196933, 'disk_io': 2360.5810546875}
+2026-02-02 17:20:56,943 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.050567030054981976)}
+2026-02-02 17:21:02,945 | INFO | Metrics: {'cpu_usage': 0.8, 'memory_usage': 40.6, 'latency': 42.72390662002254, 'disk_io': 2360.5810546875}
+2026-02-02 17:21:03,006 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06603113429493512)}
+2026-02-02 17:21:09,009 | INFO | Metrics: {'cpu_usage': 2.3, 'memory_usage': 40.7, 'latency': 51.86658219110644, 'disk_io': 2360.5810546875}
+2026-02-02 17:21:09,074 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06225715224338757)}
+2026-02-02 17:21:29,216 | INFO | Metrics: {'cpu_usage': 2.0, 'memory_usage': 40.6, 'latency': 41.517881999786766, 'disk_io': 2360.5810546875}
+2026-02-02 17:21:29,287 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06603113429493512)}
+2026-02-02 17:21:35,291 | INFO | Metrics: {'cpu_usage': 2.0, 'memory_usage': 40.6, 'latency': 62.53880706318721, 'disk_io': 2360.5810546875}
+2026-02-02 17:21:35,358 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.061010098406414914)}
+2026-02-02 17:21:41,361 | INFO | Metrics: {'cpu_usage': 2.5, 'memory_usage': 40.7, 'latency': 44.19212269947914, 'disk_io': 2360.5810546875}
+2026-02-02 17:21:41,427 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06394604778206514)}
+2026-02-02 17:21:47,453 | INFO | Metrics: {'cpu_usage': 2.0, 'memory_usage': 40.6, 'latency': 54.49007948909118, 'disk_io': 2360.5810546875}
+2026-02-02 17:21:47,514 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06379796813268623)}
+2026-02-02 17:21:53,517 | INFO | Metrics: {'cpu_usage': 2.5, 'memory_usage': 40.6, 'latency': 15.901223502281187, 'disk_io': 2360.5810546875}
+2026-02-02 17:21:53,605 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08164976164039695)}
+2026-02-02 17:21:59,608 | INFO | Metrics: {'cpu_usage': 1.8, 'memory_usage': 40.7, 'latency': 2.2218735244114676, 'disk_io': 2360.5810546875}
+2026-02-02 17:21:59,679 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08422472718532548)}
+2026-02-02 17:22:05,705 | INFO | Metrics: {'cpu_usage': 3.0, 'memory_usage': 40.6, 'latency': 20.647448356865727, 'disk_io': 2360.5810546875}
+2026-02-02 17:22:05,749 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08164976164039695)}
+2026-02-02 17:22:11,753 | INFO | Metrics: {'cpu_usage': 2.0, 'memory_usage': 40.6, 'latency': 12.758468608158195, 'disk_io': 2360.5810546875}
+2026-02-02 17:22:11,824 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08422472718532548)}
+2026-02-02 17:22:17,827 | INFO | Metrics: {'cpu_usage': 2.0, 'memory_usage': 40.7, 'latency': 20.793586611314577, 'disk_io': 2360.5810546875}
+2026-02-02 17:22:17,899 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08379484002286097)}
+2026-02-02 17:22:42,688 | INFO | Metrics: {'cpu_usage': 2.0, 'memory_usage': 40.5, 'latency': 99.70382109477819, 'disk_io': 2360.5810546875}
+2026-02-02 17:22:42,759 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04639968293760366)}
+2026-02-02 17:22:48,762 | INFO | Metrics: {'cpu_usage': 2.3, 'memory_usage': 40.6, 'latency': 48.26326821717254, 'disk_io': 2360.5810546875}
+2026-02-02 17:22:48,833 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06365193494794741)}
+2026-02-02 17:22:54,836 | INFO | Metrics: {'cpu_usage': 1.8, 'memory_usage': 40.4, 'latency': 77.57374758106779, 'disk_io': 2360.5810546875}
+2026-02-02 17:22:54,909 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05012535317385203)}
+2026-02-02 17:23:00,934 | INFO | Metrics: {'cpu_usage': 2.5, 'memory_usage': 40.6, 'latency': 77.37271295005252, 'disk_io': 2360.5810546875}
+2026-02-02 17:23:00,984 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04809398391803543)}
+2026-02-02 17:23:06,987 | INFO | Metrics: {'cpu_usage': 2.3, 'memory_usage': 40.6, 'latency': 99.41588659606188, 'disk_io': 2360.5810546875}
+2026-02-02 17:23:07,052 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.045995379026829264)}
+2026-02-02 17:23:13,055 | INFO | Metrics: {'cpu_usage': 2.0, 'memory_usage': 40.5, 'latency': 24.081047206168932, 'disk_io': 2360.5810546875}
+2026-02-02 17:23:13,124 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08164976164039695)}
+2026-02-02 17:23:19,150 | INFO | Metrics: {'cpu_usage': 42.6, 'memory_usage': 40.5, 'latency': 84.03621083287089, 'disk_io': 2360.5810546875}
+2026-02-02 17:23:19,201 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.007564752696609944)}
+2026-02-02 17:23:25,205 | INFO | Metrics: {'cpu_usage': 3.0, 'memory_usage': 40.6, 'latency': 53.55223514951972, 'disk_io': 2360.5810546875}
+2026-02-02 17:23:25,282 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06059871881767509)}
+2026-02-02 17:23:31,285 | INFO | Metrics: {'cpu_usage': 2.5, 'memory_usage': 40.6, 'latency': 9.642358303944995, 'disk_io': 2360.5810546875}
+2026-02-02 17:23:31,358 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08207819698109708)}
+2026-02-02 17:23:37,361 | INFO | Metrics: {'cpu_usage': 2.3, 'memory_usage': 40.5, 'latency': 15.0575811178936, 'disk_io': 2360.5810546875}
+2026-02-02 17:23:37,439 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0833652436177954)}
+2026-02-02 17:23:53,167 | INFO | Metrics: {'cpu_usage': 4.8, 'memory_usage': 40.8, 'latency': 59.15407055762395, 'disk_io': 2360.5810546875}
+2026-02-02 17:23:53,240 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.058823643125764935)}
+2026-02-02 17:23:59,243 | INFO | Metrics: {'cpu_usage': 25.8, 'memory_usage': 40.8, 'latency': 82.17802222292084, 'disk_io': 2360.5810546875}
+2026-02-02 17:23:59,302 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.007636243890326799)}
+2026-02-02 17:24:05,303 | INFO | Metrics: {'cpu_usage': 13.1, 'memory_usage': 40.8, 'latency': 57.16401680092324, 'disk_io': 2360.5810546875}
+2026-02-02 17:24:05,358 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0286749221911482)}
+2026-02-02 17:24:11,360 | INFO | Metrics: {'cpu_usage': 36.8, 'memory_usage': 41.0, 'latency': 69.03072029191152, 'disk_io': 2360.5810546875}
+2026-02-02 17:24:11,398 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.0023066088913406)}
+2026-02-02 17:24:17,401 | INFO | Metrics: {'cpu_usage': 11.9, 'memory_usage': 40.9, 'latency': 68.45927412727707, 'disk_io': 2360.5810546875}
+2026-02-02 17:24:17,476 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.02213613436837758)}
+2026-02-02 17:24:23,505 | INFO | Metrics: {'cpu_usage': 8.6, 'memory_usage': 40.9, 'latency': 39.80691053898332, 'disk_io': 2360.5810546875}
+2026-02-02 17:24:23,571 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04952548749278207)}
+2026-02-02 17:24:29,573 | INFO | Metrics: {'cpu_usage': 26.6, 'memory_usage': 42.4, 'latency': 32.38409912377594, 'disk_io': 2360.5810546875}
+2026-02-02 17:24:29,612 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.02406633539377112)}
+2026-02-02 17:24:35,614 | INFO | Metrics: {'cpu_usage': 34.3, 'memory_usage': 42.6, 'latency': 85.69605433062239, 'disk_io': 2360.5810546875}
+2026-02-02 17:24:35,657 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.00595216085612682)}
+2026-02-02 17:24:41,659 | INFO | Metrics: {'cpu_usage': 33.8, 'memory_usage': 42.5, 'latency': 11.078882247117834, 'disk_io': 2360.5810546875}
+2026-02-02 17:24:41,703 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03568448506604793)}
+2026-02-02 17:24:54,487 | INFO | Metrics: {'cpu_usage': 31.6, 'memory_usage': 43.5, 'latency': 45.19989969013299, 'disk_io': 2360.5810546875}
+2026-02-02 17:24:54,536 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.009029082763407525)}
+2026-02-02 17:25:00,539 | INFO | Metrics: {'cpu_usage': 12.8, 'memory_usage': 42.9, 'latency': 75.35438065383107, 'disk_io': 2360.5810546875}
+2026-02-02 17:25:00,601 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.01432128861944082)}
+2026-02-02 17:25:06,604 | INFO | Metrics: {'cpu_usage': 9.5, 'memory_usage': 40.7, 'latency': 72.08626963822506, 'disk_io': 2360.5810546875}
+2026-02-02 17:25:06,669 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.02415290714491014)}
+2026-02-02 17:25:12,672 | INFO | Metrics: {'cpu_usage': 32.7, 'memory_usage': 40.7, 'latency': 14.880704480384205, 'disk_io': 2360.5810546875}
+2026-02-02 17:25:12,773 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03757257716248208)}
+2026-02-02 17:25:18,807 | INFO | Metrics: {'cpu_usage': 1.5, 'memory_usage': 40.4, 'latency': 95.60689605570695, 'disk_io': 2360.5810546875}
+2026-02-02 17:25:18,853 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04268786482147402)}
+2026-02-02 17:25:24,856 | INFO | Metrics: {'cpu_usage': 3.0, 'memory_usage': 40.1, 'latency': 58.06454264181606, 'disk_io': 2360.5810546875}
+2026-02-02 17:25:24,906 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0608913715501227)}
+2026-02-02 17:25:30,909 | INFO | Metrics: {'cpu_usage': 2.0, 'memory_usage': 39.9, 'latency': 97.4333830693403, 'disk_io': 2360.5810546875}
+2026-02-02 17:25:30,978 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04639968293760366)}
+2026-02-02 17:25:37,004 | INFO | Metrics: {'cpu_usage': 2.8, 'memory_usage': 40.1, 'latency': 54.97535895393614, 'disk_io': 2360.5810546875}
+2026-02-02 17:25:37,059 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06172042350410767)}
+2026-02-02 17:25:43,061 | INFO | Metrics: {'cpu_usage': 11.7, 'memory_usage': 40.3, 'latency': 43.815212777657, 'disk_io': 2360.5810546875}
+2026-02-02 17:25:43,117 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03780023810837896)}
+2026-02-02 17:25:49,119 | INFO | Metrics: {'cpu_usage': 22.2, 'memory_usage': 40.3, 'latency': 36.08890334570388, 'disk_io': 2360.5810546875}
+2026-02-02 17:25:49,193 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.02098560383459047)}
+2026-02-02 17:26:00,838 | INFO | Metrics: {'cpu_usage': 3.6, 'memory_usage': 40.5, 'latency': 48.61688603000865, 'disk_io': 2360.5810546875}
+2026-02-02 17:26:00,897 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.059918294037698105)}
+2026-02-02 17:26:06,899 | INFO | Metrics: {'cpu_usage': 2.5, 'memory_usage': 40.5, 'latency': 73.52361670501917, 'disk_io': 2360.5810546875}
+2026-02-02 17:26:06,950 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04809398391803543)}
+2026-02-02 17:26:12,953 | INFO | Metrics: {'cpu_usage': 4.8, 'memory_usage': 40.4, 'latency': 92.91074487459268, 'disk_io': 2360.5810546875}
+2026-02-02 17:26:13,004 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03917301523169514)}
+2026-02-02 17:26:19,028 | INFO | Metrics: {'cpu_usage': 61.7, 'memory_usage': 40.8, 'latency': 14.305661790744878, 'disk_io': 2360.5810546875}
+2026-02-02 17:26:19,070 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07998892885607911)}
+2026-02-02 17:26:25,072 | INFO | Metrics: {'cpu_usage': 27.1, 'memory_usage': 40.9, 'latency': 3.638913891061255, 'disk_io': 2360.5810546875}
+2026-02-02 17:26:25,110 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03513573076630638)}
+2026-02-02 17:26:31,114 | INFO | Metrics: {'cpu_usage': 10.6, 'memory_usage': 41.1, 'latency': 25.615681725531964, 'disk_io': 2360.5810546875}
+2026-02-02 17:26:31,169 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05159948484115273)}
+2026-02-02 17:26:37,194 | INFO | Metrics: {'cpu_usage': 10.9, 'memory_usage': 41.1, 'latency': 74.63053766657607, 'disk_io': 2360.5810546875}
+2026-02-02 17:26:37,245 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.017851010494120523)}
+2026-02-02 17:26:43,248 | INFO | Metrics: {'cpu_usage': 39.2, 'memory_usage': 42.4, 'latency': 58.41940540393655, 'disk_io': 2360.5810546875}
+2026-02-02 17:26:43,291 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.003802016289901955)}
+2026-02-02 17:26:49,293 | INFO | Metrics: {'cpu_usage': 27.4, 'memory_usage': 42.8, 'latency': 98.99276729717519, 'disk_io': 2360.5810546875}
+2026-02-02 17:26:49,334 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.011853667333397988)}
+2026-02-02 17:26:55,337 | INFO | Metrics: {'cpu_usage': 40.6, 'memory_usage': 42.8, 'latency': 94.6045325585886, 'disk_io': 2360.5810546875}
+2026-02-02 17:26:55,423 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.011858193650020832)}
+2026-02-02 17:27:01,425 | INFO | Metrics: {'cpu_usage': 35.2, 'memory_usage': 42.1, 'latency': 86.73186591048916, 'disk_io': 2360.5810546875}
+2026-02-02 17:27:01,485 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.005579324603180225)}
+2026-02-02 17:27:07,486 | INFO | Metrics: {'cpu_usage': 26.8, 'memory_usage': 42.6, 'latency': 25.751061531410596, 'disk_io': 2360.5810546875}
+2026-02-02 17:27:07,526 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.02587064606298317)}
+2026-02-02 17:27:13,527 | INFO | Metrics: {'cpu_usage': 25.9, 'memory_usage': 43.1, 'latency': 24.59597957612394, 'disk_io': 2360.5810546875}
+2026-02-02 17:27:13,565 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.025756085571762788)}
+2026-02-02 17:27:19,567 | INFO | Metrics: {'cpu_usage': 26.3, 'memory_usage': 43.2, 'latency': 49.91608722667284, 'disk_io': 2360.5810546875}
+2026-02-02 17:27:19,606 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.0012877900903111028)}
+2026-02-02 17:27:25,608 | INFO | Metrics: {'cpu_usage': 1.8, 'memory_usage': 42.8, 'latency': 42.110011675600575, 'disk_io': 2360.5810546875}
+2026-02-02 17:27:25,681 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06451442250068862)}
+2026-02-02 17:27:38,618 | INFO | Metrics: {'cpu_usage': 2.8, 'memory_usage': 40.6, 'latency': 46.87110869903669, 'disk_io': 2360.5810546875}
+2026-02-02 17:27:38,689 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.061989731861975206)}
+2026-02-02 17:27:44,692 | INFO | Metrics: {'cpu_usage': 8.3, 'memory_usage': 40.2, 'latency': 5.861250257971371, 'disk_io': 2360.5810546875}
+2026-02-02 17:27:44,765 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07135524065561194)}
+2026-02-02 17:27:50,768 | INFO | Metrics: {'cpu_usage': 2.5, 'memory_usage': 40.2, 'latency': 27.230597810567758, 'disk_io': 2360.5810546875}
+2026-02-02 17:27:50,841 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07835767162566087)}
+2026-02-02 17:27:56,866 | INFO | Metrics: {'cpu_usage': 3.3, 'memory_usage': 40.3, 'latency': 43.288340553400964, 'disk_io': 2360.5810546875}
+2026-02-02 17:27:56,920 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06394604778206514)}
+2026-02-02 17:28:02,923 | INFO | Metrics: {'cpu_usage': 4.6, 'memory_usage': 40.1, 'latency': 38.48197226991711, 'disk_io': 2360.5810546875}
+2026-02-02 17:28:02,987 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06353972151718834)}
+2026-02-02 17:28:08,990 | INFO | Metrics: {'cpu_usage': 7.4, 'memory_usage': 40.3, 'latency': 28.297208220861254, 'disk_io': 2360.5810546875}
+2026-02-02 17:28:09,047 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0714900239112084)}
+2026-02-02 17:28:15,071 | INFO | Metrics: {'cpu_usage': 4.8, 'memory_usage': 40.7, 'latency': 33.35626027026835, 'disk_io': 2360.5810546875}
+2026-02-02 17:28:15,126 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07453475550031352)}
+2026-02-02 17:28:21,128 | INFO | Metrics: {'cpu_usage': 12.2, 'memory_usage': 40.1, 'latency': 12.082181484657207, 'disk_io': 2360.5810546875}
+2026-02-02 17:28:21,168 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05890558953918734)}
+2026-02-02 17:28:27,172 | INFO | Metrics: {'cpu_usage': 24.2, 'memory_usage': 41.0, 'latency': 30.18221590934313, 'disk_io': 2360.5810546875}
+2026-02-02 17:28:27,255 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.02575929693003831)}
+2026-02-02 17:28:39,878 | INFO | Metrics: {'cpu_usage': 4.7, 'memory_usage': 40.4, 'latency': 77.63965258810522, 'disk_io': 2361.2763671875}
+2026-02-02 17:28:39,954 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04606947503478731)}
+2026-02-02 17:28:45,956 | INFO | Metrics: {'cpu_usage': 1.8, 'memory_usage': 40.9, 'latency': 95.00443278228684, 'disk_io': 2361.2763671875}
+2026-02-02 17:28:46,028 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04268786482147402)}
+2026-02-02 17:28:52,031 | INFO | Metrics: {'cpu_usage': 2.0, 'memory_usage': 40.8, 'latency': 19.50164430828706, 'disk_io': 2361.2763671875}
+2026-02-02 17:28:52,102 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08379484002286097)}
+2026-02-02 17:28:58,133 | INFO | Metrics: {'cpu_usage': 2.5, 'memory_usage': 40.7, 'latency': 54.02298023346969, 'disk_io': 2361.2763671875}
+2026-02-02 17:28:58,205 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06059871881767509)}
+2026-02-02 17:29:04,208 | INFO | Metrics: {'cpu_usage': 2.0, 'memory_usage': 40.5, 'latency': 41.13557503845947, 'disk_io': 2361.2763671875}
+2026-02-02 17:29:04,279 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06603113429493512)}
+2026-02-02 17:29:10,283 | INFO | Metrics: {'cpu_usage': 22.4, 'memory_usage': 41.0, 'latency': 49.95526912279006, 'disk_io': 2361.2763671875}
+2026-02-02 17:29:10,348 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.004937649006964695)}
+2026-02-02 17:29:16,350 | INFO | Metrics: {'cpu_usage': 2.8, 'memory_usage': 41.2, 'latency': 31.86249803943593, 'disk_io': 2361.2763671875}
+2026-02-02 17:29:16,409 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0766557235450297)}
+2026-02-02 17:29:22,435 | INFO | Metrics: {'cpu_usage': 6.3, 'memory_usage': 40.9, 'latency': 8.48579103522145, 'disk_io': 2361.2763671875}
+2026-02-02 17:29:22,474 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0807937600893498)}
+2026-02-02 17:29:28,476 | INFO | Metrics: {'cpu_usage': 1.5, 'memory_usage': 40.9, 'latency': 94.87299624620101, 'disk_io': 2361.2763671875}
+2026-02-02 17:29:28,543 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04268786482147402)}
+2026-02-02 17:29:34,545 | INFO | Metrics: {'cpu_usage': 1.8, 'memory_usage': 40.9, 'latency': 81.20972573524115, 'disk_io': 2361.2763671875}
+2026-02-02 17:29:34,615 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05004700224248282)}
+2026-02-02 17:29:47,284 | INFO | Metrics: {'cpu_usage': 21.8, 'memory_usage': 41.1, 'latency': 37.26797007644367, 'disk_io': 2361.2763671875}
+2026-02-02 17:29:47,340 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.021523359055367064)}
+2026-02-02 17:29:53,343 | INFO | Metrics: {'cpu_usage': 8.7, 'memory_usage': 41.6, 'latency': 22.565232644348093, 'disk_io': 2361.2763671875}
+2026-02-02 17:29:53,408 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06294878145370242)}
+2026-02-02 17:29:59,411 | INFO | Metrics: {'cpu_usage': 10.9, 'memory_usage': 41.4, 'latency': 27.45282112326198, 'disk_io': 2361.4912109375}
+2026-02-02 17:29:59,471 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05159948484115273)}
+2026-02-02 17:30:05,496 | INFO | Metrics: {'cpu_usage': 4.3, 'memory_usage': 41.3, 'latency': 68.30114754950962, 'disk_io': 2361.4912109375}
+2026-02-02 17:30:05,556 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.050567030054981976)}
+2026-02-02 17:30:11,558 | INFO | Metrics: {'cpu_usage': 27.1, 'memory_usage': 42.4, 'latency': 29.25279422472053, 'disk_io': 2361.4912109375}
+2026-02-02 17:30:11,597 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.025616527447571702)}
+2026-02-02 17:30:17,599 | INFO | Metrics: {'cpu_usage': 26.8, 'memory_usage': 42.3, 'latency': 94.34611866767995, 'disk_io': 2361.4912109375}
+2026-02-02 17:30:17,638 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.012217040612612307)}
+2026-02-02 17:30:23,641 | INFO | Metrics: {'cpu_usage': 5.8, 'memory_usage': 42.3, 'latency': 15.48296662204385, 'disk_io': 2361.4912109375}
+2026-02-02 17:30:23,679 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07845124831188155)}
+2026-02-02 17:30:29,698 | INFO | Metrics: {'cpu_usage': 26.1, 'memory_usage': 42.7, 'latency': 57.39044928571954, 'disk_io': 2361.4912109375}
+2026-02-02 17:30:29,736 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.0022177230043799456)}
+2026-02-02 17:30:35,738 | INFO | Metrics: {'cpu_usage': 27.0, 'memory_usage': 42.6, 'latency': 46.04877978548538, 'disk_io': 2361.4912109375}
+2026-02-02 17:30:35,782 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.007363127456168628)}
+2026-02-02 17:30:41,785 | INFO | Metrics: {'cpu_usage': 34.0, 'memory_usage': 43.1, 'latency': 17.848259218638898, 'disk_io': 2361.4912109375}
+2026-02-02 17:30:41,862 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.033801299730546464)}
+2026-02-02 17:30:47,864 | INFO | Metrics: {'cpu_usage': 30.2, 'memory_usage': 43.7, 'latency': 44.645486435006525, 'disk_io': 2361.4912109375}
+2026-02-02 17:30:47,906 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.007883813289650599)}
+2026-02-02 17:30:53,908 | INFO | Metrics: {'cpu_usage': 34.9, 'memory_usage': 44.6, 'latency': 59.06159607155173, 'disk_io': 2361.4912109375}
+2026-02-02 17:30:53,950 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.0011574860045869828)}
+2026-02-02 17:30:59,952 | INFO | Metrics: {'cpu_usage': 26.1, 'memory_usage': 45.3, 'latency': 56.46118304573326, 'disk_io': 2361.4951171875}
+2026-02-02 17:30:59,995 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.0037438452421817425)}
+2026-02-02 17:31:05,998 | INFO | Metrics: {'cpu_usage': 2.0, 'memory_usage': 45.7, 'latency': 91.63250195512646, 'disk_io': 2361.4951171875}
+2026-02-02 17:31:06,084 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04861326535040822)}
+2026-02-02 17:31:12,087 | INFO | Metrics: {'cpu_usage': 5.8, 'memory_usage': 45.5, 'latency': 52.50095194570443, 'disk_io': 2361.4951171875}
+2026-02-02 17:31:12,143 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.055950263784270815)}
+2026-02-02 17:31:18,145 | INFO | Metrics: {'cpu_usage': 21.2, 'memory_usage': 41.8, 'latency': 92.47004972063137, 'disk_io': 2361.4951171875}
+2026-02-02 17:31:18,185 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.008887039831989352)}
+2026-02-02 17:31:24,187 | INFO | Metrics: {'cpu_usage': 15.8, 'memory_usage': 42.6, 'latency': 24.02630817848279, 'disk_io': 2361.4951171875}
+2026-02-02 17:31:24,253 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0518000198199442)}
+2026-02-02 17:31:36,215 | INFO | Metrics: {'cpu_usage': 37.3, 'memory_usage': 43.4, 'latency': 51.06183535759848, 'disk_io': 2361.4951171875}
+2026-02-02 17:31:36,272 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.006295445645464692)}
+2026-02-02 17:31:42,275 | INFO | Metrics: {'cpu_usage': 1.3, 'memory_usage': 41.8, 'latency': 10.296438987879425, 'disk_io': 2361.4951171875}
+2026-02-02 17:31:42,335 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08352185376628019)}
+2026-02-02 17:31:48,338 | INFO | Metrics: {'cpu_usage': 26.5, 'memory_usage': 42.6, 'latency': 72.65186731763899, 'disk_io': 2361.5107421875}
+2026-02-02 17:31:48,408 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.009092579995799599)}
+2026-02-02 17:31:54,411 | INFO | Metrics: {'cpu_usage': 31.9, 'memory_usage': 42.5, 'latency': 6.629970150630816, 'disk_io': 2361.5107421875}
+2026-02-02 17:31:54,463 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03448714275393849)}
+2026-02-02 17:32:00,465 | INFO | Metrics: {'cpu_usage': 4.6, 'memory_usage': 42.3, 'latency': 2.650366551363704, 'disk_io': 2361.5107421875}
+2026-02-02 17:32:00,526 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07887751884997973)}
+2026-02-02 17:32:06,567 | INFO | Metrics: {'cpu_usage': 27.8, 'memory_usage': 42.3, 'latency': 13.284788123136888, 'disk_io': 2361.5107421875}
+2026-02-02 17:32:06,607 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03448714275393849)}
+2026-02-02 17:32:12,609 | INFO | Metrics: {'cpu_usage': 26.8, 'memory_usage': 42.6, 'latency': 75.21933221885119, 'disk_io': 2361.5107421875}
+2026-02-02 17:32:12,649 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.0074594239547258745)}
+2026-02-02 17:32:18,652 | INFO | Metrics: {'cpu_usage': 69.4, 'memory_usage': 43.4, 'latency': 10.789880391590742, 'disk_io': 2361.5107421875}
+2026-02-02 17:32:18,695 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08487029548424063)}
+2026-02-02 17:32:24,698 | INFO | Metrics: {'cpu_usage': 31.2, 'memory_usage': 43.4, 'latency': 20.985352833340645, 'disk_io': 2361.5107421875}
+2026-02-02 17:32:24,776 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.02958551104160234)}
+2026-02-02 17:32:36,662 | INFO | Metrics: {'cpu_usage': 35.2, 'memory_usage': 43.7, 'latency': 8.651032954869908, 'disk_io': 2361.5107421875}
+2026-02-02 17:32:36,709 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03879070182984912)}
+2026-02-02 17:32:42,711 | INFO | Metrics: {'cpu_usage': 35.2, 'memory_usage': 43.7, 'latency': 45.542987413429636, 'disk_io': 2361.5107421875}
+2026-02-02 17:32:42,760 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.012940075930968464)}
+2026-02-02 17:32:48,762 | INFO | Metrics: {'cpu_usage': 27.1, 'memory_usage': 44.0, 'latency': 16.68781380660261, 'disk_io': 2361.5107421875}
+2026-02-02 17:32:48,801 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03009669570861717)}
+2026-02-02 17:32:54,821 | INFO | Metrics: {'cpu_usage': 30.9, 'memory_usage': 43.8, 'latency': 93.39766244827962, 'disk_io': 2361.5107421875}
+2026-02-02 17:32:54,880 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.013924713922974896)}
+2026-02-02 17:33:00,882 | INFO | Metrics: {'cpu_usage': 27.8, 'memory_usage': 44.2, 'latency': 48.85576405452834, 'disk_io': 2361.5107421875}
+2026-02-02 17:33:00,922 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.001485750790817919)}
+2026-02-02 17:33:06,925 | INFO | Metrics: {'cpu_usage': 26.1, 'memory_usage': 44.2, 'latency': 84.10469120555831, 'disk_io': 2361.5107421875}
+2026-02-02 17:33:07,032 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.011809826347333408)}
+2026-02-02 17:33:13,035 | INFO | Metrics: {'cpu_usage': 13.7, 'memory_usage': 42.0, 'latency': 6.261989849598077, 'disk_io': 2361.5107421875}
+2026-02-02 17:33:13,092 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05740638249376906)}
+2026-02-02 17:33:19,095 | INFO | Metrics: {'cpu_usage': 37.0, 'memory_usage': 41.6, 'latency': 70.63238347595859, 'disk_io': 2361.5107421875}
+2026-02-02 17:33:19,137 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.003967234495435679)}
+2026-02-02 17:33:25,139 | INFO | Metrics: {'cpu_usage': 33.1, 'memory_usage': 42.2, 'latency': 43.97457408239116, 'disk_io': 2361.5107421875}
+2026-02-02 17:33:25,205 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.01364501103937188)}
+2026-02-02 17:33:31,208 | INFO | Metrics: {'cpu_usage': 17.0, 'memory_usage': 42.0, 'latency': 15.145974859701175, 'disk_io': 2361.5107421875}
+2026-02-02 17:33:31,319 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05271924999605715)}
+2026-02-02 17:33:43,511 | INFO | Metrics: {'cpu_usage': 23.2, 'memory_usage': 42.6, 'latency': 30.05906962607915, 'disk_io': 2361.5107421875}
+2026-02-02 17:33:43,581 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.023807016594192043)}
+2026-02-02 17:33:49,584 | INFO | Metrics: {'cpu_usage': 17.6, 'memory_usage': 42.3, 'latency': 63.433712131463274, 'disk_io': 2361.5615234375}
+2026-02-02 17:33:49,629 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.01568588371538482)}
+2026-02-02 17:33:55,632 | INFO | Metrics: {'cpu_usage': 1.0, 'memory_usage': 42.3, 'latency': 16.388691160861853, 'disk_io': 2362.6318359375}
+2026-02-02 17:33:55,693 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08309244199751176)}
+2026-02-02 17:34:01,718 | INFO | Metrics: {'cpu_usage': 15.5, 'memory_usage': 43.0, 'latency': 82.34584579624655, 'disk_io': 2362.6318359375}
+2026-02-02 17:34:01,772 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.00980011745340148)}
+2026-02-02 17:34:07,777 | INFO | Metrics: {'cpu_usage': 1.0, 'memory_usage': 42.7, 'latency': 81.23523746211231, 'disk_io': 2362.6318359375}
+2026-02-02 17:34:07,852 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04856955737117441)}
+2026-02-02 17:34:13,855 | INFO | Metrics: {'cpu_usage': 12.5, 'memory_usage': 42.5, 'latency': 7.796190266055395, 'disk_io': 2362.6318359375}
+2026-02-02 17:34:13,921 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05787955507285192)}
+2026-02-02 17:34:19,924 | INFO | Metrics: {'cpu_usage': 5.4, 'memory_usage': 42.8, 'latency': 27.0214506373999, 'disk_io': 2362.9443359375}
+2026-02-02 17:34:19,993 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07475202575639095)}
+2026-02-02 17:34:26,019 | INFO | Metrics: {'cpu_usage': 4.8, 'memory_usage': 42.7, 'latency': 36.378829936448724, 'disk_io': 2362.9443359375}
+2026-02-02 17:34:26,077 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06292137429187039)}
+2026-02-02 17:34:32,080 | INFO | Metrics: {'cpu_usage': 1.3, 'memory_usage': 42.5, 'latency': 37.93553076205087, 'disk_io': 2362.9443359375}
+2026-02-02 17:34:32,149 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06661132948283044)}
+2026-02-02 17:34:38,152 | INFO | Metrics: {'cpu_usage': 11.3, 'memory_usage': 42.7, 'latency': 23.58366798680481, 'disk_io': 2362.9443359375}
+2026-02-02 17:34:38,218 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05128120383965051)}
+2026-02-02 17:34:50,653 | INFO | Metrics: {'cpu_usage': 27.5, 'memory_usage': 43.2, 'latency': 25.791559915805816, 'disk_io': 2362.9443359375}
+2026-02-02 17:34:50,694 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.024690957841713712)}
+2026-02-02 17:34:56,696 | INFO | Metrics: {'cpu_usage': 26.1, 'memory_usage': 43.4, 'latency': 45.63399082023009, 'disk_io': 2362.9443359375}
+2026-02-02 17:34:56,735 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.006127362921369617)}
+2026-02-02 17:35:02,736 | INFO | Metrics: {'cpu_usage': 27.3, 'memory_usage': 43.7, 'latency': 8.55735718885368, 'disk_io': 2362.9443359375}
+2026-02-02 17:35:02,774 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03354734332567022)}
+2026-02-02 17:35:08,777 | INFO | Metrics: {'cpu_usage': 26.1, 'memory_usage': 44.4, 'latency': 90.80525618144617, 'disk_io': 2363.0458984375}
+2026-02-02 17:35:08,821 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.012460256491637955)}
+2026-02-02 17:35:14,823 | INFO | Metrics: {'cpu_usage': 32.3, 'memory_usage': 44.7, 'latency': 18.198682239442366, 'disk_io': 2363.0458984375}
+2026-02-02 17:35:14,862 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03364300430735956)}
+2026-02-02 17:35:20,882 | INFO | Metrics: {'cpu_usage': 37.6, 'memory_usage': 44.9, 'latency': 26.374914780074516, 'disk_io': 2363.0458984375}
+2026-02-02 17:35:20,925 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03426049258135211)}
+2026-02-02 17:35:26,928 | INFO | Metrics: {'cpu_usage': 37.1, 'memory_usage': 44.7, 'latency': 54.7695143291215, 'disk_io': 2363.0458984375}
+2026-02-02 17:35:26,981 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.006262743379590319)}
+2026-02-02 17:35:32,983 | INFO | Metrics: {'cpu_usage': 28.0, 'memory_usage': 45.0, 'latency': 89.32702001153437, 'disk_io': 2363.0458984375}
+2026-02-02 17:35:33,030 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.01156583871883432)}
+2026-02-02 17:35:39,032 | INFO | Metrics: {'cpu_usage': 33.9, 'memory_usage': 45.2, 'latency': 15.774854271702054, 'disk_io': 2363.0458984375}
+2026-02-02 17:35:39,071 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03340697581698937)}
+2026-02-02 17:35:45,074 | INFO | Metrics: {'cpu_usage': 37.7, 'memory_usage': 45.3, 'latency': 12.34956561173504, 'disk_io': 2363.0458984375}
+2026-02-02 17:35:45,141 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.043264001284386455)}
+2026-02-02 17:35:58,434 | INFO | Metrics: {'cpu_usage': 27.6, 'memory_usage': 45.0, 'latency': 86.99302843702073, 'disk_io': 2363.0458984375}
+2026-02-02 17:35:58,473 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.010360631612252647)}
+2026-02-02 17:36:04,476 | INFO | Metrics: {'cpu_usage': 6.1, 'memory_usage': 45.7, 'latency': 97.21611822609405, 'disk_io': 2363.0458984375}
+2026-02-02 17:36:04,552 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03286258091760419)}
+2026-02-02 17:36:10,555 | INFO | Metrics: {'cpu_usage': 16.0, 'memory_usage': 43.1, 'latency': 1.5630592977376874, 'disk_io': 2363.0458984375}
+2026-02-02 17:36:10,610 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05482713188486488)}
+2026-02-02 17:36:16,613 | INFO | Metrics: {'cpu_usage': 26.7, 'memory_usage': 42.6, 'latency': 3.807325784087236, 'disk_io': 2363.0458984375}
+2026-02-02 17:36:16,661 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03474516822059659)}
+2026-02-02 17:36:22,680 | INFO | Metrics: {'cpu_usage': 32.9, 'memory_usage': 43.0, 'latency': 26.5812658746788, 'disk_io': 2363.0458984375}
+2026-02-02 17:36:22,722 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.02801382272409214)}
+2026-02-02 17:36:28,724 | INFO | Metrics: {'cpu_usage': 4.8, 'memory_usage': 42.3, 'latency': 46.48655929504148, 'disk_io': 2363.0458984375}
+2026-02-02 17:36:28,763 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05847780473212927)}
+2026-02-02 17:36:34,765 | INFO | Metrics: {'cpu_usage': 21.8, 'memory_usage': 42.6, 'latency': 88.35227684490083, 'disk_io': 2363.0458984375}
+2026-02-02 17:36:34,803 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.00497460122383564)}
+2026-02-02 17:36:40,806 | INFO | Metrics: {'cpu_usage': 27.1, 'memory_usage': 42.4, 'latency': 18.475976010011845, 'disk_io': 2363.0458984375}
+2026-02-02 17:36:40,849 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03221282267204206)}
+2026-02-02 17:36:46,868 | INFO | Metrics: {'cpu_usage': 5.8, 'memory_usage': 42.5, 'latency': 6.479828788116968, 'disk_io': 2363.0458984375}
+2026-02-02 17:36:46,909 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07887751884997973)}
+2026-02-02 17:36:52,912 | INFO | Metrics: {'cpu_usage': 1.8, 'memory_usage': 41.5, 'latency': 50.30400795834354, 'disk_io': 2363.0458984375}
+2026-02-02 17:36:52,983 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06246969804027991)}
+2026-02-02 17:36:58,986 | INFO | Metrics: {'cpu_usage': 6.8, 'memory_usage': 41.4, 'latency': 94.55426924696202, 'disk_io': 2363.0458984375}
+2026-02-02 17:36:59,041 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.028744740273897396)}
+2026-02-02 17:37:12,391 | INFO | Metrics: {'cpu_usage': 3.3, 'memory_usage': 41.2, 'latency': 72.72913165303537, 'disk_io': 2363.0458984375}
+2026-02-02 17:37:12,462 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0496582029123277)}
+2026-02-02 17:37:18,464 | INFO | Metrics: {'cpu_usage': 6.1, 'memory_usage': 41.3, 'latency': 88.59301192356054, 'disk_io': 2363.0458984375}
+2026-02-02 17:37:18,502 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04116826423745368)}
+2026-02-02 17:37:24,504 | INFO | Metrics: {'cpu_usage': 7.8, 'memory_usage': 41.7, 'latency': 28.121608483691674, 'disk_io': 2363.0458984375}
+2026-02-02 17:37:24,549 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06788766983173788)}
+2026-02-02 17:37:30,570 | INFO | Metrics: {'cpu_usage': 30.9, 'memory_usage': 41.8, 'latency': 94.91270155434995, 'disk_io': 2363.0458984375}
+2026-02-02 17:37:30,608 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.01300327397305956)}
+2026-02-02 17:37:36,610 | INFO | Metrics: {'cpu_usage': 26.3, 'memory_usage': 41.8, 'latency': 35.00311443555002, 'disk_io': 2363.0458984375}
+2026-02-02 17:37:36,648 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.023288201463022795)}
+2026-02-02 17:37:42,650 | INFO | Metrics: {'cpu_usage': 25.8, 'memory_usage': 42.1, 'latency': 15.524157151932467, 'disk_io': 2363.0458984375}
+2026-02-02 17:37:42,688 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03261714849866082)}
+2026-02-02 17:37:48,690 | INFO | Metrics: {'cpu_usage': 68.7, 'memory_usage': 43.1, 'latency': 80.31158158257622, 'disk_io': 2363.0458984375}
+2026-02-02 17:37:48,732 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.048221120290300346)}
+2026-02-02 17:37:54,752 | INFO | Metrics: {'cpu_usage': 26.8, 'memory_usage': 44.0, 'latency': 41.89374786288017, 'disk_io': 2363.0458984375}
+2026-02-02 17:37:54,793 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.008508727502494096)}
+2026-02-02 17:38:00,796 | INFO | Metrics: {'cpu_usage': 44.5, 'memory_usage': 44.1, 'latency': 94.50449493109122, 'disk_io': 2363.0458984375}
+2026-02-02 17:38:00,844 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.007627220962372672)}
+2026-02-02 17:38:06,847 | INFO | Metrics: {'cpu_usage': 35.7, 'memory_usage': 44.0, 'latency': 6.1390045161081215, 'disk_io': 2363.0458984375}
+2026-02-02 17:38:06,926 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0367303830778245)}
+2026-02-02 17:38:12,929 | INFO | Metrics: {'cpu_usage': 65.5, 'memory_usage': 44.2, 'latency': 49.630835645460586, 'disk_io': 2363.0458984375}
+2026-02-02 17:38:13,035 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.055207142648284524)}
+2026-02-02 17:38:19,037 | INFO | Metrics: {'cpu_usage': 26.4, 'memory_usage': 44.5, 'latency': 94.05608996150002, 'disk_io': 2363.0458984375}
+2026-02-02 17:38:19,096 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.01717739257487194)}
+2026-02-02 17:38:25,099 | INFO | Metrics: {'cpu_usage': 1.0, 'memory_usage': 44.0, 'latency': 84.86072141014864, 'disk_io': 2363.0458984375}
+2026-02-02 17:38:25,155 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04958492299651551)}
+2026-02-02 17:38:37,762 | INFO | Metrics: {'cpu_usage': 1.3, 'memory_usage': 41.6, 'latency': 87.04113184408703, 'disk_io': 2363.0458984375}
+2026-02-02 17:38:37,833 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.049495068650707075)}
+2026-02-02 17:38:43,836 | INFO | Metrics: {'cpu_usage': 1.5, 'memory_usage': 41.1, 'latency': 49.44971553124663, 'disk_io': 2363.0458984375}
+2026-02-02 17:38:43,903 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06400642245085408)}
+2026-02-02 17:38:49,906 | INFO | Metrics: {'cpu_usage': 2.6, 'memory_usage': 41.0, 'latency': 27.679330787651555, 'disk_io': 2363.0458984375}
+2026-02-02 17:38:49,971 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07835767162566087)}
+2026-02-02 17:38:55,998 | INFO | Metrics: {'cpu_usage': 6.4, 'memory_usage': 41.2, 'latency': 13.297712431661408, 'disk_io': 2363.0458984375}
+2026-02-02 17:38:56,063 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0807937600893498)}
+2026-02-02 17:39:02,068 | INFO | Metrics: {'cpu_usage': 15.1, 'memory_usage': 41.5, 'latency': 3.8348144650211813, 'disk_io': 2363.0458984375}
+2026-02-02 17:39:02,156 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05490538151704594)}
+2026-02-02 17:39:08,158 | INFO | Metrics: {'cpu_usage': 16.2, 'memory_usage': 41.7, 'latency': 97.94436765879902, 'disk_io': 2363.0458984375}
+2026-02-02 17:39:08,213 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.003239511182914656)}
+2026-02-02 17:39:14,215 | INFO | Metrics: {'cpu_usage': 18.5, 'memory_usage': 41.8, 'latency': 31.033533821131293, 'disk_io': 2363.0458984375}
+2026-02-02 17:39:14,311 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04427696603888742)}
+2026-02-02 17:39:20,338 | INFO | Metrics: {'cpu_usage': 32.5, 'memory_usage': 42.2, 'latency': 83.32547833874588, 'disk_io': 2363.0458984375}
+2026-02-02 17:39:20,385 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.0029730466171410397)}
+2026-02-02 17:39:26,388 | INFO | Metrics: {'cpu_usage': 3.5, 'memory_usage': 41.9, 'latency': 65.82925744372758, 'disk_io': 2363.0458984375}
+2026-02-02 17:39:26,447 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.055708492086137484)}
+2026-02-02 17:39:32,449 | INFO | Metrics: {'cpu_usage': 6.1, 'memory_usage': 41.7, 'latency': 71.11914709305678, 'disk_io': 2363.0458984375}
+2026-02-02 17:39:32,502 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.043330088397077526)}
+2026-02-02 17:39:38,505 | INFO | Metrics: {'cpu_usage': 36.5, 'memory_usage': 42.3, 'latency': 36.173050944785565, 'disk_io': 2363.0458984375}
+2026-02-02 17:39:38,587 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.016215555630444523)}
+2026-02-02 17:39:52,514 | INFO | Metrics: {'cpu_usage': 25.9, 'memory_usage': 42.1, 'latency': 10.530741978773932, 'disk_io': 2363.0458984375}
+2026-02-02 17:39:52,552 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.034496523004762025)}
+2026-02-02 17:39:58,555 | INFO | Metrics: {'cpu_usage': 55.3, 'memory_usage': 42.9, 'latency': 34.33353794575639, 'disk_io': 2363.0458984375}
+2026-02-02 17:39:58,622 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.055926862485012774)}
+2026-02-02 17:40:04,624 | INFO | Metrics: {'cpu_usage': 28.8, 'memory_usage': 43.9, 'latency': 23.171149331046678, 'disk_io': 2363.0458984375}
+2026-02-02 17:40:04,662 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.023132384212868895)}
+2026-02-02 17:40:10,681 | INFO | Metrics: {'cpu_usage': 34.2, 'memory_usage': 43.6, 'latency': 76.6693054189318, 'disk_io': 2363.0458984375}
+2026-02-02 17:40:10,721 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.005773380046931509)}
+2026-02-02 17:40:16,723 | INFO | Metrics: {'cpu_usage': 35.2, 'memory_usage': 43.5, 'latency': 10.378896468290751, 'disk_io': 2363.0615234375}
+2026-02-02 17:40:16,767 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03879070182984912)}
+2026-02-02 17:40:22,768 | INFO | Metrics: {'cpu_usage': 36.0, 'memory_usage': 43.7, 'latency': 8.146747151384984, 'disk_io': 2363.0615234375}
+2026-02-02 17:40:22,814 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03872177270201316)}
+2026-02-02 17:40:28,815 | INFO | Metrics: {'cpu_usage': 26.8, 'memory_usage': 44.0, 'latency': 93.36973459804334, 'disk_io': 2363.0615234375}
+2026-02-02 17:40:28,853 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.013591708515463763)}
+2026-02-02 17:40:34,855 | INFO | Metrics: {'cpu_usage': 27.0, 'memory_usage': 44.2, 'latency': 20.123622189433167, 'disk_io': 2363.0615234375}
+2026-02-02 17:40:34,894 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03009669570861717)}
+2026-02-02 17:40:40,915 | INFO | Metrics: {'cpu_usage': 18.2, 'memory_usage': 44.0, 'latency': 47.99955206415131, 'disk_io': 2363.0615234375}
+2026-02-02 17:40:40,971 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.02457930232607597)}
+2026-02-02 17:40:46,974 | INFO | Metrics: {'cpu_usage': 2.5, 'memory_usage': 41.9, 'latency': 61.42610217550686, 'disk_io': 2363.0615234375}
+2026-02-02 17:40:47,042 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05826705471001259)}
+2026-02-02 17:40:53,044 | INFO | Metrics: {'cpu_usage': 30.2, 'memory_usage': 41.5, 'latency': 23.76669920280597, 'disk_io': 2363.0615234375}
+2026-02-02 17:40:53,117 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.025079153219360606)}
+2026-02-02 17:41:05,810 | INFO | Metrics: {'cpu_usage': 3.0, 'memory_usage': 41.7, 'latency': 25.664550052826307, 'disk_io': 2363.0615234375}
+2026-02-02 17:41:05,883 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07766128633064107)}
+2026-02-02 17:41:11,885 | INFO | Metrics: {'cpu_usage': 32.9, 'memory_usage': 41.5, 'latency': 34.71760770205381, 'disk_io': 2363.0615234375}
+2026-02-02 17:41:11,950 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.024862830176462958)}
+2026-02-02 17:41:17,953 | INFO | Metrics: {'cpu_usage': 17.9, 'memory_usage': 41.8, 'latency': 41.10828304595784, 'disk_io': 2363.0615234375}
+2026-02-02 17:41:18,027 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.029495523316092065)}
+2026-02-02 17:41:24,056 | INFO | Metrics: {'cpu_usage': 2.8, 'memory_usage': 41.4, 'latency': 87.96929408308239, 'disk_io': 2363.0615234375}
+2026-02-02 17:41:24,107 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05001202250030967)}
+2026-02-02 17:41:30,110 | INFO | Metrics: {'cpu_usage': 27.4, 'memory_usage': 41.8, 'latency': 44.28450170256853, 'disk_io': 2363.0615234375}
+2026-02-02 17:41:30,189 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.009777453169136696)}
+2026-02-02 17:41:36,192 | INFO | Metrics: {'cpu_usage': 2.8, 'memory_usage': 41.7, 'latency': 30.207678991463123, 'disk_io': 2363.0615234375}
+2026-02-02 17:41:36,254 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07596122036108244)}
+2026-02-02 17:41:42,257 | INFO | Metrics: {'cpu_usage': 2.8, 'memory_usage': 41.2, 'latency': 89.50041898016504, 'disk_io': 2363.0615234375}
+2026-02-02 17:41:42,337 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05001202250030967)}
+2026-02-02 17:41:48,359 | INFO | Metrics: {'cpu_usage': 64.8, 'memory_usage': 41.7, 'latency': 30.457254615282675, 'disk_io': 2363.0615234375}
+2026-02-02 17:41:48,407 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06824743729196314)}
+2026-02-02 17:41:54,410 | INFO | Metrics: {'cpu_usage': 4.6, 'memory_usage': 41.8, 'latency': 73.53171703679547, 'disk_io': 2363.0615234375}
+2026-02-02 17:41:54,462 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.045408795865593765)}
+2026-02-02 17:42:00,465 | INFO | Metrics: {'cpu_usage': 2.3, 'memory_usage': 41.6, 'latency': 92.93486054943425, 'disk_io': 2363.0888671875}
+2026-02-02 17:42:00,536 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04343021969974281)}
+2026-02-02 17:42:14,147 | INFO | Metrics: {'cpu_usage': 1.5, 'memory_usage': 42.0, 'latency': 53.503088774681146, 'disk_io': 2363.0888671875}
+2026-02-02 17:42:14,220 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06199342267255692)}
+2026-02-02 17:42:20,223 | INFO | Metrics: {'cpu_usage': 9.4, 'memory_usage': 42.1, 'latency': 3.370743910895655, 'disk_io': 2363.0888671875}
+2026-02-02 17:42:20,297 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05823071546386682)}
+2026-02-02 17:42:26,303 | INFO | Metrics: {'cpu_usage': 97.8, 'memory_usage': 43.0, 'latency': 27.48646145751895, 'disk_io': 2363.1748046875}
+2026-02-02 17:42:26,472 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.1087523275504475)}
+2026-02-02 17:42:32,516 | INFO | Metrics: {'cpu_usage': 32.1, 'memory_usage': 42.2, 'latency': 81.63477377714848, 'disk_io': 2363.1748046875}
+2026-02-02 17:42:32,554 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.003981917073700991)}
+2026-02-02 17:42:38,556 | INFO | Metrics: {'cpu_usage': 31.6, 'memory_usage': 42.3, 'latency': 3.0798471833797345, 'disk_io': 2363.1748046875}
+2026-02-02 17:42:38,595 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03448714275393849)}
+2026-02-02 17:42:44,597 | INFO | Metrics: {'cpu_usage': 27.2, 'memory_usage': 42.5, 'latency': 20.725178754592207, 'disk_io': 2363.1748046875}
+2026-02-02 17:42:44,635 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03127667160070868)}
+2026-02-02 17:42:50,637 | INFO | Metrics: {'cpu_usage': 28.3, 'memory_usage': 43.0, 'latency': 47.173425811190164, 'disk_io': 2363.1748046875}
+2026-02-02 17:42:50,678 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0061184368887480245)}
+2026-02-02 17:42:56,680 | INFO | Metrics: {'cpu_usage': 9.3, 'memory_usage': 42.7, 'latency': 38.87975387552781, 'disk_io': 2363.1748046875}
+2026-02-02 17:42:56,721 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03963980824941227)}
+2026-02-02 17:43:02,741 | INFO | Metrics: {'cpu_usage': 7.6, 'memory_usage': 43.0, 'latency': 46.78960570407141, 'disk_io': 2363.1748046875}
+2026-02-02 17:43:02,782 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05346162465837567)}
+2026-02-02 17:43:08,785 | INFO | Metrics: {'cpu_usage': 1.0, 'memory_usage': 42.8, 'latency': 85.18921631423326, 'disk_io': 2363.1748046875}
+2026-02-02 17:43:08,837 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.050974924539925914)}
+2026-02-02 17:43:14,840 | INFO | Metrics: {'cpu_usage': 24.2, 'memory_usage': 43.4, 'latency': 7.085523024647441, 'disk_io': 2363.1748046875}
+2026-02-02 17:43:14,891 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03462884646211439)}
+2026-02-02 17:43:27,865 | INFO | Metrics: {'cpu_usage': 2.0, 'memory_usage': 43.4, 'latency': 18.038662188391964, 'disk_io': 2363.1748046875}
+2026-02-02 17:43:27,936 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08266332066460602)}
+2026-02-02 17:43:33,940 | INFO | Metrics: {'cpu_usage': 8.1, 'memory_usage': 43.3, 'latency': 98.36939857921259, 'disk_io': 2363.1748046875}
+2026-02-02 17:43:34,024 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.02744810466240888)}
+2026-02-02 17:43:40,027 | INFO | Metrics: {'cpu_usage': 7.7, 'memory_usage': 44.0, 'latency': 66.67504177565338, 'disk_io': 2363.1748046875}
+2026-02-02 17:43:40,101 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.036458239967410266)}
+2026-02-02 17:43:46,129 | INFO | Metrics: {'cpu_usage': 14.1, 'memory_usage': 43.7, 'latency': 96.2738341838924, 'disk_io': 2363.2529296875}
+2026-02-02 17:43:46,194 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.008483150213844826)}
+2026-02-02 17:43:52,197 | INFO | Metrics: {'cpu_usage': 7.4, 'memory_usage': 43.5, 'latency': 87.27486685971691, 'disk_io': 2363.2685546875}
+2026-02-02 17:43:52,244 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03490964110819361)}
+2026-02-02 17:43:58,247 | INFO | Metrics: {'cpu_usage': 5.4, 'memory_usage': 43.4, 'latency': 88.86053103813538, 'disk_io': 2363.2685546875}
+2026-02-02 17:43:58,298 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04298385931777304)}
+2026-02-02 17:44:04,301 | INFO | Metrics: {'cpu_usage': 29.0, 'memory_usage': 44.8, 'latency': 89.00104955403488, 'disk_io': 2363.2880859375}
+2026-02-02 17:44:04,376 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.009831105851882294)}
+2026-02-02 17:44:10,378 | INFO | Metrics: {'cpu_usage': 56.5, 'memory_usage': 42.5, 'latency': 37.17006827847742, 'disk_io': 2363.2880859375}
+2026-02-02 17:44:10,438 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.050395819570889344)}
+2026-02-02 17:44:16,463 | INFO | Metrics: {'cpu_usage': 62.8, 'memory_usage': 42.3, 'latency': 20.105719498845833, 'disk_io': 2363.2880859375}
+2026-02-02 17:44:16,501 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07935404038511407)}
+2026-02-02 17:44:22,504 | INFO | Metrics: {'cpu_usage': 30.7, 'memory_usage': 43.9, 'latency': 14.500429484160504, 'disk_io': 2363.2880859375}
+2026-02-02 17:44:22,556 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.030503725260691672)}
+2026-02-02 17:44:28,561 | INFO | Metrics: {'cpu_usage': 60.5, 'memory_usage': 44.3, 'latency': 29.739955415456958, 'disk_io': 2363.2880859375}
+2026-02-02 17:44:28,631 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06679990977802186)}
+2026-02-02 17:44:40,710 | INFO | Metrics: {'cpu_usage': 27.8, 'memory_usage': 44.6, 'latency': 37.40386357124554, 'disk_io': 2363.2880859375}
+2026-02-02 17:44:40,748 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.010488091313292092)}
+2026-02-02 17:44:46,750 | INFO | Metrics: {'cpu_usage': 27.7, 'memory_usage': 45.2, 'latency': 78.25084508081619, 'disk_io': 2363.2880859375}
+2026-02-02 17:44:46,788 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.01007946228296741)}
+2026-02-02 17:44:52,790 | INFO | Metrics: {'cpu_usage': 25.3, 'memory_usage': 45.3, 'latency': 17.359187961002576, 'disk_io': 2363.2880859375}
+2026-02-02 17:44:52,828 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.030499555403481926)}
+2026-02-02 17:44:58,831 | INFO | Metrics: {'cpu_usage': 3.3, 'memory_usage': 45.1, 'latency': 44.20799930275835, 'disk_io': 2363.2880859375}
+2026-02-02 17:44:58,904 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06020292539368732)}
+2026-02-02 17:45:04,930 | INFO | Metrics: {'cpu_usage': 5.8, 'memory_usage': 42.8, 'latency': 89.48186760655115, 'disk_io': 2363.2880859375}
+2026-02-02 17:45:04,987 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04298385931777304)}
+2026-02-02 17:45:10,990 | INFO | Metrics: {'cpu_usage': 58.4, 'memory_usage': 42.4, 'latency': 48.97832150140571, 'disk_io': 2363.2880859375}
+2026-02-02 17:45:11,054 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.051997077520991364)}
+2026-02-02 17:45:17,057 | INFO | Metrics: {'cpu_usage': 2.5, 'memory_usage': 42.5, 'latency': 36.75001846385649, 'disk_io': 2363.2880859375}
+2026-02-02 17:45:17,122 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06416949770733849)}
+2026-02-02 17:45:23,148 | INFO | Metrics: {'cpu_usage': 3.3, 'memory_usage': 42.5, 'latency': 47.80704077585786, 'disk_io': 2363.2880859375}
+2026-02-02 17:45:23,204 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.060544361227705346)}
+2026-02-02 17:45:29,207 | INFO | Metrics: {'cpu_usage': 18.2, 'memory_usage': 42.4, 'latency': 53.56802670336556, 'disk_io': 2363.2880859375}
+2026-02-02 17:45:29,291 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.01738310936416132)}
+2026-02-02 17:45:35,294 | INFO | Metrics: {'cpu_usage': 4.0, 'memory_usage': 42.5, 'latency': 19.6696807392764, 'disk_io': 2363.2880859375}
+2026-02-02 17:45:35,349 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07845124831188155)}
+2026-02-02 17:45:47,128 | INFO | Metrics: {'cpu_usage': 63.6, 'memory_usage': 43.0, 'latency': 78.27313753610602, 'disk_io': 2363.2880859375}
+2026-02-02 17:45:47,170 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04493547939597009)}
+2026-02-02 17:45:53,173 | INFO | Metrics: {'cpu_usage': 3.3, 'memory_usage': 43.3, 'latency': 33.034942290318966, 'disk_io': 2363.2880859375}
+2026-02-02 17:45:53,214 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07475202575639095)}
+2026-02-02 17:45:59,216 | INFO | Metrics: {'cpu_usage': 17.9, 'memory_usage': 44.1, 'latency': 92.67785356183944, 'disk_io': 2363.2880859375}
+2026-02-02 17:45:59,261 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.0028766089358225333)}
+2026-02-02 17:46:05,264 | INFO | Metrics: {'cpu_usage': 5.6, 'memory_usage': 44.8, 'latency': 56.859349117563426, 'disk_io': 2363.2880859375}
+2026-02-02 17:46:05,315 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05639200012153511)}
+2026-02-02 17:46:11,340 | INFO | Metrics: {'cpu_usage': 1.5, 'memory_usage': 44.3, 'latency': 25.269741397458635, 'disk_io': 2363.2880859375}
+2026-02-02 17:46:11,406 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07791044103324529)}
+2026-02-02 17:46:17,409 | INFO | Metrics: {'cpu_usage': 11.2, 'memory_usage': 44.0, 'latency': 45.00438032845476, 'disk_io': 2363.2880859375}
+2026-02-02 17:46:17,479 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03358665092826374)}
+2026-02-02 17:46:23,481 | INFO | Metrics: {'cpu_usage': 15.4, 'memory_usage': 43.9, 'latency': 33.21370518353426, 'disk_io': 2367.2568359375}
+2026-02-02 17:46:23,539 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04392763917077536)}
+2026-02-02 17:46:29,566 | INFO | Metrics: {'cpu_usage': 6.1, 'memory_usage': 43.2, 'latency': 99.6764100285416, 'disk_io': 2367.2568359375}
+2026-02-02 17:46:29,615 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03502967679747315)}
+2026-02-02 17:46:35,618 | INFO | Metrics: {'cpu_usage': 5.3, 'memory_usage': 43.2, 'latency': 53.84661838634397, 'disk_io': 2367.2568359375}
+2026-02-02 17:46:35,688 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05668321867782178)}
+2026-02-02 17:46:41,691 | INFO | Metrics: {'cpu_usage': 9.8, 'memory_usage': 43.3, 'latency': 60.44753611757388, 'disk_io': 2367.3115234375}
+2026-02-02 17:46:41,759 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0331322275026289)}
+2026-02-02 17:46:55,179 | INFO | Metrics: {'cpu_usage': 19.9, 'memory_usage': 42.8, 'latency': 18.424605885142196, 'disk_io': 2367.3115234375}
+2026-02-02 17:46:55,232 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.035795608297897186)}
+2026-02-02 17:47:01,234 | INFO | Metrics: {'cpu_usage': 13.6, 'memory_usage': 42.8, 'latency': 26.56417654877989, 'disk_io': 2367.3115234375}
+2026-02-02 17:47:01,291 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.048958844686723846)}
+2026-02-02 17:47:07,294 | INFO | Metrics: {'cpu_usage': 3.0, 'memory_usage': 42.8, 'latency': 66.36998388248249, 'disk_io': 2367.3115234375}
+2026-02-02 17:47:07,361 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05077598035587394)}
+2026-02-02 17:47:13,387 | INFO | Metrics: {'cpu_usage': 3.8, 'memory_usage': 42.7, 'latency': 48.61171756269904, 'disk_io': 2367.3115234375}
+2026-02-02 17:47:13,447 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.057241222364655786)}
+2026-02-02 17:47:19,450 | INFO | Metrics: {'cpu_usage': 13.1, 'memory_usage': 43.7, 'latency': 85.062498259136, 'disk_io': 2367.3115234375}
+2026-02-02 17:47:19,524 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0134927683253242)}
+2026-02-02 17:47:25,527 | INFO | Metrics: {'cpu_usage': 3.5, 'memory_usage': 44.0, 'latency': 97.28878836650082, 'disk_io': 2367.3115234375}
+2026-02-02 17:47:25,600 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03694170166616617)}
+2026-02-02 17:47:31,624 | INFO | Metrics: {'cpu_usage': 27.6, 'memory_usage': 44.5, 'latency': 11.630037555460902, 'disk_io': 2367.3115234375}
+2026-02-02 17:47:31,662 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.032362768845422774)}
+2026-02-02 17:47:37,665 | INFO | Metrics: {'cpu_usage': 30.0, 'memory_usage': 44.5, 'latency': 19.77868026678078, 'disk_io': 2367.3115234375}
+2026-02-02 17:47:37,780 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.029194027997139105)}
+2026-02-02 17:47:43,781 | INFO | Metrics: {'cpu_usage': 27.1, 'memory_usage': 45.4, 'latency': 87.98063986339672, 'disk_io': 2367.3115234375}
+2026-02-02 17:47:43,819 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.010461203522422413)}
+2026-02-02 17:47:49,824 | INFO | Metrics: {'cpu_usage': 36.3, 'memory_usage': 45.5, 'latency': 15.819464091034627, 'disk_io': 2367.3115234375}
+2026-02-02 17:47:49,976 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03758582771018004)}
+2026-02-02 17:48:04,460 | INFO | Metrics: {'cpu_usage': 35.4, 'memory_usage': 45.7, 'latency': 1.2791372805265178, 'disk_io': 2367.3115234375}
+2026-02-02 17:48:04,515 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03810578505418449)}
+2026-02-02 17:48:10,517 | INFO | Metrics: {'cpu_usage': 35.8, 'memory_usage': 46.5, 'latency': 83.35568449042856, 'disk_io': 2367.3115234375}
+2026-02-02 17:48:10,566 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.006236680744553302)}
+2026-02-02 17:48:16,569 | INFO | Metrics: {'cpu_usage': 31.4, 'memory_usage': 46.2, 'latency': 69.13124004754604, 'disk_io': 2367.3115234375}
+2026-02-02 17:48:16,614 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.0059671141008865725)}
+2026-02-02 17:48:22,615 | INFO | Metrics: {'cpu_usage': 16.9, 'memory_usage': 45.9, 'latency': 7.007977735156527, 'disk_io': 2367.3115234375}
+2026-02-02 17:48:22,663 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.052916504110219975)}
+2026-02-02 17:48:28,666 | INFO | Metrics: {'cpu_usage': 3.3, 'memory_usage': 43.9, 'latency': 69.40201403457411, 'disk_io': 2367.3154296875}
+2026-02-02 17:48:28,734 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04938643790845354)}
+2026-02-02 17:48:34,761 | INFO | Metrics: {'cpu_usage': 1.8, 'memory_usage': 43.5, 'latency': 99.49913849057448, 'disk_io': 2367.3154296875}
+2026-02-02 17:48:34,816 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04533478179721917)}
+2026-02-02 17:48:40,819 | INFO | Metrics: {'cpu_usage': 36.9, 'memory_usage': 43.9, 'latency': 59.69168343055399, 'disk_io': 2367.3154296875}
+2026-02-02 17:48:40,983 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0013239507758895375)}
+2026-02-02 17:48:46,986 | INFO | Metrics: {'cpu_usage': 29.2, 'memory_usage': 44.0, 'latency': 2.3930968417068548, 'disk_io': 2367.3154296875}
+2026-02-02 17:48:47,031 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.031851047100036056)}
+2026-02-02 17:48:53,034 | INFO | Metrics: {'cpu_usage': 4.8, 'memory_usage': 43.5, 'latency': 91.23095519972631, 'disk_io': 2367.3154296875}
+2026-02-02 17:48:53,076 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04298385931777304)}
+2026-02-02 17:49:07,170 | INFO | Metrics: {'cpu_usage': 6.9, 'memory_usage': 43.0, 'latency': 56.81747058684728, 'disk_io': 2367.3154296875}
+2026-02-02 17:49:07,249 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0487097255649146)}
+2026-02-02 17:49:13,252 | INFO | Metrics: {'cpu_usage': 1.0, 'memory_usage': 43.3, 'latency': 67.94771292411741, 'disk_io': 2367.3154296875}
+2026-02-02 17:49:13,323 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05316468007352981)}
+2026-02-02 17:49:19,327 | INFO | Metrics: {'cpu_usage': 7.6, 'memory_usage': 43.4, 'latency': 46.17673442504108, 'disk_io': 2367.3154296875}
+2026-02-02 17:49:19,394 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05346162465837567)}
+2026-02-02 17:49:25,418 | INFO | Metrics: {'cpu_usage': 1.5, 'memory_usage': 43.0, 'latency': 96.28739325098846, 'disk_io': 2367.3154296875}
+2026-02-02 17:49:25,482 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04380954281062488)}
+2026-02-02 17:49:31,484 | INFO | Metrics: {'cpu_usage': 6.3, 'memory_usage': 42.9, 'latency': 82.52174526972311, 'disk_io': 2367.3154296875}
+2026-02-02 17:49:31,554 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04184783624650468)}
+2026-02-02 17:49:37,557 | INFO | Metrics: {'cpu_usage': 13.0, 'memory_usage': 43.4, 'latency': 93.96643582833015, 'disk_io': 2367.3154296875}
+2026-02-02 17:49:37,612 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.008169758315349274)}
+2026-02-02 17:49:43,615 | INFO | Metrics: {'cpu_usage': 28.0, 'memory_usage': 43.2, 'latency': 21.255333649037752, 'disk_io': 2367.3154296875}
+2026-02-02 17:49:43,652 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.029978708503453744)}
+2026-02-02 17:49:49,672 | INFO | Metrics: {'cpu_usage': 25.6, 'memory_usage': 43.3, 'latency': 94.43980991663284, 'disk_io': 2367.3154296875}
+2026-02-02 17:49:49,709 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.015946976908031596)}
+2026-02-02 17:49:55,712 | INFO | Metrics: {'cpu_usage': 4.5, 'memory_usage': 43.7, 'latency': 2.776304447892845, 'disk_io': 2367.3154296875}
+2026-02-02 17:49:55,783 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07845124831188155)}
+2026-02-02 17:50:01,785 | INFO | Metrics: {'cpu_usage': 26.1, 'memory_usage': 44.7, 'latency': 20.082198293470668, 'disk_io': 2367.3154296875}
+2026-02-02 17:50:01,824 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03089337150449778)}
+2026-02-02 17:50:07,825 | INFO | Metrics: {'cpu_usage': 27.7, 'memory_usage': 44.9, 'latency': 59.489517437083855, 'disk_io': 2367.3154296875}
+2026-02-02 17:50:07,864 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.0013713287828688303)}
+2026-02-02 17:50:13,866 | INFO | Metrics: {'cpu_usage': 37.3, 'memory_usage': 45.1, 'latency': 83.0164125953952, 'disk_io': 2367.3154296875}
+2026-02-02 17:50:13,918 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.003931649469136045)}
+2026-02-02 17:50:19,920 | INFO | Metrics: {'cpu_usage': 35.6, 'memory_usage': 44.6, 'latency': 36.00304921652602, 'disk_io': 2367.3154296875}
+2026-02-02 17:50:19,967 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.015141160695252509)}
+2026-02-02 17:50:31,622 | INFO | Metrics: {'cpu_usage': 30.3, 'memory_usage': 45.2, 'latency': 19.38805633690615, 'disk_io': 2367.3154296875}
+2026-02-02 17:50:31,699 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.029194027997139105)}
+2026-02-02 17:50:37,702 | INFO | Metrics: {'cpu_usage': 20.3, 'memory_usage': 45.1, 'latency': 25.515931430204773, 'disk_io': 2367.3154296875}
+2026-02-02 17:50:37,754 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.030945155663999246)}
+2026-02-02 17:50:43,757 | INFO | Metrics: {'cpu_usage': 5.9, 'memory_usage': 43.3, 'latency': 7.590197833335729, 'disk_io': 2367.3154296875}
+2026-02-02 17:50:43,823 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07845124831188155)}
+2026-02-02 17:50:49,849 | INFO | Metrics: {'cpu_usage': 27.6, 'memory_usage': 43.3, 'latency': 88.62370759411793, 'disk_io': 2367.3154296875}
+2026-02-02 17:50:49,892 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.008485767384658782)}
+2026-02-02 17:50:55,895 | INFO | Metrics: {'cpu_usage': 2.3, 'memory_usage': 43.0, 'latency': 98.33647654741814, 'disk_io': 2367.3154296875}
+2026-02-02 17:50:55,955 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04493119814029889)}
+2026-02-02 17:51:01,957 | INFO | Metrics: {'cpu_usage': 4.6, 'memory_usage': 42.4, 'latency': 47.90721809753532, 'disk_io': 2367.3154296875}
+2026-02-02 17:51:02,022 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05847780473212927)}
+2026-02-02 17:51:08,025 | INFO | Metrics: {'cpu_usage': 1.0, 'memory_usage': 42.3, 'latency': 22.327749573951625, 'disk_io': 2367.3154296875}
+2026-02-02 17:51:08,096 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08309244199751176)}
+2026-02-02 17:51:14,121 | INFO | Metrics: {'cpu_usage': 2.5, 'memory_usage': 42.4, 'latency': 92.65071037232501, 'disk_io': 2367.3154296875}
+2026-02-02 17:51:14,182 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04334331582993123)}
+2026-02-02 17:51:20,185 | INFO | Metrics: {'cpu_usage': 1.5, 'memory_usage': 42.5, 'latency': 36.075015454898164, 'disk_io': 2425.8974609375}
+2026-02-02 17:51:20,248 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.067866950224163)}
+2026-02-02 17:51:26,250 | INFO | Metrics: {'cpu_usage': 4.8, 'memory_usage': 42.4, 'latency': 91.01878718075778, 'disk_io': 2425.8974609375}
+2026-02-02 17:51:26,296 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04338612498607897)}
+2026-02-02 17:51:38,116 | INFO | Metrics: {'cpu_usage': 1.8, 'memory_usage': 42.9, 'latency': 1.759811246422377, 'disk_io': 2425.8974609375}
+2026-02-02 17:51:38,188 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08309244199751176)}
+2026-02-02 17:51:44,191 | INFO | Metrics: {'cpu_usage': 1.5, 'memory_usage': 42.6, 'latency': 7.043447626796367, 'disk_io': 2425.8974609375}
+2026-02-02 17:51:44,255 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08352185376628019)}
+2026-02-02 17:51:50,258 | INFO | Metrics: {'cpu_usage': 1.7, 'memory_usage': 42.6, 'latency': 30.776481561242488, 'disk_io': 2425.8974609375}
+2026-02-02 17:51:50,330 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07766128633064107)}
+2026-02-02 17:51:56,355 | INFO | Metrics: {'cpu_usage': 2.0, 'memory_usage': 42.5, 'latency': 4.274691937495595, 'disk_io': 2425.8974609375}
+2026-02-02 17:51:56,417 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08352185376628019)}
+2026-02-02 17:52:02,420 | INFO | Metrics: {'cpu_usage': 1.0, 'memory_usage': 42.5, 'latency': 89.27454979413285, 'disk_io': 2425.8974609375}
+2026-02-02 17:52:02,485 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.050974924539925914)}
+2026-02-02 17:52:08,487 | INFO | Metrics: {'cpu_usage': 2.0, 'memory_usage': 42.5, 'latency': 45.28508909276472, 'disk_io': 2425.8974609375}
+2026-02-02 17:52:08,542 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06380368114845292)}
+2026-02-02 17:52:14,567 | INFO | Metrics: {'cpu_usage': 2.3, 'memory_usage': 42.4, 'latency': 94.32933945944065, 'disk_io': 2425.8974609375}
+2026-02-02 17:52:14,607 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04162957616054508)}
+2026-02-02 17:52:20,610 | INFO | Metrics: {'cpu_usage': 2.5, 'memory_usage': 42.5, 'latency': 66.63649513379035, 'disk_io': 2425.8974609375}
+2026-02-02 17:52:20,678 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05118351985053782)}
+2026-02-02 17:52:26,681 | INFO | Metrics: {'cpu_usage': 2.3, 'memory_usage': 42.5, 'latency': 63.704637659248874, 'disk_io': 2425.8974609375}
+2026-02-02 17:52:26,755 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05950572138446997)}
+2026-02-02 17:52:38,131 | INFO | Metrics: {'cpu_usage': 3.5, 'memory_usage': 42.5, 'latency': 44.074274928803156, 'disk_io': 2425.8974609375}
+2026-02-02 17:52:38,180 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.062496067103053776)}
+2026-02-02 17:52:44,183 | INFO | Metrics: {'cpu_usage': 1.5, 'memory_usage': 42.4, 'latency': 82.33052309784726, 'disk_io': 2425.8974609375}
+2026-02-02 17:52:44,248 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.048975603525111544)}
+2026-02-02 17:52:50,252 | INFO | Metrics: {'cpu_usage': 1.8, 'memory_usage': 42.5, 'latency': 61.00896166193715, 'disk_io': 2425.8974609375}
+2026-02-02 17:52:50,324 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05991916930100116)}
+2026-02-02 17:52:56,354 | INFO | Metrics: {'cpu_usage': 1.8, 'memory_usage': 42.5, 'latency': 37.529068845922694, 'disk_io': 2425.8974609375}
+2026-02-02 17:52:56,425 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06661132948283044)}
+2026-02-02 17:53:02,429 | INFO | Metrics: {'cpu_usage': 1.0, 'memory_usage': 42.5, 'latency': 88.772048270612, 'disk_io': 2425.8974609375}
+2026-02-02 17:53:02,501 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.050974924539925914)}
+2026-02-02 17:53:08,504 | INFO | Metrics: {'cpu_usage': 1.0, 'memory_usage': 42.6, 'latency': 90.36638253217367, 'disk_io': 2426.0966796875}
+2026-02-02 17:53:08,577 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.050974924539925914)}
+2026-02-02 17:53:14,602 | INFO | Metrics: {'cpu_usage': 1.0, 'memory_usage': 42.5, 'latency': 1.6304526095050966, 'disk_io': 2426.0966796875}
+2026-02-02 17:53:14,655 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08352185376628019)}
+2026-02-02 17:53:20,658 | INFO | Metrics: {'cpu_usage': 1.5, 'memory_usage': 42.4, 'latency': 21.957001400585327, 'disk_io': 2426.0966796875}
+2026-02-02 17:53:20,729 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08309244199751176)}
+2026-02-02 17:53:26,732 | INFO | Metrics: {'cpu_usage': 1.3, 'memory_usage': 42.5, 'latency': 79.43625874248482, 'disk_io': 2426.0966796875}
+2026-02-02 17:53:26,805 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.048975603525111544)}
+2026-02-02 17:53:40,044 | INFO | Metrics: {'cpu_usage': 3.3, 'memory_usage': 42.5, 'latency': 46.4105134220337, 'disk_io': 2426.0966796875}
+2026-02-02 17:53:40,117 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.060544361227705346)}
+2026-02-02 17:53:46,119 | INFO | Metrics: {'cpu_usage': 3.0, 'memory_usage': 42.4, 'latency': 4.317901048082661, 'disk_io': 2426.0966796875}
+2026-02-02 17:53:46,175 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0810132030437839)}
+2026-02-02 17:53:52,178 | INFO | Metrics: {'cpu_usage': 2.3, 'memory_usage': 42.5, 'latency': 68.20505405498325, 'disk_io': 2426.0966796875}
+2026-02-02 17:53:52,244 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05316468007352981)}
+2026-02-02 17:53:58,270 | INFO | Metrics: {'cpu_usage': 2.8, 'memory_usage': 42.6, 'latency': 49.656101975052756, 'disk_io': 2426.0966796875}
+2026-02-02 17:53:58,326 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06048294825384337)}
+2026-02-02 17:54:04,329 | INFO | Metrics: {'cpu_usage': 3.0, 'memory_usage': 42.6, 'latency': 85.31793784313112, 'disk_io': 2426.0966796875}
+2026-02-02 17:54:04,401 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04900094054494264)}
+2026-02-02 17:54:10,403 | INFO | Metrics: {'cpu_usage': 29.1, 'memory_usage': 43.2, 'latency': 45.470193751449216, 'disk_io': 2426.0966796875}
+2026-02-02 17:54:10,459 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.008007565281225482)}
+2026-02-02 17:54:16,462 | INFO | Metrics: {'cpu_usage': 11.9, 'memory_usage': 43.6, 'latency': 39.19787772426141, 'disk_io': 2426.4873046875}
+2026-02-02 17:54:16,527 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03601432126778159)}
+2026-02-02 17:54:22,550 | INFO | Metrics: {'cpu_usage': 27.1, 'memory_usage': 43.3, 'latency': 79.49345398564324, 'disk_io': 2426.4873046875}
+2026-02-02 17:54:22,589 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.00864170130662023)}
+2026-02-02 17:54:28,592 | INFO | Metrics: {'cpu_usage': 5.1, 'memory_usage': 43.5, 'latency': 75.02752040031761, 'disk_io': 2426.4873046875}
+2026-02-02 17:54:28,665 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.044258492014889295)}
+2026-02-02 17:54:34,668 | INFO | Metrics: {'cpu_usage': 29.7, 'memory_usage': 43.5, 'latency': 79.74292650267223, 'disk_io': 2426.7412109375}
+2026-02-02 17:54:34,715 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.008520861417969261)}
+2026-02-02 17:54:40,717 | INFO | Metrics: {'cpu_usage': 29.5, 'memory_usage': 43.4, 'latency': 98.5892742610463, 'disk_io': 2426.7412109375}
+2026-02-02 17:54:40,756 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.011260062446391439)}
+2026-02-02 17:54:46,758 | INFO | Metrics: {'cpu_usage': 26.0, 'memory_usage': 43.4, 'latency': 16.199844463039035, 'disk_io': 2426.7412109375}
+2026-02-02 17:54:46,802 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.031286000447903084)}
+2026-02-02 17:54:52,804 | INFO | Metrics: {'cpu_usage': 6.6, 'memory_usage': 43.2, 'latency': 64.82931139808272, 'disk_io': 2427.1708984375}
+2026-02-02 17:54:52,865 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04891031449137517)}
+2026-02-02 17:55:06,773 | INFO | Metrics: {'cpu_usage': 27.3, 'memory_usage': 43.2, 'latency': 36.83011412025213, 'disk_io': 2427.1708984375}
+2026-02-02 17:55:06,812 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.011628275066963845)}
+2026-02-02 17:55:12,816 | INFO | Metrics: {'cpu_usage': 12.2, 'memory_usage': 43.7, 'latency': 50.42901816465149, 'disk_io': 2427.4052734375}
+2026-02-02 17:55:12,895 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03013681313579808)}
+2026-02-02 17:55:18,897 | INFO | Metrics: {'cpu_usage': 15.5, 'memory_usage': 44.2, 'latency': 52.569065392188456, 'disk_io': 2427.7177734375}
+2026-02-02 17:55:18,946 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.020771967370273425)}
+2026-02-02 17:55:24,972 | INFO | Metrics: {'cpu_usage': 15.8, 'memory_usage': 44.1, 'latency': 77.44559574031021, 'disk_io': 2427.7333984375}
+2026-02-02 17:55:25,027 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.010968502305854888)}
+2026-02-02 17:55:31,030 | INFO | Metrics: {'cpu_usage': 1.5, 'memory_usage': 42.9, 'latency': 18.974933135090993, 'disk_io': 2428.1552734375}
+2026-02-02 17:55:31,102 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08266332066460602)}
+2026-02-02 17:55:37,105 | INFO | Metrics: {'cpu_usage': 3.8, 'memory_usage': 42.6, 'latency': 3.0523181237034827, 'disk_io': 2428.1552734375}
+2026-02-02 17:55:37,175 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07887751884997973)}
+2026-02-02 17:55:43,198 | INFO | Metrics: {'cpu_usage': 27.9, 'memory_usage': 44.0, 'latency': 58.21364109139167, 'disk_io': 2428.1552734375}
+2026-02-02 17:55:43,236 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.003338640310835528)}
+2026-02-02 17:55:49,239 | INFO | Metrics: {'cpu_usage': 11.4, 'memory_usage': 44.1, 'latency': 71.4645014615067, 'disk_io': 2428.1552734375}
+2026-02-02 17:55:49,299 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.016293368064973834)}
+2026-02-02 17:55:55,301 | INFO | Metrics: {'cpu_usage': 27.3, 'memory_usage': 45.1, 'latency': 95.19640305557634, 'disk_io': 2428.1552734375}
+2026-02-02 17:55:55,340 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.015202424885468413)}
+2026-02-02 17:56:01,342 | INFO | Metrics: {'cpu_usage': 38.3, 'memory_usage': 46.0, 'latency': 64.70371653488762, 'disk_io': 2428.1552734375}
+2026-02-02 17:56:01,404 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.003338557571098688)}
+2026-02-02 17:56:07,406 | INFO | Metrics: {'cpu_usage': 35.5, 'memory_usage': 46.1, 'latency': 46.81748922237395, 'disk_io': 2428.1552734375}
+2026-02-02 17:56:07,484 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.01046145639755458)}
+2026-02-02 17:56:13,486 | INFO | Metrics: {'cpu_usage': 33.6, 'memory_usage': 46.5, 'latency': 82.16172081697293, 'disk_io': 2428.1552734375}
+2026-02-02 17:56:13,523 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.006827790763276664)}
+2026-02-02 17:56:19,525 | INFO | Metrics: {'cpu_usage': 28.8, 'memory_usage': 47.4, 'latency': 47.372446211663245, 'disk_io': 2428.1552734375}
+2026-02-02 17:56:19,563 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.002809283076053215)}
+2026-02-02 17:56:25,566 | INFO | Metrics: {'cpu_usage': 16.3, 'memory_usage': 47.7, 'latency': 61.964337487253836, 'disk_io': 2428.1552734375}
+2026-02-02 17:56:25,620 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.016637303355128696)}
+2026-02-02 17:56:31,623 | INFO | Metrics: {'cpu_usage': 8.9, 'memory_usage': 48.3, 'latency': 52.47636448224799, 'disk_io': 2428.1552734375}
+2026-02-02 17:56:31,668 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04262007140572033)}
+2026-02-02 17:56:46,753 | INFO | Metrics: {'cpu_usage': 71.9, 'memory_usage': 44.0, 'latency': 18.32406792554693, 'disk_io': 2428.1552734375}
+2026-02-02 17:56:46,794 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08279309185620387)}
+2026-02-02 17:56:52,797 | INFO | Metrics: {'cpu_usage': 1.0, 'memory_usage': 43.9, 'latency': 20.175230507495193, 'disk_io': 2428.1591796875}
+2026-02-02 17:56:52,862 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08120019300465264)}
+2026-02-02 17:56:58,864 | INFO | Metrics: {'cpu_usage': 27.4, 'memory_usage': 43.4, 'latency': 92.83388986275686, 'disk_io': 2428.1591796875}
+2026-02-02 17:56:58,902 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.01323769280608289)}
+2026-02-02 17:57:04,905 | INFO | Metrics: {'cpu_usage': 4.1, 'memory_usage': 43.3, 'latency': 45.896006493556534, 'disk_io': 2428.1591796875}
+2026-02-02 17:57:04,972 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05806533169330863)}
+2026-02-02 17:57:10,997 | INFO | Metrics: {'cpu_usage': 3.5, 'memory_usage': 43.0, 'latency': 52.688179903481455, 'disk_io': 2429.1943359375}
+2026-02-02 17:57:11,054 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05874369393115664)}
+2026-02-02 17:57:17,057 | INFO | Metrics: {'cpu_usage': 35.1, 'memory_usage': 43.7, 'latency': 82.95576452901098, 'disk_io': 2429.1943359375}
+2026-02-02 17:57:17,133 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.005515721819220554)}
+2026-02-02 17:57:23,135 | INFO | Metrics: {'cpu_usage': 26.9, 'memory_usage': 43.8, 'latency': 66.85608101468982, 'disk_io': 2429.1943359375}
+2026-02-02 17:57:23,192 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.0044760233284075746)}
+2026-02-02 17:57:29,194 | INFO | Metrics: {'cpu_usage': 2.8, 'memory_usage': 43.7, 'latency': 51.44667543633496, 'disk_io': 2429.1943359375}
+2026-02-02 17:57:29,250 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05874369393115664)}
+2026-02-02 17:57:35,253 | INFO | Metrics: {'cpu_usage': 3.0, 'memory_usage': 43.7, 'latency': 97.61214154891938, 'disk_io': 2429.1943359375}
+2026-02-02 17:57:35,300 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04297702053831265)}
+2026-02-06 21:41:32,725 | INFO | Metrics: {'cpu_usage': 0.8, 'memory_usage': 37.0, 'latency': 39.37996951449798, 'disk_io': 2061.71875}
+2026-02-06 21:41:32,899 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07066024157435247)}
+2026-02-06 21:41:38,902 | INFO | Metrics: {'cpu_usage': 25.2, 'memory_usage': 38.5, 'latency': 78.03539303592441, 'disk_io': 2066.546875}
+2026-02-06 21:41:38,975 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.001165644170344371)}
+2026-02-06 21:41:44,977 | INFO | Metrics: {'cpu_usage': 5.6, 'memory_usage': 38.0, 'latency': 17.06385966989514, 'disk_io': 2068.1640625}
+2026-02-06 21:41:45,016 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07594156491411275)}
+2026-02-06 21:41:51,019 | INFO | Metrics: {'cpu_usage': 7.4, 'memory_usage': 37.6, 'latency': 5.5954543815772, 'disk_io': 2068.1640625}
+2026-02-06 21:41:51,079 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07162418386600111)}
+2026-02-06 21:42:17,684 | INFO | Metrics: {'cpu_usage': 11.8, 'memory_usage': 40.2, 'latency': 78.06514331807124, 'disk_io': 2095.3046875}
+2026-02-06 21:42:17,746 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.017851010494120523)}
+2026-02-06 21:42:23,748 | INFO | Metrics: {'cpu_usage': 69.2, 'memory_usage': 40.7, 'latency': 57.31236447521579, 'disk_io': 2095.3125}
+2026-02-06 21:42:23,793 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06334304774843458)}
+2026-02-06 21:42:29,796 | INFO | Metrics: {'cpu_usage': 47.6, 'memory_usage': 42.0, 'latency': 66.47053640724009, 'disk_io': 2095.390625}
+2026-02-06 21:42:29,889 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.022491790942214318)}
+2026-02-06 21:42:35,928 | INFO | Metrics: {'cpu_usage': 29.0, 'memory_usage': 42.4, 'latency': 63.008447979313665, 'disk_io': 2097.69921875}
+2026-02-06 21:42:35,976 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.002492201045464104)}
+2026-02-06 21:42:41,979 | INFO | Metrics: {'cpu_usage': 36.4, 'memory_usage': 43.4, 'latency': 99.48829588943188, 'disk_io': 2097.75390625}
+2026-02-06 21:42:42,034 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.009746849566197424)}
+2026-02-06 21:42:48,037 | INFO | Metrics: {'cpu_usage': 35.6, 'memory_usage': 44.3, 'latency': 99.00940571495829, 'disk_io': 2098.3515625}
+2026-02-06 21:42:48,082 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.010772099437692306)}
+2026-02-06 21:42:54,085 | INFO | Metrics: {'cpu_usage': 34.8, 'memory_usage': 42.2, 'latency': 50.9195274227579, 'disk_io': 2098.3515625}
+2026-02-06 21:42:54,164 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0034586751443026476)}
+2026-02-06 21:43:00,167 | INFO | Metrics: {'cpu_usage': 34.4, 'memory_usage': 41.5, 'latency': 42.806606747031424, 'disk_io': 2098.453125}
+2026-02-06 21:43:00,212 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.011438146969003693)}
+2026-02-06 21:43:06,214 | INFO | Metrics: {'cpu_usage': 33.4, 'memory_usage': 41.5, 'latency': 88.86919160660302, 'disk_io': 2098.453125}
+2026-02-06 21:43:06,257 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.003736907925753319)}
+2026-02-06 21:43:12,259 | INFO | Metrics: {'cpu_usage': 33.4, 'memory_usage': 41.7, 'latency': 27.121063062701833, 'disk_io': 2098.453125}
+2026-02-06 21:43:12,303 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.028405956443320002)}
+2026-02-06 21:43:18,306 | INFO | Metrics: {'cpu_usage': 25.9, 'memory_usage': 41.8, 'latency': 78.08443278051065, 'disk_io': 2098.453125}
+2026-02-06 21:43:18,353 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.00853417195165651)}
+2026-02-06 21:43:24,355 | INFO | Metrics: {'cpu_usage': 29.7, 'memory_usage': 42.3, 'latency': 1.4582685446699353, 'disk_io': 2098.62109375}
+2026-02-06 21:43:24,398 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03448714275393849)}
+2026-02-06 21:43:52,907 | INFO | Metrics: {'cpu_usage': 25.7, 'memory_usage': 44.6, 'latency': 63.64239866351949, 'disk_io': 2098.62890625}
+2026-02-06 21:43:52,957 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.005444279499123961)}
+2026-02-06 21:43:58,959 | INFO | Metrics: {'cpu_usage': 2.0, 'memory_usage': 44.3, 'latency': 42.22424616339327, 'disk_io': 2098.62890625}
+2026-02-06 21:43:59,024 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06309317636850464)}
+2026-02-06 21:44:05,027 | INFO | Metrics: {'cpu_usage': 3.5, 'memory_usage': 44.2, 'latency': 36.56628556790759, 'disk_io': 2098.62890625}
+2026-02-06 21:44:05,101 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06358061495692813)}
+2026-02-06 21:44:11,104 | INFO | Metrics: {'cpu_usage': 2.5, 'memory_usage': 40.1, 'latency': 43.17077113635243, 'disk_io': 2098.62890625}
+2026-02-06 21:44:11,183 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06394604778206514)}
+2026-02-06 21:44:17,210 | INFO | Metrics: {'cpu_usage': 2.5, 'memory_usage': 39.8, 'latency': 14.645098815581935, 'disk_io': 2098.62890625}
+2026-02-06 21:44:17,282 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08207819698109708)}
+2026-02-06 21:44:23,285 | INFO | Metrics: {'cpu_usage': 2.5, 'memory_usage': 39.9, 'latency': 73.11745311856924, 'disk_io': 2098.62890625}
+2026-02-06 21:44:23,353 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04768853405411588)}
+2026-02-06 21:44:29,356 | INFO | Metrics: {'cpu_usage': 2.3, 'memory_usage': 40.0, 'latency': 74.67888734658956, 'disk_io': 2098.62890625}
+2026-02-06 21:44:29,422 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.049311980740740724)}
+2026-02-06 21:44:50,199 | INFO | Metrics: {'cpu_usage': 10.9, 'memory_usage': 40.3, 'latency': 57.39222661710106, 'disk_io': 2099.12890625}
+2026-02-06 21:44:50,279 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.030918813025261782)}
+2026-02-06 21:44:56,282 | INFO | Metrics: {'cpu_usage': 5.8, 'memory_usage': 40.4, 'latency': 30.565817105251018, 'disk_io': 2099.18359375}
+2026-02-06 21:44:56,355 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07453475550031352)}
+2026-02-06 21:45:02,357 | INFO | Metrics: {'cpu_usage': 63.1, 'memory_usage': 40.6, 'latency': 26.318531191917817, 'disk_io': 2099.26171875}
+2026-02-06 21:45:02,398 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07292792169242712)}
