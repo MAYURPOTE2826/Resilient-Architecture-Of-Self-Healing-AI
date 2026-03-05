@@ -702,3 +702,1073 @@
 2026-02-06 21:44:56,355 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07453475550031352)}
 2026-02-06 21:45:02,357 | INFO | Metrics: {'cpu_usage': 63.1, 'memory_usage': 40.6, 'latency': 26.318531191917817, 'disk_io': 2099.26171875}
 2026-02-06 21:45:02,398 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07292792169242712)}
+2026-02-12 17:55:12,131 | INFO | Metrics: {'cpu_usage': 1.0, 'memory_usage': 23.7, 'latency': 46.03948752249194, 'disk_io': 1772.8642578125}
+2026-02-12 17:55:12,298 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07764939999448595)}
+2026-02-12 17:55:18,302 | INFO | Metrics: {'cpu_usage': 3.5, 'memory_usage': 23.7, 'latency': 53.581924915589546, 'disk_io': 1774.1103515625}
+2026-02-12 17:55:18,372 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07362662233748973)}
+2026-02-12 17:55:24,374 | INFO | Metrics: {'cpu_usage': 3.0, 'memory_usage': 23.7, 'latency': 9.185742910165914, 'disk_io': 1775.2783203125}
+2026-02-12 17:55:24,444 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.09004689031208712)}
+2026-02-12 17:55:44,398 | INFO | Metrics: {'cpu_usage': 0.5, 'memory_usage': 23.5, 'latency': 50.08363983925028, 'disk_io': 1775.8798828125}
+2026-02-12 17:55:44,467 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07843792864114485)}
+2026-02-12 17:55:50,471 | INFO | Metrics: {'cpu_usage': 2.3, 'memory_usage': 23.5, 'latency': 54.01413335605533, 'disk_io': 1775.8798828125}
+2026-02-12 17:55:50,541 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.075320361521381)}
+2026-02-12 17:55:56,544 | INFO | Metrics: {'cpu_usage': 0.5, 'memory_usage': 23.5, 'latency': 89.10668194071208, 'disk_io': 1775.8798828125}
+2026-02-12 17:55:56,614 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06452160006557717)}
+2026-02-12 17:56:02,639 | INFO | Metrics: {'cpu_usage': 1.0, 'memory_usage': 23.5, 'latency': 56.03042141275949, 'disk_io': 1775.8798828125}
+2026-02-12 17:56:02,701 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.075320361521381)}
+2026-02-12 17:56:08,705 | INFO | Metrics: {'cpu_usage': 0.8, 'memory_usage': 23.4, 'latency': 52.3040843503318, 'disk_io': 1775.8798828125}
+2026-02-12 17:56:08,781 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.075320361521381)}
+2026-02-12 17:56:14,783 | INFO | Metrics: {'cpu_usage': 1.3, 'memory_usage': 23.4, 'latency': 18.684452140057655, 'disk_io': 1775.8798828125}
+2026-02-12 17:56:14,849 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.09135012790166264)}
+2026-02-12 17:56:20,872 | INFO | Metrics: {'cpu_usage': 3.5, 'memory_usage': 23.6, 'latency': 31.685427334753033, 'disk_io': 1775.8876953125}
+2026-02-12 17:56:20,932 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08658449478187047)}
+2026-02-12 17:56:26,935 | INFO | Metrics: {'cpu_usage': 1.8, 'memory_usage': 23.4, 'latency': 78.02835236480234, 'disk_io': 1777.9150390625}
+2026-02-12 17:56:27,011 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0639407292881411)}
+2026-02-12 17:56:33,014 | INFO | Metrics: {'cpu_usage': 1.0, 'memory_usage': 23.4, 'latency': 50.37565755803773, 'disk_io': 1777.9150390625}
+2026-02-12 17:56:33,077 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07616895160592618)}
+2026-02-12 17:56:46,197 | INFO | Metrics: {'cpu_usage': 4.3, 'memory_usage': 23.0, 'latency': 10.493286772238777, 'disk_io': 1777.9150390625}
+2026-02-12 17:56:46,234 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08788069740591997)}
+2026-02-12 17:56:52,237 | INFO | Metrics: {'cpu_usage': 0.8, 'memory_usage': 23.0, 'latency': 82.63952215137908, 'disk_io': 1777.9150390625}
+2026-02-12 17:56:52,306 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06352456135942264)}
+2026-02-12 17:56:58,309 | INFO | Metrics: {'cpu_usage': 2.0, 'memory_usage': 23.1, 'latency': 20.45225151052832, 'disk_io': 1777.9150390625}
+2026-02-12 17:56:58,367 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.09135012790166264)}
+2026-02-12 17:57:04,387 | INFO | Metrics: {'cpu_usage': 3.0, 'memory_usage': 23.1, 'latency': 26.06375383042253, 'disk_io': 1777.9150390625}
+2026-02-12 17:57:04,450 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0870162700252215)}
+2026-02-12 17:57:10,454 | INFO | Metrics: {'cpu_usage': 3.3, 'memory_usage': 23.0, 'latency': 46.28771606980493, 'disk_io': 1777.9150390625}
+2026-02-12 17:57:10,524 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07594936614996639)}
+2026-02-12 17:57:16,527 | INFO | Metrics: {'cpu_usage': 9.3, 'memory_usage': 23.3, 'latency': 3.0409723790410665, 'disk_io': 1777.9150390625}
+2026-02-12 17:57:16,564 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06825742343471719)}
+2026-02-12 17:57:22,583 | INFO | Metrics: {'cpu_usage': 1.8, 'memory_usage': 23.1, 'latency': 10.27573946791711, 'disk_io': 1777.9150390625}
+2026-02-12 17:57:22,641 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.09178512859819088)}
+2026-02-12 17:57:28,643 | INFO | Metrics: {'cpu_usage': 11.1, 'memory_usage': 23.6, 'latency': 68.00051339947208, 'disk_io': 1781.5283203125}
+2026-02-12 17:57:28,683 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03960939632481297)}
+2026-02-12 17:57:34,685 | INFO | Metrics: {'cpu_usage': 14.8, 'memory_usage': 24.6, 'latency': 60.41108433612146, 'disk_io': 1782.4541015625}
+2026-02-12 17:57:34,726 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03476623623092556)}
+2026-02-12 17:57:45,756 | INFO | Metrics: {'cpu_usage': 10.0, 'memory_usage': 24.3, 'latency': 79.62340805377919, 'disk_io': 1782.4541015625}
+2026-02-12 17:57:45,794 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.032789591840133525)}
+2026-02-12 17:57:51,796 | INFO | Metrics: {'cpu_usage': 8.9, 'memory_usage': 25.4, 'latency': 67.50819625871507, 'disk_io': 1787.4228515625}
+2026-02-12 17:57:51,840 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04634391938975024)}
+2026-02-12 17:57:57,842 | INFO | Metrics: {'cpu_usage': 5.3, 'memory_usage': 24.9, 'latency': 55.76090351645049, 'disk_io': 1787.8056640625}
+2026-02-12 17:57:57,882 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06731994905559846)}
+2026-02-12 17:58:03,903 | INFO | Metrics: {'cpu_usage': 31.3, 'memory_usage': 25.9, 'latency': 74.96322489296237, 'disk_io': 1788.2744140625}
+2026-02-12 17:58:03,951 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.006346706696354287)}
+2026-02-12 17:58:09,954 | INFO | Metrics: {'cpu_usage': 21.2, 'memory_usage': 27.4, 'latency': 48.50324283332346, 'disk_io': 1804.5869140625}
+2026-02-12 17:58:10,040 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.024439786435863753)}
+2026-02-12 17:58:16,042 | INFO | Metrics: {'cpu_usage': 28.5, 'memory_usage': 27.9, 'latency': 82.68417602390159, 'disk_io': 1805.6806640625}
+2026-02-12 17:58:16,082 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.001516753237965407)}
+2026-02-12 17:58:22,083 | INFO | Metrics: {'cpu_usage': 28.6, 'memory_usage': 27.6, 'latency': 63.80308521661974, 'disk_io': 1805.7822265625}
+2026-02-12 17:58:22,149 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0065018790264146364)}
+2026-02-12 17:58:28,152 | INFO | Metrics: {'cpu_usage': 15.7, 'memory_usage': 27.6, 'latency': 16.575811117481873, 'disk_io': 1805.7822265625}
+2026-02-12 17:58:28,206 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05658783775652798)}
+2026-02-12 17:58:34,208 | INFO | Metrics: {'cpu_usage': 1.0, 'memory_usage': 27.6, 'latency': 74.13317891947321, 'disk_io': 1805.7822265625}
+2026-02-12 17:58:34,273 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05485648274861976)}
+2026-02-12 17:58:40,298 | INFO | Metrics: {'cpu_usage': 1.5, 'memory_usage': 26.2, 'latency': 29.898427365666272, 'disk_io': 1805.7822265625}
+2026-02-12 17:58:40,356 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08357452369224838)}
+2026-02-12 17:58:46,359 | INFO | Metrics: {'cpu_usage': 1.0, 'memory_usage': 26.3, 'latency': 15.793505449041525, 'disk_io': 1805.7822265625}
+2026-02-12 17:58:46,422 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08848626071983345)}
+2026-02-12 17:58:52,425 | INFO | Metrics: {'cpu_usage': 3.3, 'memory_usage': 26.2, 'latency': 91.8057503648306, 'disk_io': 1805.7822265625}
+2026-02-12 17:58:52,488 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05748236771407944)}
+2026-02-12 17:59:03,866 | INFO | Metrics: {'cpu_usage': 29.8, 'memory_usage': 27.5, 'latency': 49.11463260471658, 'disk_io': 1809.5595703125}
+2026-02-12 17:59:03,916 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.013068069401538152)}
+2026-02-12 17:59:09,919 | INFO | Metrics: {'cpu_usage': 57.1, 'memory_usage': 29.2, 'latency': 27.602926125428876, 'disk_io': 1814.3017578125}
+2026-02-12 17:59:09,974 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06068565399987014)}
+2026-02-12 17:59:15,977 | INFO | Metrics: {'cpu_usage': 55.4, 'memory_usage': 29.4, 'latency': 10.553864877466514, 'disk_io': 1814.3720703125}
+2026-02-12 17:59:16,033 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06659692457582456)}
+2026-02-12 17:59:22,061 | INFO | Metrics: {'cpu_usage': 58.9, 'memory_usage': 30.0, 'latency': 74.30253347382158, 'disk_io': 1815.1533203125}
+2026-02-12 17:59:22,136 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04600067580658451)}
+2026-02-12 17:59:28,138 | INFO | Metrics: {'cpu_usage': 18.4, 'memory_usage': 30.2, 'latency': 88.40115577597419, 'disk_io': 1815.3291015625}
+2026-02-12 17:59:28,176 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.015736761250069176)}
+2026-02-12 17:59:34,178 | INFO | Metrics: {'cpu_usage': 15.9, 'memory_usage': 28.9, 'latency': 44.88696573863743, 'disk_io': 1816.0869140625}
+2026-02-12 17:59:34,220 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04026839158414253)}
+2026-02-12 17:59:40,246 | INFO | Metrics: {'cpu_usage': 12.4, 'memory_usage': 28.4, 'latency': 19.389511630542508, 'disk_io': 1816.0869140625}
+2026-02-12 17:59:40,288 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06107802470221135)}
+2026-02-12 17:59:46,290 | INFO | Metrics: {'cpu_usage': 18.8, 'memory_usage': 28.5, 'latency': 54.81827417981088, 'disk_io': 1816.0908203125}
+2026-02-12 17:59:46,340 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.022685452519823124)}
+2026-02-12 17:59:52,343 | INFO | Metrics: {'cpu_usage': 10.7, 'memory_usage': 28.3, 'latency': 65.77539999523306, 'disk_io': 1816.0908203125}
+2026-02-12 17:59:52,383 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03620213917224291)}
+2026-02-12 17:59:58,402 | INFO | Metrics: {'cpu_usage': 17.6, 'memory_usage': 28.1, 'latency': 54.084541297811455, 'disk_io': 1816.0908203125}
+2026-02-12 17:59:58,445 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.029698463019694143)}
+2026-02-12 18:00:04,447 | INFO | Metrics: {'cpu_usage': 13.9, 'memory_usage': 27.6, 'latency': 6.786604175499416, 'disk_io': 1816.0908203125}
+2026-02-12 18:00:04,488 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0594840846502841)}
+2026-02-12 18:00:10,490 | INFO | Metrics: {'cpu_usage': 16.8, 'memory_usage': 27.7, 'latency': 66.43779204929531, 'disk_io': 1816.0908203125}
+2026-02-12 18:00:10,539 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.021462755272494638)}
+2026-02-12 18:00:21,345 | INFO | Metrics: {'cpu_usage': 9.3, 'memory_usage': 27.6, 'latency': 47.26387925862712, 'disk_io': 1816.0908203125}
+2026-02-12 18:00:21,392 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04509322521578185)}
+2026-02-12 18:00:27,394 | INFO | Metrics: {'cpu_usage': 9.6, 'memory_usage': 27.5, 'latency': 26.828417186054914, 'disk_io': 1816.0908203125}
+2026-02-12 18:00:27,438 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.056437683708963404)}
+2026-02-12 18:00:33,440 | INFO | Metrics: {'cpu_usage': 11.2, 'memory_usage': 27.6, 'latency': 86.39237995720426, 'disk_io': 1816.1962890625}
+2026-02-12 18:00:33,519 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.026148298921646274)}
+2026-02-12 18:00:39,544 | INFO | Metrics: {'cpu_usage': 8.1, 'memory_usage': 27.7, 'latency': 69.58864083865963, 'disk_io': 1816.1962890625}
+2026-02-12 18:00:39,588 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04540454547873407)}
+2026-02-12 18:00:45,590 | INFO | Metrics: {'cpu_usage': 10.9, 'memory_usage': 28.2, 'latency': 17.70441858322854, 'disk_io': 1839.982421875}
+2026-02-12 18:00:45,628 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06107802470221135)}
+2026-02-12 18:00:51,630 | INFO | Metrics: {'cpu_usage': 50.1, 'memory_usage': 29.1, 'latency': 23.92382640367475, 'disk_io': 1841.189453125}
+2026-02-12 18:00:51,674 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04973063211681883)}
+2026-02-12 18:00:57,693 | INFO | Metrics: {'cpu_usage': 33.0, 'memory_usage': 29.7, 'latency': 36.71933322009598, 'disk_io': 1841.701171875}
+2026-02-12 18:00:57,734 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.021620486721660392)}
+2026-02-12 18:01:03,736 | INFO | Metrics: {'cpu_usage': 32.2, 'memory_usage': 31.0, 'latency': 83.8634245537297, 'disk_io': 1841.783203125}
+2026-02-12 18:01:03,812 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.004026513759636585)}
+2026-02-12 18:01:09,815 | INFO | Metrics: {'cpu_usage': 36.2, 'memory_usage': 31.2, 'latency': 69.2260494045394, 'disk_io': 1841.908203125}
+2026-02-12 18:01:09,883 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.004570495989769108)}
+2026-02-12 18:01:15,885 | INFO | Metrics: {'cpu_usage': 6.3, 'memory_usage': 30.9, 'latency': 73.39823557536431, 'disk_io': 1841.908203125}
+2026-02-12 18:01:15,929 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04917507402702814)}
+2026-02-12 18:01:21,931 | INFO | Metrics: {'cpu_usage': 7.8, 'memory_usage': 28.5, 'latency': 27.57407884429739, 'disk_io': 1841.908203125}
+2026-02-12 18:01:21,972 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06836733483700774)}
+2026-02-12 18:01:33,962 | INFO | Metrics: {'cpu_usage': 22.8, 'memory_usage': 28.8, 'latency': 52.30724394330581, 'disk_io': 1842.302734375}
+2026-02-12 18:01:34,023 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.008877551875635992)}
+2026-02-12 18:01:40,026 | INFO | Metrics: {'cpu_usage': 44.9, 'memory_usage': 30.9, 'latency': 17.383630388126214, 'disk_io': 1842.841796875}
+2026-02-12 18:01:40,067 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0489110063305751)}
+2026-02-12 18:01:46,069 | INFO | Metrics: {'cpu_usage': 17.9, 'memory_usage': 30.3, 'latency': 84.30488277352326, 'disk_io': 1842.841796875}
+2026-02-12 18:01:46,125 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.016541097380176506)}
+2026-02-12 18:01:52,127 | INFO | Metrics: {'cpu_usage': 6.3, 'memory_usage': 30.2, 'latency': 97.51972014110325, 'disk_io': 1842.841796875}
+2026-02-12 18:01:52,174 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04369158924751193)}
+2026-02-12 18:01:58,198 | INFO | Metrics: {'cpu_usage': 15.4, 'memory_usage': 30.3, 'latency': 63.5380762817631, 'disk_io': 1842.841796875}
+2026-02-12 18:01:58,238 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03173569554097855)}
+2026-02-12 18:02:04,240 | INFO | Metrics: {'cpu_usage': 18.8, 'memory_usage': 30.4, 'latency': 12.814119706598389, 'disk_io': 1842.841796875}
+2026-02-12 18:02:04,285 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04879771260461929)}
+2026-02-12 18:02:10,288 | INFO | Metrics: {'cpu_usage': 21.9, 'memory_usage': 29.8, 'latency': 55.4870132523376, 'disk_io': 1842.841796875}
+2026-02-12 18:02:10,341 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.017713977493143518)}
+2026-02-12 18:02:16,363 | INFO | Metrics: {'cpu_usage': 13.2, 'memory_usage': 29.8, 'latency': 34.23707507617172, 'disk_io': 1842.841796875}
+2026-02-12 18:02:16,414 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05027590081442579)}
+2026-02-12 18:02:22,416 | INFO | Metrics: {'cpu_usage': 22.8, 'memory_usage': 29.8, 'latency': 16.008761357809778, 'disk_io': 1842.841796875}
+2026-02-12 18:02:22,459 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03492527272632073)}
+2026-02-12 18:02:28,461 | INFO | Metrics: {'cpu_usage': 11.7, 'memory_usage': 29.9, 'latency': 10.896975484953735, 'disk_io': 1842.841796875}
+2026-02-12 18:02:28,502 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.060577454109771445)}
+2026-02-12 18:02:40,212 | INFO | Metrics: {'cpu_usage': 9.8, 'memory_usage': 29.6, 'latency': 94.42966004721998, 'disk_io': 1842.857421875}
+2026-02-12 18:02:40,274 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.020029908429545107)}
+2026-02-12 18:02:46,278 | INFO | Metrics: {'cpu_usage': 20.9, 'memory_usage': 29.5, 'latency': 32.536191987969715, 'disk_io': 1842.857421875}
+2026-02-12 18:02:46,336 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03854571934979911)}
+2026-02-12 18:02:52,339 | INFO | Metrics: {'cpu_usage': 27.0, 'memory_usage': 30.2, 'latency': 87.81627254021785, 'disk_io': 1921.642578125}
+2026-02-12 18:02:52,399 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.000122282589226419)}
+2026-02-12 18:02:58,401 | INFO | Metrics: {'cpu_usage': 26.4, 'memory_usage': 31.9, 'latency': 50.073660116844714, 'disk_io': 1983.548828125}
+2026-02-12 18:02:58,450 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.009091910598846065)}
+2026-02-12 18:03:04,455 | INFO | Metrics: {'cpu_usage': 84.8, 'memory_usage': 33.7, 'latency': 29.55470703436467, 'disk_io': 2034.419921875}
+2026-02-12 18:03:04,559 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08679439803061983)}
+2026-02-12 18:03:10,604 | INFO | Metrics: {'cpu_usage': 65.4, 'memory_usage': 38.2, 'latency': 60.33502744780517, 'disk_io': 2062.525390625}
+2026-02-12 18:03:10,678 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06210833336685573)}
+2026-02-12 18:03:16,680 | INFO | Metrics: {'cpu_usage': 7.0, 'memory_usage': 37.7, 'latency': 68.61625898622256, 'disk_io': 2108.521484375}
+2026-02-12 18:03:16,721 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04478671523180422)}
+2026-02-12 18:03:22,724 | INFO | Metrics: {'cpu_usage': 22.5, 'memory_usage': 38.1, 'latency': 79.03802005329426, 'disk_io': 2109.025390625}
+2026-02-12 18:03:22,774 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.0013749495929448186)}
+2026-02-12 18:03:28,776 | INFO | Metrics: {'cpu_usage': 17.1, 'memory_usage': 38.2, 'latency': 7.206997743473552, 'disk_io': 2109.208984375}
+2026-02-12 18:03:28,819 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05572751585088864)}
+2026-02-12 18:03:40,304 | INFO | Metrics: {'cpu_usage': 37.5, 'memory_usage': 36.8, 'latency': 20.605598492140533, 'disk_io': 2109.490234375}
+2026-02-12 18:03:40,381 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.034526391490277364)}
+2026-02-12 18:03:46,386 | INFO | Metrics: {'cpu_usage': 90.0, 'memory_usage': 42.0, 'latency': 75.22513478209225, 'disk_io': 2109.666015625}
+2026-02-12 18:03:46,470 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07654003587795388)}
+2026-02-12 18:03:52,473 | INFO | Metrics: {'cpu_usage': 8.4, 'memory_usage': 41.4, 'latency': 49.023247432544444, 'disk_io': 2109.705078125}
+2026-02-12 18:03:52,517 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04747725695466376)}
+2026-02-12 18:03:58,538 | INFO | Metrics: {'cpu_usage': 13.0, 'memory_usage': 38.3, 'latency': 48.83540264332836, 'disk_io': 2110.466796875}
+2026-02-12 18:03:58,581 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.039748409675299246)}
+2026-02-12 18:04:04,583 | INFO | Metrics: {'cpu_usage': 12.3, 'memory_usage': 30.8, 'latency': 6.82451361149314, 'disk_io': 2114.787109375}
+2026-02-12 18:04:04,632 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.061694512012187674)}
+2026-02-12 18:04:10,635 | INFO | Metrics: {'cpu_usage': 4.3, 'memory_usage': 30.8, 'latency': 74.78196666716536, 'disk_io': 2114.787109375}
+2026-02-12 18:04:10,674 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05202967706464512)}
+2026-02-12 18:04:16,694 | INFO | Metrics: {'cpu_usage': 13.6, 'memory_usage': 31.6, 'latency': 48.116636933071206, 'disk_io': 2115.447265625}
+2026-02-12 18:04:16,740 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.042284982783509784)}
+2026-02-12 18:04:22,743 | INFO | Metrics: {'cpu_usage': 93.0, 'memory_usage': 36.1, 'latency': 77.67352796328697, 'disk_io': 2119.076171875}
+2026-02-12 18:04:22,886 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08200464946782893)}
+2026-02-12 18:04:28,888 | INFO | Metrics: {'cpu_usage': 88.1, 'memory_usage': 40.4, 'latency': 35.177423828423095, 'disk_io': 2125.314453125}
+2026-02-12 18:04:28,991 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08090595763170094)}
+2026-02-12 18:04:40,006 | INFO | Metrics: {'cpu_usage': 44.5, 'memory_usage': 45.7, 'latency': 40.92651522425377, 'disk_io': 2158.712890625}
+2026-02-12 18:04:40,122 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.033375663106764764)}
+2026-02-12 18:04:46,124 | INFO | Metrics: {'cpu_usage': 77.5, 'memory_usage': 48.1, 'latency': 86.42891634140275, 'disk_io': 2235.029296875}
+2026-02-12 18:04:46,172 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06862367142038528)}
+2026-02-12 18:04:52,175 | INFO | Metrics: {'cpu_usage': 77.5, 'memory_usage': 49.6, 'latency': 90.58642663185907, 'disk_io': 2315.560546875}
+2026-02-12 18:04:52,296 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0687467412444368)}
+2026-02-12 18:04:58,399 | INFO | Metrics: {'cpu_usage': 64.2, 'memory_usage': 49.7, 'latency': 43.516696784269705, 'disk_io': 2347.376953125}
+2026-02-12 18:04:58,438 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06301257285255668)}
+2026-02-12 18:05:04,440 | INFO | Metrics: {'cpu_usage': 20.7, 'memory_usage': 47.9, 'latency': 27.43829391021576, 'disk_io': 2347.376953125}
+2026-02-12 18:05:04,484 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03046991491504769)}
+2026-02-12 18:05:10,487 | INFO | Metrics: {'cpu_usage': 12.2, 'memory_usage': 47.3, 'latency': 18.399810129290277, 'disk_io': 2347.376953125}
+2026-02-12 18:05:10,567 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05718517354346597)}
+2026-02-12 18:05:16,588 | INFO | Metrics: {'cpu_usage': 22.2, 'memory_usage': 46.3, 'latency': 1.7610003456028438, 'disk_io': 2347.501953125}
+2026-02-12 18:05:16,630 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03967415700107857)}
+2026-02-12 18:05:22,632 | INFO | Metrics: {'cpu_usage': 26.3, 'memory_usage': 47.0, 'latency': 96.17723949596211, 'disk_io': 2347.501953125}
+2026-02-12 18:05:22,680 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.01625498169513717)}
+2026-02-12 18:05:28,683 | INFO | Metrics: {'cpu_usage': 34.0, 'memory_usage': 46.6, 'latency': 72.62158384027158, 'disk_io': 2347.521484375}
+2026-02-12 18:05:28,748 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.006141911442774317)}
+2026-02-12 18:05:34,750 | INFO | Metrics: {'cpu_usage': 33.3, 'memory_usage': 47.1, 'latency': 9.176999178371206, 'disk_io': 2347.521484375}
+2026-02-12 18:05:34,799 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0352551502607652)}
+2026-02-12 18:05:40,802 | INFO | Metrics: {'cpu_usage': 44.1, 'memory_usage': 48.4, 'latency': 47.115121265808796, 'disk_io': 2347.521484375}
+2026-02-12 18:05:40,880 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0334819262170134)}
+2026-02-12 18:05:51,437 | INFO | Metrics: {'cpu_usage': 13.7, 'memory_usage': 49.4, 'latency': 61.53667569596235, 'disk_io': 2347.568359375}
+2026-02-12 18:05:51,478 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03043643348997105)}
+2026-02-12 18:05:57,481 | INFO | Metrics: {'cpu_usage': 28.5, 'memory_usage': 47.6, 'latency': 71.68660996546512, 'disk_io': 2347.568359375}
+2026-02-12 18:05:57,535 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.010041934486374693)}
+2026-02-12 18:06:03,538 | INFO | Metrics: {'cpu_usage': 19.2, 'memory_usage': 46.9, 'latency': 37.76171115527352, 'disk_io': 2347.568359375}
+2026-02-12 18:06:03,585 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.01933665718656774)}
+2026-02-12 18:06:09,588 | INFO | Metrics: {'cpu_usage': 41.6, 'memory_usage': 46.8, 'latency': 87.86100666308856, 'disk_io': 2347.568359375}
+2026-02-12 18:06:09,628 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(9.452889307781653e-05)}
+2026-02-12 18:06:15,631 | INFO | Metrics: {'cpu_usage': 12.6, 'memory_usage': 46.6, 'latency': 59.90451183365777, 'disk_io': 2347.568359375}
+2026-02-12 18:06:15,674 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.02739314477549959)}
+2026-02-12 18:06:21,695 | INFO | Metrics: {'cpu_usage': 49.2, 'memory_usage': 47.0, 'latency': 5.5343391498378915, 'disk_io': 2347.572265625}
+2026-02-12 18:06:21,778 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.062468386592474334)}
+2026-02-12 18:06:27,782 | INFO | Metrics: {'cpu_usage': 43.1, 'memory_usage': 46.3, 'latency': 2.9960702310675513, 'disk_io': 2348.177734375}
+2026-02-12 18:06:27,911 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05303942137280149)}
+2026-02-12 18:06:33,914 | INFO | Metrics: {'cpu_usage': 60.8, 'memory_usage': 46.4, 'latency': 1.1471905172418624, 'disk_io': 2348.216796875}
+2026-02-12 18:06:34,017 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08054096935379818)}
+2026-02-12 18:06:40,057 | INFO | Metrics: {'cpu_usage': 65.3, 'memory_usage': 45.3, 'latency': 66.75341590652505, 'disk_io': 2348.341796875}
+2026-02-12 18:06:40,141 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.051644434096901115)}
+2026-02-12 18:06:46,143 | INFO | Metrics: {'cpu_usage': 28.8, 'memory_usage': 45.6, 'latency': 49.960859919919855, 'disk_io': 2348.341796875}
+2026-02-12 18:06:46,182 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.0019434284099347776)}
+2026-02-12 18:06:52,185 | INFO | Metrics: {'cpu_usage': 12.2, 'memory_usage': 45.4, 'latency': 29.974100117491236, 'disk_io': 2348.341796875}
+2026-02-12 18:06:52,236 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.047424384436152156)}
+2026-02-12 18:06:58,238 | INFO | Metrics: {'cpu_usage': 4.5, 'memory_usage': 44.1, 'latency': 10.186009135845051, 'disk_io': 2348.341796875}
+2026-02-12 18:06:58,280 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07699784069242954)}
+2026-02-12 18:07:10,401 | INFO | Metrics: {'cpu_usage': 23.4, 'memory_usage': 43.7, 'latency': 78.70017472218439, 'disk_io': 2348.341796875}
+2026-02-12 18:07:10,448 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.009145782875048192)}
+2026-02-12 18:07:16,451 | INFO | Metrics: {'cpu_usage': 4.6, 'memory_usage': 43.8, 'latency': 70.31674899233703, 'disk_io': 2348.341796875}
+2026-02-12 18:07:16,495 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.045812702767938474)}
+2026-02-12 18:07:22,498 | INFO | Metrics: {'cpu_usage': 4.0, 'memory_usage': 43.8, 'latency': 76.38701596162268, 'disk_io': 2348.341796875}
+2026-02-12 18:07:22,554 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.044258492014889295)}
+2026-02-12 18:07:28,557 | INFO | Metrics: {'cpu_usage': 62.3, 'memory_usage': 44.1, 'latency': 15.478417107567388, 'disk_io': 2348.341796875}
+2026-02-12 18:07:28,632 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07747294102164148)}
+2026-02-12 18:07:34,666 | INFO | Metrics: {'cpu_usage': 19.4, 'memory_usage': 44.3, 'latency': 74.75516511137391, 'disk_io': 2348.638671875}
+2026-02-12 18:07:34,708 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.005975624347924979)}
+2026-02-12 18:07:40,710 | INFO | Metrics: {'cpu_usage': 9.4, 'memory_usage': 44.4, 'latency': 8.760555959471855, 'disk_io': 2348.638671875}
+2026-02-12 18:07:40,755 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05606250248051958)}
+2026-02-12 18:07:46,757 | INFO | Metrics: {'cpu_usage': 7.6, 'memory_usage': 44.3, 'latency': 88.43807365124098, 'disk_io': 2348.638671875}
+2026-02-12 18:07:46,798 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03316109534158518)}
+2026-02-12 18:07:52,801 | INFO | Metrics: {'cpu_usage': 17.1, 'memory_usage': 44.9, 'latency': 33.76753841590668, 'disk_io': 2348.638671875}
+2026-02-12 18:07:52,864 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04215838366297964)}
+2026-02-12 18:07:58,889 | INFO | Metrics: {'cpu_usage': 44.7, 'memory_usage': 44.4, 'latency': 47.79467706442655, 'disk_io': 2348.880859375}
+2026-02-12 18:07:58,931 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.030570538126605262)}
+2026-02-12 18:08:04,932 | INFO | Metrics: {'cpu_usage': 28.6, 'memory_usage': 44.2, 'latency': 99.109290748961, 'disk_io': 2348.888671875}
+2026-02-12 18:08:04,972 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.013310460025832915)}
+2026-02-12 18:08:10,975 | INFO | Metrics: {'cpu_usage': 49.9, 'memory_usage': 44.4, 'latency': 91.83741193532981, 'disk_io': 2348.888671875}
+2026-02-12 18:08:11,057 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.016523070495880754)}
+2026-02-12 18:08:17,059 | INFO | Metrics: {'cpu_usage': 21.2, 'memory_usage': 44.5, 'latency': 75.41359891518923, 'disk_io': 2348.916015625}
+2026-02-12 18:08:17,106 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.00573383780427883)}
+2026-02-12 18:08:23,107 | INFO | Metrics: {'cpu_usage': 24.6, 'memory_usage': 44.7, 'latency': 23.83352844157848, 'disk_io': 2348.916015625}
+2026-02-12 18:08:23,164 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.02681536786452665)}
+2026-02-12 18:08:36,215 | INFO | Metrics: {'cpu_usage': 5.3, 'memory_usage': 44.2, 'latency': 1.1386636703865967, 'disk_io': 2348.916015625}
+2026-02-12 18:08:36,264 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07699784069242954)}
+2026-02-12 18:08:42,266 | INFO | Metrics: {'cpu_usage': 12.0, 'memory_usage': 44.6, 'latency': 94.9485186586747, 'disk_io': 2348.916015625}
+2026-02-12 18:08:42,311 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.006542769159075368)}
+2026-02-12 18:08:48,313 | INFO | Metrics: {'cpu_usage': 39.6, 'memory_usage': 44.6, 'latency': 3.648034178458085, 'disk_io': 2348.916015625}
+2026-02-12 18:08:48,358 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04469753181692715)}
+2026-02-12 18:08:54,360 | INFO | Metrics: {'cpu_usage': 60.5, 'memory_usage': 44.9, 'latency': 10.83353541912543, 'disk_io': 2348.955078125}
+2026-02-12 18:08:54,406 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.08088712199048576)}
+2026-02-12 18:09:00,432 | INFO | Metrics: {'cpu_usage': 20.8, 'memory_usage': 45.2, 'latency': 2.1139099138319435, 'disk_io': 2348.955078125}
+2026-02-12 18:09:00,477 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04177908867171154)}
+2026-02-12 18:09:06,482 | INFO | Metrics: {'cpu_usage': 24.1, 'memory_usage': 44.1, 'latency': 61.72747404009474, 'disk_io': 2348.955078125}
+2026-02-12 18:09:06,608 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.00444362857238445)}
+2026-02-12 18:09:12,611 | INFO | Metrics: {'cpu_usage': 14.0, 'memory_usage': 44.0, 'latency': 36.85272690076363, 'disk_io': 2348.955078125}
+2026-02-12 18:09:12,668 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.033991928594382714)}
+2026-02-12 18:09:18,669 | INFO | Metrics: {'cpu_usage': 34.1, 'memory_usage': 44.1, 'latency': 78.95949539047217, 'disk_io': 2348.962890625}
+2026-02-12 18:09:18,710 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.00956441308458944)}
+2026-02-12 18:09:24,712 | INFO | Metrics: {'cpu_usage': 31.2, 'memory_usage': 44.5, 'latency': 40.13274709993288, 'disk_io': 2348.962890625}
+2026-02-12 18:09:24,796 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.007588665921840598)}
+2026-02-12 18:09:30,799 | INFO | Metrics: {'cpu_usage': 31.6, 'memory_usage': 44.9, 'latency': 24.694274669305052, 'disk_io': 2348.966796875}
+2026-02-12 18:09:30,843 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0244626377072924)}
+2026-02-12 18:09:36,846 | INFO | Metrics: {'cpu_usage': 25.1, 'memory_usage': 45.1, 'latency': 35.738675197542925, 'disk_io': 2348.966796875}
+2026-02-12 18:09:36,909 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.011863388245900608)}
+2026-02-12 18:09:49,703 | INFO | Metrics: {'cpu_usage': 37.5, 'memory_usage': 43.7, 'latency': 19.07676982450001, 'disk_io': 2348.966796875}
+2026-02-12 18:09:49,743 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.039753446056444264)}
+2026-02-12 18:09:55,745 | INFO | Metrics: {'cpu_usage': 49.0, 'memory_usage': 44.4, 'latency': 75.16043276966504, 'disk_io': 2348.966796875}
+2026-02-12 18:09:55,798 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.017492967874011667)}
+2026-02-12 18:10:01,800 | INFO | Metrics: {'cpu_usage': 15.4, 'memory_usage': 43.9, 'latency': 77.72354520444212, 'disk_io': 2348.986328125}
+2026-02-12 18:10:01,841 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.008578072403994663)}
+2026-02-12 18:10:07,843 | INFO | Metrics: {'cpu_usage': 42.4, 'memory_usage': 43.9, 'latency': 52.34478564023102, 'disk_io': 2348.986328125}
+2026-02-12 18:10:07,884 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.012499737690061408)}
+2026-02-12 18:10:13,906 | INFO | Metrics: {'cpu_usage': 56.3, 'memory_usage': 44.1, 'latency': 99.90054402878268, 'disk_io': 2348.986328125}
+2026-02-12 18:10:13,986 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.027757416153547987)}
+2026-02-12 18:10:19,988 | INFO | Metrics: {'cpu_usage': 3.8, 'memory_usage': 44.1, 'latency': 70.27327868998935, 'disk_io': 2348.986328125}
+2026-02-12 18:10:20,034 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04443461388900727)}
+2026-02-12 18:10:26,036 | INFO | Metrics: {'cpu_usage': 4.8, 'memory_usage': 44.2, 'latency': 41.13921437100174, 'disk_io': 2348.986328125}
+2026-02-12 18:10:26,093 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.058598281203657065)}
+2026-02-12 18:10:32,120 | INFO | Metrics: {'cpu_usage': 5.8, 'memory_usage': 43.8, 'latency': 53.794489782303565, 'disk_io': 2348.986328125}
+2026-02-12 18:10:32,164 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05668321867782178)}
+2026-02-12 18:10:38,168 | INFO | Metrics: {'cpu_usage': 3.5, 'memory_usage': 43.8, 'latency': 38.65504194619798, 'disk_io': 2348.986328125}
+2026-02-12 18:10:38,218 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06375317504938804)}
+2026-02-12 18:10:44,222 | INFO | Metrics: {'cpu_usage': 16.2, 'memory_usage': 44.0, 'latency': 11.390113941248082, 'disk_io': 2348.986328125}
+2026-02-12 18:10:44,375 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.052201897383182705)}
+2026-02-12 18:10:56,141 | INFO | Metrics: {'cpu_usage': 7.8, 'memory_usage': 44.4, 'latency': 93.09393182747874, 'disk_io': 2350.021484375}
+2026-02-12 18:10:56,206 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.02533129060013639)}
+2026-02-12 18:11:02,208 | INFO | Metrics: {'cpu_usage': 3.8, 'memory_usage': 44.5, 'latency': 36.55485440361196, 'disk_io': 2350.021484375}
+2026-02-12 18:11:02,257 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06150380437695269)}
+2026-02-12 18:11:08,259 | INFO | Metrics: {'cpu_usage': 21.0, 'memory_usage': 44.3, 'latency': 82.86457744559952, 'disk_io': 2350.021484375}
+2026-02-12 18:11:08,310 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.005359057973892689)}
+2026-02-12 18:11:14,313 | INFO | Metrics: {'cpu_usage': 12.2, 'memory_usage': 44.4, 'latency': 32.41865273487106, 'disk_io': 2350.021484375}
+2026-02-12 18:11:14,363 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04676357391022845)}
+2026-02-12 18:11:20,384 | INFO | Metrics: {'cpu_usage': 27.4, 'memory_usage': 44.6, 'latency': 88.01647273228635, 'disk_io': 2350.041015625}
+2026-02-12 18:11:20,428 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.009951654074432659)}
+2026-02-12 18:11:26,430 | INFO | Metrics: {'cpu_usage': 62.0, 'memory_usage': 44.6, 'latency': 67.75510496705351, 'disk_io': 2350.041015625}
+2026-02-12 18:11:26,503 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0445918692124172)}
+2026-02-12 18:11:32,505 | INFO | Metrics: {'cpu_usage': 47.6, 'memory_usage': 44.6, 'latency': 94.25510516038129, 'disk_io': 2350.041015625}
+2026-02-12 18:11:32,546 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.009074035197218278)}
+2026-02-12 18:11:38,548 | INFO | Metrics: {'cpu_usage': 22.5, 'memory_usage': 44.7, 'latency': 64.11986953418813, 'disk_io': 2350.087890625}
+2026-02-12 18:11:38,598 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.0007611006213534832)}
+2026-02-12 18:11:44,600 | INFO | Metrics: {'cpu_usage': 33.2, 'memory_usage': 44.5, 'latency': 61.91545250772346, 'disk_io': 2350.087890625}
+2026-02-12 18:11:44,665 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.00021296803029036138)}
+2026-02-12 18:11:50,668 | INFO | Metrics: {'cpu_usage': 17.2, 'memory_usage': 44.7, 'latency': 67.5096880798685, 'disk_io': 2350.087890625}
+2026-02-12 18:11:50,715 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0073019291024789545)}
+2026-02-12 18:11:56,717 | INFO | Metrics: {'cpu_usage': 4.6, 'memory_usage': 44.7, 'latency': 7.016737434528265, 'disk_io': 2350.087890625}
+2026-02-12 18:11:56,762 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.07784870223236562)}
+2026-02-12 18:12:02,765 | INFO | Metrics: {'cpu_usage': 50.5, 'memory_usage': 44.6, 'latency': 67.47578094173079, 'disk_io': 2350.087890625}
+2026-02-12 18:12:02,824 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.024802890318853743)}
+2026-02-12 18:12:08,827 | INFO | Metrics: {'cpu_usage': 11.8, 'memory_usage': 44.5, 'latency': 12.214560400251939, 'disk_io': 2350.087890625}
+2026-02-12 18:12:08,871 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05606250248051958)}
+2026-02-12 18:12:20,691 | INFO | Metrics: {'cpu_usage': 9.5, 'memory_usage': 43.8, 'latency': 88.93800558668822, 'disk_io': 2350.166015625}
+2026-02-12 18:12:20,733 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.019690381934952206)}
+2026-02-12 18:12:26,736 | INFO | Metrics: {'cpu_usage': 15.5, 'memory_usage': 43.8, 'latency': 3.082942682129844, 'disk_io': 2350.166015625}
+2026-02-12 18:12:26,785 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05499091578522397)}
+2026-02-12 18:12:32,787 | INFO | Metrics: {'cpu_usage': 55.1, 'memory_usage': 45.3, 'latency': 77.13036308057335, 'disk_io': 2350.185546875}
+2026-02-12 18:12:32,852 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03280551044567659)}
+2026-02-12 18:12:38,875 | INFO | Metrics: {'cpu_usage': 14.9, 'memory_usage': 45.6, 'latency': 3.383619862577972, 'disk_io': 2350.197265625}
+2026-02-12 18:12:38,915 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05553852121852387)}
+2026-02-12 18:12:44,917 | INFO | Metrics: {'cpu_usage': 36.1, 'memory_usage': 45.6, 'latency': 59.08161080047147, 'disk_io': 2350.197265625}
+2026-02-12 18:12:44,960 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0016944839682149215)}
+2026-02-12 18:12:50,962 | INFO | Metrics: {'cpu_usage': 6.8, 'memory_usage': 45.2, 'latency': 89.01936307819568, 'disk_io': 2350.197265625}
+2026-02-12 18:12:51,012 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03271955103405422)}
+2026-02-12 18:12:57,015 | INFO | Metrics: {'cpu_usage': 9.8, 'memory_usage': 44.8, 'latency': 27.176464399762615, 'disk_io': 2350.197265625}
+2026-02-12 18:12:57,054 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05331246193578354)}
+2026-02-12 18:13:03,075 | INFO | Metrics: {'cpu_usage': 12.7, 'memory_usage': 44.3, 'latency': 8.308863545209917, 'disk_io': 2350.197265625}
+2026-02-12 18:13:03,119 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05606250248051958)}
+2026-02-12 18:13:09,121 | INFO | Metrics: {'cpu_usage': 34.2, 'memory_usage': 43.9, 'latency': 61.40134959196612, 'disk_io': 2350.197265625}
+2026-02-12 18:13:09,161 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.0015698469410315719)}
+2026-02-12 18:13:15,163 | INFO | Metrics: {'cpu_usage': 7.3, 'memory_usage': 44.0, 'latency': 45.15617277599324, 'disk_io': 2350.197265625}
+2026-02-12 18:13:15,209 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05288298611384301)}
+2026-02-12 18:13:21,211 | INFO | Metrics: {'cpu_usage': 11.6, 'memory_usage': 43.8, 'latency': 48.79498930128964, 'disk_io': 2350.197265625}
+2026-02-12 18:13:21,259 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03295956461759608)}
+2026-02-12 18:13:34,399 | INFO | Metrics: {'cpu_usage': 34.4, 'memory_usage': 44.8, 'latency': 10.884506675265381, 'disk_io': 2350.197265625}
+2026-02-12 18:13:34,445 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.037712419094035665)}
+2026-02-12 18:13:40,447 | INFO | Metrics: {'cpu_usage': 34.4, 'memory_usage': 45.1, 'latency': 1.1248153676379276, 'disk_io': 2350.197265625}
+2026-02-12 18:13:40,499 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.037712419094035665)}
+2026-02-12 18:13:46,501 | INFO | Metrics: {'cpu_usage': 34.4, 'memory_usage': 45.5, 'latency': 86.81965998266759, 'disk_io': 2350.197265625}
+2026-02-12 18:13:46,543 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.0076416369544984875)}
+2026-02-12 18:13:52,546 | INFO | Metrics: {'cpu_usage': 11.2, 'memory_usage': 44.4, 'latency': 74.56094027795349, 'disk_io': 2350.197265625}
+2026-02-12 18:13:52,605 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.014433041851940276)}
+2026-02-12 18:13:58,626 | INFO | Metrics: {'cpu_usage': 15.1, 'memory_usage': 44.0, 'latency': 83.26242109808166, 'disk_io': 2350.197265625}
+2026-02-12 18:13:58,673 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.010263475745132089)}
+2026-02-12 18:14:04,675 | INFO | Metrics: {'cpu_usage': 10.1, 'memory_usage': 43.0, 'latency': 53.92809633758413, 'disk_io': 2350.275390625}
+2026-02-12 18:14:04,733 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.032852843335982373)}
+2026-02-12 18:14:10,735 | INFO | Metrics: {'cpu_usage': 19.3, 'memory_usage': 42.7, 'latency': 16.54204711875906, 'disk_io': 2350.275390625}
+2026-02-12 18:14:10,787 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.04268562605649795)}
+2026-02-12 18:14:16,807 | INFO | Metrics: {'cpu_usage': 28.7, 'memory_usage': 43.2, 'latency': 34.826283507570245, 'disk_io': 2350.275390625}
+2026-02-12 18:14:16,863 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.02069190965049883)}
+2026-02-12 18:14:22,865 | INFO | Metrics: {'cpu_usage': 29.3, 'memory_usage': 42.7, 'latency': 10.57179374110978, 'disk_io': 2350.373046875}
+2026-02-12 18:14:22,914 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.033034583132971584)}
+2026-02-12 18:14:28,917 | INFO | Metrics: {'cpu_usage': 8.3, 'memory_usage': 42.5, 'latency': 42.061612144867695, 'disk_io': 2350.373046875}
+2026-02-12 18:14:28,971 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.052104596994181906)}
+2026-02-12 18:14:41,631 | INFO | Metrics: {'cpu_usage': 12.4, 'memory_usage': 42.8, 'latency': 87.31354581459688, 'disk_io': 2350.373046875}
+2026-02-12 18:14:41,691 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.013875073973471208)}
+2026-02-12 18:14:47,694 | INFO | Metrics: {'cpu_usage': 28.8, 'memory_usage': 43.0, 'latency': 32.263043433515406, 'disk_io': 2350.373046875}
+2026-02-12 18:14:47,750 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.021466527972150096)}
+2026-02-12 18:14:53,752 | INFO | Metrics: {'cpu_usage': 32.9, 'memory_usage': 43.5, 'latency': 85.0045819320829, 'disk_io': 2350.373046875}
+2026-02-12 18:14:53,807 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.0038357750009583302)}
+2026-02-12 18:14:59,810 | INFO | Metrics: {'cpu_usage': 33.8, 'memory_usage': 44.4, 'latency': 29.541958662374476, 'disk_io': 2350.373046875}
+2026-02-12 18:14:59,892 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.024844597900297583)}
+2026-02-12 18:15:05,933 | INFO | Metrics: {'cpu_usage': 38.3, 'memory_usage': 45.2, 'latency': 60.01531565359537, 'disk_io': 2350.373046875}
+2026-02-12 18:15:05,972 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.004396499791721964)}
+2026-02-12 18:15:11,975 | INFO | Metrics: {'cpu_usage': 38.1, 'memory_usage': 45.9, 'latency': 72.1869937560047, 'disk_io': 2350.373046875}
+2026-02-12 18:15:12,030 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.002877302419836525)}
+2026-02-12 18:15:18,032 | INFO | Metrics: {'cpu_usage': 34.4, 'memory_usage': 46.6, 'latency': 6.853147511370291, 'disk_io': 2350.373046875}
+2026-02-12 18:15:18,073 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03644355276043809)}
+2026-02-12 18:15:24,075 | INFO | Metrics: {'cpu_usage': 36.4, 'memory_usage': 47.0, 'latency': 94.72530043143416, 'disk_io': 2350.373046875}
+2026-02-12 18:15:24,126 | INFO | Anomaly: {'status': 'NORMAL', 'confidence': np.float64(0.010131447446520059)}
+2026-02-12 18:15:30,128 | INFO | Metrics: {'cpu_usage': 9.1, 'memory_usage': 47.1, 'latency': 27.245943590404288, 'disk_io': 2350.373046875}
+2026-02-12 18:15:30,173 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06423799967776433)}
+2026-02-12 18:15:36,176 | INFO | Metrics: {'cpu_usage': 45.2, 'memory_usage': 43.8, 'latency': 7.694430720795343, 'disk_io': 2350.373046875}
+2026-02-12 18:15:36,277 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.054057335786173444)}
+2026-02-12 18:15:48,586 | INFO | Metrics: {'cpu_usage': 10.2, 'memory_usage': 44.4, 'latency': 40.718079893071724, 'disk_io': 2350.373046875}
+2026-02-12 18:15:48,639 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03827596432633795)}
+2026-02-12 18:15:54,641 | INFO | Metrics: {'cpu_usage': 11.7, 'memory_usage': 44.0, 'latency': 8.446843256728275, 'disk_io': 2350.373046875}
+2026-02-12 18:15:54,684 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05606250248051958)}
+2026-02-12 18:16:00,687 | INFO | Metrics: {'cpu_usage': 34.1, 'memory_usage': 44.5, 'latency': 35.070277658243654, 'disk_io': 2350.373046875}
+2026-02-12 18:16:00,755 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.016378414098030758)}
+2026-02-12 18:16:06,783 | INFO | Metrics: {'cpu_usage': 46.7, 'memory_usage': 44.8, 'latency': 42.34827477536166, 'disk_io': 2350.376953125}
+2026-02-12 18:16:06,823 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.03732577715950802)}
+2026-02-12 18:16:12,825 | INFO | Metrics: {'cpu_usage': 6.3, 'memory_usage': 44.6, 'latency': 84.16047380906086, 'disk_io': 2350.376953125}
+2026-02-12 18:16:12,878 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.038806978891209765)}
+2026-02-12 18:16:18,880 | INFO | Metrics: {'cpu_usage': 60.6, 'memory_usage': 45.2, 'latency': 25.730112406818535, 'disk_io': 2350.376953125}
+2026-02-12 18:16:18,925 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.06943889127736236)}
+2026-02-12 18:16:24,951 | INFO | Metrics: {'cpu_usage': 21.1, 'memory_usage': 45.2, 'latency': 63.623756869893796, 'disk_io': 2350.376953125}
+2026-02-12 18:16:24,997 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0009400435656840012)}
+2026-02-12 18:16:30,999 | INFO | Metrics: {'cpu_usage': 16.8, 'memory_usage': 45.2, 'latency': 84.63284193672635, 'disk_io': 2350.376953125}
+2026-02-12 18:16:31,058 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0015230698780710483)}
+2026-02-12 18:16:37,060 | INFO | Metrics: {'cpu_usage': 29.4, 'memory_usage': 44.7, 'latency': 36.786458814685226, 'disk_io': 2350.376953125}
+2026-02-12 18:16:37,104 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.010755680318561445)}
+2026-02-12 18:16:43,106 | INFO | Metrics: {'cpu_usage': 5.8, 'memory_usage': 45.0, 'latency': 61.52098982463431, 'disk_io': 2350.376953125}
+2026-02-12 18:16:43,148 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.05277179121561637)}
+2026-02-12 18:16:49,151 | INFO | Metrics: {'cpu_usage': 35.0, 'memory_usage': 44.9, 'latency': 58.78324284261637, 'disk_io': 2350.376953125}
+2026-02-12 18:16:49,204 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.0007069867579538869)}
+2026-02-12 18:16:55,207 | INFO | Metrics: {'cpu_usage': 16.9, 'memory_usage': 45.2, 'latency': 9.031216520542609, 'disk_io': 2350.376953125}
+2026-02-12 18:16:55,254 | INFO | Anomaly: {'status': 'ANOMALY', 'confidence': np.float64(0.051793669101254936)}
+2026-02-12 18:18:13,673 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.42.33.20:5000
+2026-02-12 18:18:13,674 | INFO | [33mPress CTRL+C to quit[0m
+2026-02-12 18:18:14,671 | INFO | Metrics: {'cpu_usage': 7.8, 'memory_usage': 43.7, 'latency': 4.739120026400581, 'disk_io': 2350.642578125}
+2026-02-12 18:18:17,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:18:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:18:20,719 | INFO | Metrics: {'cpu_usage': 5.8, 'memory_usage': 43.4, 'latency': 21.213301579917076, 'disk_io': 2350.642578125}
+2026-02-12 18:18:22,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:18:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:18:26,766 | INFO | Metrics: {'cpu_usage': 6.1, 'memory_usage': 43.3, 'latency': 52.97628952779416, 'disk_io': 2350.767578125}
+2026-02-12 18:18:27,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:18:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:18:32,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:18:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:18:37,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:18:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:18:42,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:18:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:18:44,353 | INFO | Metrics: {'cpu_usage': 26.5, 'memory_usage': 43.0, 'latency': 65.29986464596523, 'disk_io': 2350.767578125}
+2026-02-12 18:18:47,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:18:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:18:50,409 | INFO | Metrics: {'cpu_usage': 9.7, 'memory_usage': 43.1, 'latency': 78.31342813511083, 'disk_io': 2350.767578125}
+2026-02-12 18:18:52,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:18:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:18:53,160 | INFO | 127.0.0.1 - - [12/Feb/2026 18:18:53] "[33mPOST /heal HTTP/1.1[0m" 404 -
+2026-02-12 18:18:56,452 | INFO | Metrics: {'cpu_usage': 22.1, 'memory_usage': 43.5, 'latency': 8.778801545664889, 'disk_io': 2350.767578125}
+2026-02-12 18:18:57,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:18:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:18:59,974 | INFO | 127.0.0.1 - - [12/Feb/2026 18:18:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:19:02,520 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:19:02,523 | INFO | Metrics: {'cpu_usage': 30.6, 'memory_usage': 43.4, 'latency': 9.89065770439793, 'disk_io': 2350.767578125}
+2026-02-12 18:19:07,070 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:07] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:19:07,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:19:08,644 | INFO | Metrics: {'cpu_usage': 20.5, 'memory_usage': 43.7, 'latency': 89.52006294083647, 'disk_io': 2350.771484375}
+2026-02-12 18:19:11,930 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:11] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:19:12,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:19:14,697 | INFO | Metrics: {'cpu_usage': 9.2, 'memory_usage': 43.2, 'latency': 31.946829136304512, 'disk_io': 2350.771484375}
+2026-02-12 18:19:16,931 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:16] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:19:17,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:19:20,744 | INFO | Metrics: {'cpu_usage': 9.9, 'memory_usage': 43.0, 'latency': 67.56010495415187, 'disk_io': 2350.771484375}
+2026-02-12 18:19:21,928 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:21] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:19:22,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:19:26,785 | INFO | Metrics: {'cpu_usage': 29.1, 'memory_usage': 43.6, 'latency': 16.40537991188521, 'disk_io': 2350.966796875}
+2026-02-12 18:19:26,975 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:26] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:19:27,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:19:31,972 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:31] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:19:32,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:19:36,972 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:36] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:19:37,351 | INFO | Metrics: {'cpu_usage': 31.2, 'memory_usage': 43.7, 'latency': 23.958651239154303, 'disk_io': 2354.716796875}
+2026-02-12 18:19:37,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:19:41,972 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:41] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:19:42,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:19:43,414 | INFO | Metrics: {'cpu_usage': 18.5, 'memory_usage': 43.7, 'latency': 46.72664193862231, 'disk_io': 2354.716796875}
+2026-02-12 18:19:46,973 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:46] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:19:47,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:19:49,471 | INFO | Metrics: {'cpu_usage': 8.6, 'memory_usage': 43.5, 'latency': 62.54462609249885, 'disk_io': 2354.732421875}
+2026-02-12 18:19:51,973 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:51] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:19:52,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:19:55,546 | INFO | Metrics: {'cpu_usage': 10.9, 'memory_usage': 43.2, 'latency': 21.638651051871292, 'disk_io': 2354.732421875}
+2026-02-12 18:19:56,980 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:56] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:19:57,520 | INFO | 127.0.0.1 - - [12/Feb/2026 18:19:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:20:01,593 | INFO | Metrics: {'cpu_usage': 30.5, 'memory_usage': 43.9, 'latency': 20.342023542277627, 'disk_io': 2354.732421875}
+2026-02-12 18:20:01,971 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:01] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:20:02,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:20:06,972 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:06] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:20:07,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:20:07,727 | INFO | Metrics: {'cpu_usage': 23.5, 'memory_usage': 43.6, 'latency': 57.72021596439946, 'disk_io': 2354.732421875}
+2026-02-12 18:20:11,974 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:11] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:20:12,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:20:13,791 | INFO | Metrics: {'cpu_usage': 7.8, 'memory_usage': 43.5, 'latency': 6.367065304579309, 'disk_io': 2354.732421875}
+2026-02-12 18:20:16,974 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:16] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:20:17,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:20:19,858 | INFO | Metrics: {'cpu_usage': 10.9, 'memory_usage': 43.5, 'latency': 82.41333511816177, 'disk_io': 2354.732421875}
+2026-02-12 18:20:21,972 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:21] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:20:22,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:20:25,913 | INFO | Metrics: {'cpu_usage': 14.7, 'memory_usage': 43.4, 'latency': 47.616466422794744, 'disk_io': 2354.857421875}
+2026-02-12 18:20:27,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:20:31,968 | INFO | Metrics: {'cpu_usage': 12.9, 'memory_usage': 43.4, 'latency': 47.11745051724204, 'disk_io': 2354.857421875}
+2026-02-12 18:20:32,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:20:37,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:20:42,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:20:42,866 | INFO | Metrics: {'cpu_usage': 40.8, 'memory_usage': 44.2, 'latency': 7.68894090274889, 'disk_io': 2354.857421875}
+2026-02-12 18:20:47,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:20:48,918 | INFO | Metrics: {'cpu_usage': 41.0, 'memory_usage': 45.2, 'latency': 82.92116827767255, 'disk_io': 2354.857421875}
+2026-02-12 18:20:52,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:20:54,985 | INFO | Metrics: {'cpu_usage': 32.1, 'memory_usage': 45.6, 'latency': 27.399332683646808, 'disk_io': 2354.857421875}
+2026-02-12 18:20:57,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:20:57,923 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:57] "GET / HTTP/1.1" 200 -
+2026-02-12 18:20:57,989 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:57] "GET /api/status HTTP/1.1" 200 -
+2026-02-12 18:20:58,005 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:58] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:20:58,027 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-12 18:20:59,976 | INFO | 127.0.0.1 - - [12/Feb/2026 18:20:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:21:01,037 | INFO | Metrics: {'cpu_usage': 8.9, 'memory_usage': 46.2, 'latency': 54.68172239980134, 'disk_io': 2354.962890625}
+2026-02-12 18:21:02,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:21:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:21:02,964 | INFO | 127.0.0.1 - - [12/Feb/2026 18:21:02] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:21:07,104 | INFO | Metrics: {'cpu_usage': 6.3, 'memory_usage': 44.3, 'latency': 70.82631533133302, 'disk_io': 2354.962890625}
+2026-02-12 18:21:07,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:21:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:21:07,965 | INFO | 127.0.0.1 - - [12/Feb/2026 18:21:07] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:21:12,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:21:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:21:13,163 | INFO | Metrics: {'cpu_usage': 16.2, 'memory_usage': 44.2, 'latency': 87.36534163301481, 'disk_io': 2354.966796875}
+2026-02-12 18:21:17,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:21:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:21:19,203 | INFO | Metrics: {'cpu_usage': 44.5, 'memory_usage': 44.6, 'latency': 67.43928213962177, 'disk_io': 2354.966796875}
+2026-02-12 18:21:22,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:21:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:21:25,258 | INFO | Metrics: {'cpu_usage': 26.5, 'memory_usage': 43.6, 'latency': 30.977748348545944, 'disk_io': 2354.966796875}
+2026-02-12 18:21:27,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:21:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:21:31,328 | INFO | Metrics: {'cpu_usage': 23.4, 'memory_usage': 43.9, 'latency': 51.749736308686515, 'disk_io': 2354.966796875}
+2026-02-12 18:21:32,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:21:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:21:37,380 | INFO | Metrics: {'cpu_usage': 11.9, 'memory_usage': 44.8, 'latency': 33.8436393330894, 'disk_io': 2355.005859375}
+2026-02-12 18:21:37,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:21:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:21:42,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:21:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:21:43,434 | INFO | Metrics: {'cpu_usage': 33.8, 'memory_usage': 45.1, 'latency': 51.7036627442566, 'disk_io': 2355.005859375}
+2026-02-12 18:21:47,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:21:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:21:49,477 | INFO | Metrics: {'cpu_usage': 13.9, 'memory_usage': 43.9, 'latency': 6.344940477109845, 'disk_io': 2355.005859375}
+2026-02-12 18:21:52,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:21:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:21:55,528 | INFO | Metrics: {'cpu_usage': 10.6, 'memory_usage': 43.9, 'latency': 71.72117404454033, 'disk_io': 2355.005859375}
+2026-02-12 18:21:57,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:21:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:21:59,972 | INFO | 127.0.0.1 - - [12/Feb/2026 18:21:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:22:02,519 | INFO | 127.0.0.1 - - [12/Feb/2026 18:22:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:22:06,410 | INFO | Metrics: {'cpu_usage': 12.2, 'memory_usage': 43.9, 'latency': 82.03737611200906, 'disk_io': 2355.005859375}
+2026-02-12 18:22:07,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:22:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:22:12,460 | INFO | Metrics: {'cpu_usage': 13.3, 'memory_usage': 44.0, 'latency': 88.35921873888391, 'disk_io': 2355.005859375}
+2026-02-12 18:22:12,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:22:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:22:17,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:22:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:22:18,510 | INFO | Metrics: {'cpu_usage': 14.8, 'memory_usage': 44.7, 'latency': 51.79909970457139, 'disk_io': 2355.005859375}
+2026-02-12 18:22:22,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:22:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:22:24,596 | INFO | Metrics: {'cpu_usage': 53.7, 'memory_usage': 44.9, 'latency': 27.43427061905036, 'disk_io': 2355.005859375}
+2026-02-12 18:22:27,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:22:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:22:30,638 | INFO | Metrics: {'cpu_usage': 32.3, 'memory_usage': 44.9, 'latency': 86.36264213912351, 'disk_io': 2355.005859375}
+2026-02-12 18:22:32,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:22:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:22:36,680 | INFO | Metrics: {'cpu_usage': 32.6, 'memory_usage': 45.3, 'latency': 55.51434749635606, 'disk_io': 2355.005859375}
+2026-02-12 18:22:37,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:22:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:22:42,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:22:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:22:42,721 | INFO | Metrics: {'cpu_usage': 14.1, 'memory_usage': 46.0, 'latency': 46.508442705145065, 'disk_io': 2355.005859375}
+2026-02-12 18:22:47,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:22:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:22:48,784 | INFO | Metrics: {'cpu_usage': 34.1, 'memory_usage': 45.8, 'latency': 75.12401078075243, 'disk_io': 2355.005859375}
+2026-02-12 18:22:52,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:22:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:22:54,849 | INFO | Metrics: {'cpu_usage': 25.4, 'memory_usage': 44.3, 'latency': 28.131387394994043, 'disk_io': 2355.005859375}
+2026-02-12 18:22:57,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:22:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:22:59,972 | INFO | 127.0.0.1 - - [12/Feb/2026 18:22:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:23:00,892 | INFO | Metrics: {'cpu_usage': 37.9, 'memory_usage': 44.5, 'latency': 89.84272950257638, 'disk_io': 2355.005859375}
+2026-02-12 18:23:02,522 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:23:10,187 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 18:23:10,188 | INFO | [33mPress CTRL+C to quit[0m
+2026-02-12 18:23:11,184 | INFO | Metrics: {'cpu_usage': 6.6, 'memory_usage': 43.7, 'latency': 71.89359105439597, 'disk_io': 2355.005859375}
+2026-02-12 18:23:12,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:23:15,439 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:15] "[36mGET / HTTP/1.1[0m" 304 -
+2026-02-12 18:23:15,471 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:15] "GET /api/status HTTP/1.1" 200 -
+2026-02-12 18:23:15,473 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:15] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:23:17,234 | INFO | Metrics: {'cpu_usage': 8.7, 'memory_usage': 44.6, 'latency': 57.85273595513655, 'disk_io': 2355.005859375}
+2026-02-12 18:23:17,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:23:20,471 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:20] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:23:22,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:23:23,277 | INFO | Metrics: {'cpu_usage': 12.2, 'memory_usage': 43.9, 'latency': 90.59767467475668, 'disk_io': 2355.005859375}
+2026-02-12 18:23:25,975 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:25] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:23:27,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:23:30,974 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:30] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:23:32,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:23:35,974 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:35] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:23:37,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:23:40,305 | INFO | Metrics: {'cpu_usage': 17.4, 'memory_usage': 44.6, 'latency': 21.645317999159353, 'disk_io': 2355.005859375}
+2026-02-12 18:23:40,972 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:40] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:23:42,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:23:45,972 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:45] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:23:46,370 | INFO | Metrics: {'cpu_usage': 22.0, 'memory_usage': 44.6, 'latency': 51.137638793324406, 'disk_io': 2355.005859375}
+2026-02-12 18:23:47,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:23:50,973 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:50] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:23:52,413 | INFO | Metrics: {'cpu_usage': 32.5, 'memory_usage': 44.7, 'latency': 98.62926381771392, 'disk_io': 2355.005859375}
+2026-02-12 18:23:52,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:23:53,159 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:53] "[33mPOST /heal HTTP/1.1[0m" 404 -
+2026-02-12 18:23:55,978 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:55] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:23:57,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:23:58,455 | INFO | Metrics: {'cpu_usage': 29.4, 'memory_usage': 44.6, 'latency': 68.9505773859705, 'disk_io': 2355.353515625}
+2026-02-12 18:23:59,973 | INFO | 127.0.0.1 - - [12/Feb/2026 18:23:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:24:00,974 | INFO | 127.0.0.1 - - [12/Feb/2026 18:24:00] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:24:02,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:24:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:24:04,496 | INFO | Metrics: {'cpu_usage': 31.8, 'memory_usage': 44.9, 'latency': 45.73725539070954, 'disk_io': 2355.353515625}
+2026-02-12 18:24:05,973 | INFO | 127.0.0.1 - - [12/Feb/2026 18:24:05] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:24:07,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:24:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:24:10,540 | INFO | Metrics: {'cpu_usage': 34.9, 'memory_usage': 45.0, 'latency': 15.405549715919767, 'disk_io': 2355.353515625}
+2026-02-12 18:24:10,972 | INFO | 127.0.0.1 - - [12/Feb/2026 18:24:10] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:24:12,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:24:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:24:15,975 | INFO | 127.0.0.1 - - [12/Feb/2026 18:24:15] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:24:16,586 | INFO | Metrics: {'cpu_usage': 51.8, 'memory_usage': 45.6, 'latency': 41.90322762752518, 'disk_io': 2355.443359375}
+2026-02-12 18:24:17,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:24:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:24:22,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:24:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:24:22,665 | INFO | Metrics: {'cpu_usage': 10.8, 'memory_usage': 46.4, 'latency': 23.43037986052544, 'disk_io': 2355.443359375}
+2026-02-12 18:24:27,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:24:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:24:28,727 | INFO | Metrics: {'cpu_usage': 12.4, 'memory_usage': 45.9, 'latency': 51.95956780321428, 'disk_io': 2355.443359375}
+2026-02-12 18:24:32,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:24:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:24:34,773 | INFO | Metrics: {'cpu_usage': 68.4, 'memory_usage': 46.7, 'latency': 12.298961973485914, 'disk_io': 2355.443359375}
+2026-02-12 18:24:37,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:24:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:24:40,970 | INFO | Metrics: {'cpu_usage': 37.4, 'memory_usage': 45.0, 'latency': 69.25192895854487, 'disk_io': 2355.443359375}
+2026-02-12 18:24:42,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:24:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:24:47,012 | INFO | Metrics: {'cpu_usage': 60.3, 'memory_usage': 44.8, 'latency': 7.240555077902315, 'disk_io': 2355.443359375}
+2026-02-12 18:24:47,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:24:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:24:52,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:24:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:24:57,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:24:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:24:58,945 | INFO | Metrics: {'cpu_usage': 88.0, 'memory_usage': 45.2, 'latency': 28.03255512969571, 'disk_io': 2355.513671875}
+2026-02-12 18:24:59,974 | INFO | 127.0.0.1 - - [12/Feb/2026 18:24:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:24:59,980 | INFO | 127.0.0.1 - - [12/Feb/2026 18:24:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:25:02,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:25:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:25:05,027 | INFO | Metrics: {'cpu_usage': 57.6, 'memory_usage': 44.9, 'latency': 79.04750472667426, 'disk_io': 2355.513671875}
+2026-02-12 18:25:07,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:25:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:25:11,070 | INFO | Metrics: {'cpu_usage': 10.1, 'memory_usage': 45.3, 'latency': 18.733820090150292, 'disk_io': 2355.513671875}
+2026-02-12 18:25:12,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:25:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:25:17,143 | INFO | Metrics: {'cpu_usage': 29.0, 'memory_usage': 45.5, 'latency': 7.562520387281322, 'disk_io': 2355.513671875}
+2026-02-12 18:25:17,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:25:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:25:22,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:25:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:25:23,195 | INFO | Metrics: {'cpu_usage': 17.1, 'memory_usage': 44.9, 'latency': 31.138485860908183, 'disk_io': 2355.513671875}
+2026-02-12 18:25:27,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:25:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:25:29,246 | INFO | Metrics: {'cpu_usage': 25.3, 'memory_usage': 45.0, 'latency': 51.70453556023648, 'disk_io': 2355.513671875}
+2026-02-12 18:25:32,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:25:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:25:35,303 | INFO | Metrics: {'cpu_usage': 24.9, 'memory_usage': 45.2, 'latency': 43.024967270933125, 'disk_io': 2355.513671875}
+2026-02-12 18:25:37,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:25:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:25:41,349 | INFO | Metrics: {'cpu_usage': 61.4, 'memory_usage': 45.7, 'latency': 72.95827333687527, 'disk_io': 2355.513671875}
+2026-02-12 18:25:42,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:25:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:25:47,483 | INFO | Metrics: {'cpu_usage': 48.7, 'memory_usage': 45.1, 'latency': 99.44721039615881, 'disk_io': 2355.513671875}
+2026-02-12 18:25:47,532 | INFO | 127.0.0.1 - - [12/Feb/2026 18:25:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:25:52,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:25:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:25:53,583 | INFO | Metrics: {'cpu_usage': 17.5, 'memory_usage': 45.8, 'latency': 26.23379879976559, 'disk_io': 2355.513671875}
+2026-02-12 18:25:57,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:25:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:25:59,637 | INFO | Metrics: {'cpu_usage': 15.3, 'memory_usage': 45.7, 'latency': 56.013675410939335, 'disk_io': 2355.513671875}
+2026-02-12 18:25:59,972 | INFO | 127.0.0.1 - - [12/Feb/2026 18:25:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:25:59,978 | INFO | 127.0.0.1 - - [12/Feb/2026 18:25:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:26:02,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:26:07,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:26:11,751 | INFO | Metrics: {'cpu_usage': 43.5, 'memory_usage': 45.7, 'latency': 81.20382469133845, 'disk_io': 2355.513671875}
+2026-02-12 18:26:12,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:26:17,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:26:17,804 | INFO | Metrics: {'cpu_usage': 47.0, 'memory_usage': 46.3, 'latency': 5.0097855266785425, 'disk_io': 2355.513671875}
+2026-02-12 18:26:25,801 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 18:26:25,802 | INFO | [33mPress CTRL+C to quit[0m
+2026-02-12 18:26:26,797 | INFO | Metrics: {'cpu_usage': 8.8, 'memory_usage': 45.1, 'latency': 92.29767535040257, 'disk_io': 2355.513671875}
+2026-02-12 18:26:27,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:26:32,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:26:32,703 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:32] "[36mGET / HTTP/1.1[0m" 304 -
+2026-02-12 18:26:32,766 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:32] "GET /api/status HTTP/1.1" 200 -
+2026-02-12 18:26:32,773 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:32] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:26:32,846 | INFO | Metrics: {'cpu_usage': 32.8, 'memory_usage': 45.1, 'latency': 40.01256519351281, 'disk_io': 2355.513671875}
+2026-02-12 18:26:35,626 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:35] "[36mGET / HTTP/1.1[0m" 304 -
+2026-02-12 18:26:35,659 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:35] "GET /api/status HTTP/1.1" 200 -
+2026-02-12 18:26:35,665 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:35] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:26:35,890 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:35] "[36mGET / HTTP/1.1[0m" 304 -
+2026-02-12 18:26:35,919 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:35] "GET /api/status HTTP/1.1" 200 -
+2026-02-12 18:26:35,927 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:35] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:26:36,556 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:36] "[36mGET / HTTP/1.1[0m" 304 -
+2026-02-12 18:26:36,591 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:36] "GET /api/status HTTP/1.1" 200 -
+2026-02-12 18:26:36,594 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:36] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:26:36,723 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:36] "[36mGET / HTTP/1.1[0m" 304 -
+2026-02-12 18:26:36,763 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:36] "GET /api/status HTTP/1.1" 200 -
+2026-02-12 18:26:36,772 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:36] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:26:36,905 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:36] "[36mGET / HTTP/1.1[0m" 304 -
+2026-02-12 18:26:36,939 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:36] "GET /api/status HTTP/1.1" 200 -
+2026-02-12 18:26:36,948 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:36] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:26:37,346 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:37] "[36mGET / HTTP/1.1[0m" 304 -
+2026-02-12 18:26:37,373 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:37] "GET /api/status HTTP/1.1" 200 -
+2026-02-12 18:26:37,380 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:37] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:26:37,486 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:37] "[36mGET / HTTP/1.1[0m" 304 -
+2026-02-12 18:26:37,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:26:37,534 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:37] "GET /api/status HTTP/1.1" 200 -
+2026-02-12 18:26:37,541 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:37] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:26:37,657 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:37] "[36mGET / HTTP/1.1[0m" 304 -
+2026-02-12 18:26:37,695 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:37] "GET /api/status HTTP/1.1" 200 -
+2026-02-12 18:26:37,700 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:37] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:26:38,897 | INFO | Metrics: {'cpu_usage': 18.3, 'memory_usage': 44.5, 'latency': 15.579832958720251, 'disk_io': 2355.513671875}
+2026-02-12 18:26:39,769 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:39] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:26:42,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:26:42,684 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:42] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:26:47,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:26:47,685 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:47] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:26:51,881 | INFO | Metrics: {'cpu_usage': 8.3, 'memory_usage': 45.7, 'latency': 11.849193206781955, 'disk_io': 2359.693359375}
+2026-02-12 18:26:52,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:26:52,683 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:52] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:26:57,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:26:57,683 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:57] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:26:57,925 | INFO | Metrics: {'cpu_usage': 53.4, 'memory_usage': 46.4, 'latency': 58.257614887868954, 'disk_io': 2359.693359375}
+2026-02-12 18:26:59,973 | INFO | 127.0.0.1 - - [12/Feb/2026 18:26:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:27:02,520 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:27:02,684 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:02] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:27:04,036 | INFO | Metrics: {'cpu_usage': 32.7, 'memory_usage': 44.4, 'latency': 72.89373935528135, 'disk_io': 2359.693359375}
+2026-02-12 18:27:07,521 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:27:07,685 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:07] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:27:10,089 | INFO | Metrics: {'cpu_usage': 34.1, 'memory_usage': 44.2, 'latency': 55.28563909468361, 'disk_io': 2359.693359375}
+2026-02-12 18:27:12,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:27:12,684 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:12] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:27:16,155 | INFO | Metrics: {'cpu_usage': 12.6, 'memory_usage': 43.9, 'latency': 29.946522939167274, 'disk_io': 2359.693359375}
+2026-02-12 18:27:17,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:27:17,683 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:17] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:27:22,221 | INFO | Metrics: {'cpu_usage': 19.9, 'memory_usage': 44.7, 'latency': 10.607859699230723, 'disk_io': 2359.693359375}
+2026-02-12 18:27:22,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:27:22,683 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:22] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:27:30,992 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 18:27:30,992 | INFO | [33mPress CTRL+C to quit[0m
+2026-02-12 18:27:31,989 | INFO | Metrics: {'cpu_usage': 9.8, 'memory_usage': 44.3, 'latency': 2.892816366495323, 'disk_io': 2359.693359375}
+2026-02-12 18:27:32,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:27:32,683 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:32] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:27:37,519 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:27:37,687 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:37] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:27:38,056 | INFO | Metrics: {'cpu_usage': 43.7, 'memory_usage': 44.9, 'latency': 50.941851765157445, 'disk_io': 2359.693359375}
+2026-02-12 18:27:42,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:27:42,683 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:42] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:27:44,112 | INFO | Metrics: {'cpu_usage': 59.7, 'memory_usage': 44.7, 'latency': 72.90723432927604, 'disk_io': 2359.919921875}
+2026-02-12 18:27:47,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:27:47,685 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:47] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:27:52,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:27:52,684 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:52] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:27:56,371 | INFO | Metrics: {'cpu_usage': 25.4, 'memory_usage': 44.6, 'latency': 94.56817026654151, 'disk_io': 2359.919921875}
+2026-02-12 18:27:57,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:27:57,683 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:57] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:27:59,973 | INFO | 127.0.0.1 - - [12/Feb/2026 18:27:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:28:02,436 | INFO | Metrics: {'cpu_usage': 8.6, 'memory_usage': 44.9, 'latency': 81.32422357064861, 'disk_io': 2359.919921875}
+2026-02-12 18:28:02,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:28:02,685 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:02] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:28:07,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:28:07,682 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:07] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:28:08,494 | INFO | Metrics: {'cpu_usage': 27.2, 'memory_usage': 43.2, 'latency': 45.859561595317054, 'disk_io': 2359.919921875}
+2026-02-12 18:28:12,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:28:12,683 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:12] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:28:14,557 | INFO | Metrics: {'cpu_usage': 51.7, 'memory_usage': 43.6, 'latency': 6.158877211750769, 'disk_io': 2359.919921875}
+2026-02-12 18:28:17,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:28:17,683 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:17] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:28:20,618 | INFO | Metrics: {'cpu_usage': 58.0, 'memory_usage': 43.9, 'latency': 29.389220321369788, 'disk_io': 2359.919921875}
+2026-02-12 18:28:22,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:28:22,683 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:22] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:28:28,364 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 18:28:28,364 | INFO | [33mPress CTRL+C to quit[0m
+2026-02-12 18:28:29,361 | INFO | Metrics: {'cpu_usage': 9.8, 'memory_usage': 43.7, 'latency': 25.01750616614697, 'disk_io': 2359.919921875}
+2026-02-12 18:28:32,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:28:32,685 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:32] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:28:35,420 | INFO | Metrics: {'cpu_usage': 22.2, 'memory_usage': 43.8, 'latency': 70.633070479693, 'disk_io': 2359.919921875}
+2026-02-12 18:28:37,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:28:37,685 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:37] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:28:41,463 | INFO | Metrics: {'cpu_usage': 10.6, 'memory_usage': 43.8, 'latency': 7.664238383694336, 'disk_io': 2359.919921875}
+2026-02-12 18:28:42,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:28:42,684 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:42] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:28:47,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:28:47,525 | INFO | Metrics: {'cpu_usage': 9.1, 'memory_usage': 43.7, 'latency': 24.624921472629403, 'disk_io': 2359.919921875}
+2026-02-12 18:28:47,683 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:47] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:28:52,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:28:52,688 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:52] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:28:53,161 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:53] "[33mPOST /heal HTTP/1.1[0m" 404 -
+2026-02-12 18:28:57,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:28:57,685 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:57] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:28:59,972 | INFO | 127.0.0.1 - - [12/Feb/2026 18:28:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:29:01,597 | INFO | Metrics: {'cpu_usage': 16.1, 'memory_usage': 44.3, 'latency': 40.7270301578364, 'disk_io': 2359.919921875}
+2026-02-12 18:29:02,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:29:02,981 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:02] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:29:07,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:29:07,657 | INFO | Metrics: {'cpu_usage': 43.1, 'memory_usage': 44.5, 'latency': 88.98504429020912, 'disk_io': 2360.009765625}
+2026-02-12 18:29:07,973 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:07] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:29:12,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:29:12,974 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:12] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:29:13,712 | INFO | Metrics: {'cpu_usage': 12.2, 'memory_usage': 44.7, 'latency': 28.030582368293118, 'disk_io': 2360.009765625}
+2026-02-12 18:29:17,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:29:17,974 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:17] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:29:19,758 | INFO | Metrics: {'cpu_usage': 17.7, 'memory_usage': 44.4, 'latency': 29.565858295764492, 'disk_io': 2360.009765625}
+2026-02-12 18:29:22,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:29:22,973 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:22] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:29:25,826 | INFO | Metrics: {'cpu_usage': 15.9, 'memory_usage': 44.5, 'latency': 90.81435848203458, 'disk_io': 2360.009765625}
+2026-02-12 18:29:27,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:29:27,973 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:27] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:29:31,870 | INFO | Metrics: {'cpu_usage': 43.2, 'memory_usage': 44.8, 'latency': 44.3681925683976, 'disk_io': 2360.009765625}
+2026-02-12 18:29:32,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:29:32,972 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:32] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:29:37,521 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:29:37,917 | INFO | Metrics: {'cpu_usage': 40.9, 'memory_usage': 45.4, 'latency': 32.77307009017783, 'disk_io': 2360.009765625}
+2026-02-12 18:29:37,979 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:37] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:29:42,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:29:42,973 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:42] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:29:43,974 | INFO | Metrics: {'cpu_usage': 19.2, 'memory_usage': 46.1, 'latency': 41.30933333263613, 'disk_io': 2360.009765625}
+2026-02-12 18:29:47,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:29:47,975 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:47] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:29:50,058 | INFO | Metrics: {'cpu_usage': 27.4, 'memory_usage': 46.0, 'latency': 77.87637550259196, 'disk_io': 2360.009765625}
+2026-02-12 18:29:52,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:29:52,975 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:52] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:29:56,101 | INFO | Metrics: {'cpu_usage': 13.9, 'memory_usage': 45.8, 'latency': 31.648584741013977, 'disk_io': 2360.009765625}
+2026-02-12 18:29:57,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:29:57,975 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:57] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:29:59,975 | INFO | 127.0.0.1 - - [12/Feb/2026 18:29:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:30:02,167 | INFO | Metrics: {'cpu_usage': 46.3, 'memory_usage': 46.6, 'latency': 3.010351159327123, 'disk_io': 2360.009765625}
+2026-02-12 18:30:02,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:30:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:30:07,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:30:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:30:08,252 | INFO | Metrics: {'cpu_usage': 34.6, 'memory_usage': 47.6, 'latency': 26.52113480239618, 'disk_io': 2360.009765625}
+2026-02-12 18:30:12,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:30:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:30:17,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:30:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:30:22,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:30:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:30:25,970 | INFO | Metrics: {'cpu_usage': 58.9, 'memory_usage': 49.1, 'latency': 85.85418433202553, 'disk_io': 2360.009765625}
+2026-02-12 18:30:27,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:30:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:30:32,019 | INFO | Metrics: {'cpu_usage': 11.2, 'memory_usage': 49.0, 'latency': 99.77579294724319, 'disk_io': 2360.009765625}
+2026-02-12 18:30:32,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:30:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:30:37,523 | INFO | 127.0.0.1 - - [12/Feb/2026 18:30:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:30:38,060 | INFO | Metrics: {'cpu_usage': 48.2, 'memory_usage': 48.7, 'latency': 33.19135488474602, 'disk_io': 2360.009765625}
+2026-02-12 18:30:42,519 | INFO | 127.0.0.1 - - [12/Feb/2026 18:30:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:30:44,122 | INFO | Metrics: {'cpu_usage': 31.4, 'memory_usage': 49.2, 'latency': 26.002568012622262, 'disk_io': 2360.009765625}
+2026-02-12 18:30:47,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:30:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:30:50,178 | INFO | Metrics: {'cpu_usage': 22.0, 'memory_usage': 44.1, 'latency': 70.36824690698644, 'disk_io': 2360.009765625}
+2026-02-12 18:30:52,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:30:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:30:56,224 | INFO | Metrics: {'cpu_usage': 27.9, 'memory_usage': 43.6, 'latency': 65.19578241406404, 'disk_io': 2360.009765625}
+2026-02-12 18:30:57,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:30:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:30:58,972 | INFO | 127.0.0.1 - - [12/Feb/2026 18:30:58] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:30:59,973 | INFO | 127.0.0.1 - - [12/Feb/2026 18:30:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:31:02,273 | INFO | Metrics: {'cpu_usage': 8.6, 'memory_usage': 43.5, 'latency': 95.59223513514839, 'disk_io': 2360.009765625}
+2026-02-12 18:31:02,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:31:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:31:07,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:31:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:31:08,331 | INFO | Metrics: {'cpu_usage': 7.5, 'memory_usage': 43.4, 'latency': 29.012050358871296, 'disk_io': 2360.064453125}
+2026-02-12 18:31:12,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:31:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:31:17,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:31:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:31:21,060 | INFO | Metrics: {'cpu_usage': 53.1, 'memory_usage': 44.2, 'latency': 52.07568509896439, 'disk_io': 2360.064453125}
+2026-02-12 18:31:22,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:31:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:31:27,142 | INFO | Metrics: {'cpu_usage': 40.7, 'memory_usage': 44.6, 'latency': 60.64308324930729, 'disk_io': 2360.158203125}
+2026-02-12 18:31:27,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:31:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:31:32,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:31:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:31:33,221 | INFO | Metrics: {'cpu_usage': 32.2, 'memory_usage': 44.9, 'latency': 95.68640882652225, 'disk_io': 2360.158203125}
+2026-02-12 18:31:37,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:31:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:31:39,272 | INFO | Metrics: {'cpu_usage': 42.5, 'memory_usage': 45.2, 'latency': 52.493830411533, 'disk_io': 2360.158203125}
+2026-02-12 18:31:42,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:31:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:31:45,334 | INFO | Metrics: {'cpu_usage': 29.8, 'memory_usage': 45.6, 'latency': 43.56710221344532, 'disk_io': 2360.158203125}
+2026-02-12 18:31:47,520 | INFO | 127.0.0.1 - - [12/Feb/2026 18:31:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:31:51,376 | INFO | Metrics: {'cpu_usage': 35.9, 'memory_usage': 46.2, 'latency': 44.32156861218071, 'disk_io': 2360.158203125}
+2026-02-12 18:31:52,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:31:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:31:57,418 | INFO | Metrics: {'cpu_usage': 39.9, 'memory_usage': 44.4, 'latency': 69.0102704208296, 'disk_io': 2360.158203125}
+2026-02-12 18:31:57,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:31:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:31:59,972 | INFO | 127.0.0.1 - - [12/Feb/2026 18:31:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:31:59,977 | INFO | 127.0.0.1 - - [12/Feb/2026 18:31:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:32:02,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:32:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:32:03,473 | INFO | Metrics: {'cpu_usage': 4.3, 'memory_usage': 43.5, 'latency': 6.288745458321054, 'disk_io': 2360.158203125}
+2026-02-12 18:32:07,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:32:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:32:09,538 | INFO | Metrics: {'cpu_usage': 14.3, 'memory_usage': 43.8, 'latency': 78.95006378998691, 'disk_io': 2360.158203125}
+2026-02-12 18:32:12,520 | INFO | 127.0.0.1 - - [12/Feb/2026 18:32:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:32:15,592 | INFO | Metrics: {'cpu_usage': 24.6, 'memory_usage': 44.0, 'latency': 27.88021941878034, 'disk_io': 2360.158203125}
+2026-02-12 18:32:17,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:32:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:32:21,644 | INFO | Metrics: {'cpu_usage': 14.2, 'memory_usage': 44.1, 'latency': 59.92027467201002, 'disk_io': 2360.158203125}
+2026-02-12 18:32:22,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:32:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:32:27,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:32:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:32:32,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:32:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:32:34,646 | INFO | Metrics: {'cpu_usage': 16.9, 'memory_usage': 43.9, 'latency': 62.510307127870064, 'disk_io': 2360.158203125}
+2026-02-12 18:32:37,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:32:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:32:40,700 | INFO | Metrics: {'cpu_usage': 11.3, 'memory_usage': 44.0, 'latency': 20.911691162364985, 'disk_io': 2360.158203125}
+2026-02-12 18:32:42,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:32:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:32:46,776 | INFO | Metrics: {'cpu_usage': 4.3, 'memory_usage': 43.6, 'latency': 22.809427511611734, 'disk_io': 2360.158203125}
+2026-02-12 18:32:47,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:32:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:32:52,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:32:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:32:52,851 | INFO | Metrics: {'cpu_usage': 11.7, 'memory_usage': 43.7, 'latency': 72.65118742370262, 'disk_io': 2360.158203125}
+2026-02-12 18:32:57,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:32:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:32:58,912 | INFO | Metrics: {'cpu_usage': 4.5, 'memory_usage': 43.7, 'latency': 31.308145272483426, 'disk_io': 2360.158203125}
+2026-02-12 18:32:59,973 | INFO | 127.0.0.1 - - [12/Feb/2026 18:32:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:32:59,979 | INFO | 127.0.0.1 - - [12/Feb/2026 18:32:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:33:02,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:33:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:33:04,959 | INFO | Metrics: {'cpu_usage': 10.0, 'memory_usage': 44.0, 'latency': 50.04871322165683, 'disk_io': 2489.025390625}
+2026-02-12 18:33:07,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:33:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:33:11,040 | INFO | Metrics: {'cpu_usage': 9.0, 'memory_usage': 44.1, 'latency': 91.74078444440096, 'disk_io': 2634.912109375}
+2026-02-12 18:33:12,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:33:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:33:17,084 | INFO | Metrics: {'cpu_usage': 6.1, 'memory_usage': 43.9, 'latency': 45.17080377217545, 'disk_io': 2647.541015625}
+2026-02-12 18:33:17,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:33:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:33:22,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:33:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:33:23,124 | INFO | Metrics: {'cpu_usage': 34.5, 'memory_usage': 44.0, 'latency': 6.712740843742793, 'disk_io': 2715.697265625}
+2026-02-12 18:33:27,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:33:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:33:32,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:33:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:33:37,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:33:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:33:39,578 | INFO | Metrics: {'cpu_usage': 6.1, 'memory_usage': 43.9, 'latency': 13.595038268163604, 'disk_io': 2958.419921875}
+2026-02-12 18:33:42,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:33:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:33:45,632 | INFO | Metrics: {'cpu_usage': 10.1, 'memory_usage': 44.2, 'latency': 87.99736763471932, 'disk_io': 2958.447265625}
+2026-02-12 18:33:47,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:33:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:33:51,682 | INFO | Metrics: {'cpu_usage': 18.6, 'memory_usage': 44.6, 'latency': 81.41113273200433, 'disk_io': 2958.474609375}
+2026-02-12 18:33:52,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:33:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:33:53,162 | INFO | 127.0.0.1 - - [12/Feb/2026 18:33:53] "[33mPOST /heal HTTP/1.1[0m" 404 -
+2026-02-12 18:33:57,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:33:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:33:57,736 | INFO | Metrics: {'cpu_usage': 11.4, 'memory_usage': 44.6, 'latency': 81.63652047871535, 'disk_io': 2958.474609375}
+2026-02-12 18:33:59,973 | INFO | 127.0.0.1 - - [12/Feb/2026 18:33:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:33:59,979 | INFO | 127.0.0.1 - - [12/Feb/2026 18:33:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:34:02,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:34:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:34:03,808 | INFO | Metrics: {'cpu_usage': 13.0, 'memory_usage': 44.6, 'latency': 77.31953148452564, 'disk_io': 2958.474609375}
+2026-02-12 18:34:07,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:34:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:34:09,855 | INFO | Metrics: {'cpu_usage': 38.7, 'memory_usage': 45.5, 'latency': 26.633055944465735, 'disk_io': 2958.498046875}
+2026-02-12 18:34:12,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:34:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:34:15,928 | INFO | Metrics: {'cpu_usage': 29.5, 'memory_usage': 45.1, 'latency': 20.06567989260818, 'disk_io': 2958.498046875}
+2026-02-12 18:34:17,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:34:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:34:21,989 | INFO | Metrics: {'cpu_usage': 30.8, 'memory_usage': 45.5, 'latency': 66.4603403992688, 'disk_io': 2958.498046875}
+2026-02-12 18:34:22,520 | INFO | 127.0.0.1 - - [12/Feb/2026 18:34:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:34:27,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:34:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:34:28,032 | INFO | Metrics: {'cpu_usage': 27.8, 'memory_usage': 46.3, 'latency': 93.0905681840489, 'disk_io': 2958.498046875}
+2026-02-12 18:34:32,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:34:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:34:34,097 | INFO | Metrics: {'cpu_usage': 6.0, 'memory_usage': 47.0, 'latency': 81.09119883436126, 'disk_io': 2958.498046875}
+2026-02-12 18:34:37,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:34:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:34:40,146 | INFO | Metrics: {'cpu_usage': 8.7, 'memory_usage': 46.5, 'latency': 7.070236444689795, 'disk_io': 2958.498046875}
+2026-02-12 18:34:42,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:34:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:34:46,199 | INFO | Metrics: {'cpu_usage': 3.0, 'memory_usage': 44.0, 'latency': 5.938925164759734, 'disk_io': 2958.498046875}
+2026-02-12 18:34:47,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:34:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:34:52,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:34:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:34:57,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:34:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:34:58,898 | INFO | Metrics: {'cpu_usage': 16.5, 'memory_usage': 44.2, 'latency': 9.621479689541935, 'disk_io': 2958.498046875}
+2026-02-12 18:34:59,972 | INFO | 127.0.0.1 - - [12/Feb/2026 18:34:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:34:59,976 | INFO | 127.0.0.1 - - [12/Feb/2026 18:34:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:35:02,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:35:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:35:04,960 | INFO | Metrics: {'cpu_usage': 6.6, 'memory_usage': 44.0, 'latency': 15.49410466933046, 'disk_io': 2958.498046875}
+2026-02-12 18:35:07,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:35:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:35:11,016 | INFO | Metrics: {'cpu_usage': 9.6, 'memory_usage': 44.3, 'latency': 99.96072490612892, 'disk_io': 2958.498046875}
+2026-02-12 18:35:12,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:35:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:35:17,091 | INFO | Metrics: {'cpu_usage': 17.0, 'memory_usage': 43.9, 'latency': 88.98002888037924, 'disk_io': 2958.498046875}
+2026-02-12 18:35:17,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:35:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:35:22,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:35:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:35:23,146 | INFO | Metrics: {'cpu_usage': 16.7, 'memory_usage': 44.1, 'latency': 21.23424441185562, 'disk_io': 2958.498046875}
+2026-02-12 18:35:27,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:35:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:35:29,201 | INFO | Metrics: {'cpu_usage': 4.8, 'memory_usage': 43.8, 'latency': 18.40472390187423, 'disk_io': 2958.498046875}
+2026-02-12 18:35:32,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:35:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:35:35,258 | INFO | Metrics: {'cpu_usage': 5.1, 'memory_usage': 44.0, 'latency': 99.02066346304682, 'disk_io': 2958.498046875}
+2026-02-12 18:35:37,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:35:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:35:41,322 | INFO | Metrics: {'cpu_usage': 6.4, 'memory_usage': 44.1, 'latency': 64.03802416903663, 'disk_io': 2958.498046875}
+2026-02-12 18:35:42,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:35:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:35:47,371 | INFO | Metrics: {'cpu_usage': 4.0, 'memory_usage': 43.9, 'latency': 99.8699337894895, 'disk_io': 2958.498046875}
+2026-02-12 18:35:47,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:35:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:35:52,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:35:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:35:53,421 | INFO | Metrics: {'cpu_usage': 3.5, 'memory_usage': 43.8, 'latency': 5.122601515287046, 'disk_io': 2958.498046875}
+2026-02-12 18:35:57,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:35:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:35:59,974 | INFO | 127.0.0.1 - - [12/Feb/2026 18:35:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:35:59,979 | INFO | 127.0.0.1 - - [12/Feb/2026 18:35:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:36:02,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:36:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:36:06,324 | INFO | Metrics: {'cpu_usage': 3.5, 'memory_usage': 44.0, 'latency': 72.9773611377162, 'disk_io': 2958.498046875}
+2026-02-12 18:36:07,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:36:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:36:12,409 | INFO | Metrics: {'cpu_usage': 26.7, 'memory_usage': 44.0, 'latency': 21.21412291929065, 'disk_io': 2958.498046875}
+2026-02-12 18:36:12,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:36:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:36:17,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:36:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:36:18,469 | INFO | Metrics: {'cpu_usage': 18.4, 'memory_usage': 44.1, 'latency': 56.055045935423465, 'disk_io': 2958.498046875}
+2026-02-12 18:36:22,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:36:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:36:24,539 | INFO | Metrics: {'cpu_usage': 29.7, 'memory_usage': 45.0, 'latency': 1.2658206128866063, 'disk_io': 2958.498046875}
+2026-02-12 18:36:27,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:36:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:36:30,594 | INFO | Metrics: {'cpu_usage': 30.9, 'memory_usage': 45.1, 'latency': 37.548489113636975, 'disk_io': 2958.521484375}
+2026-02-12 18:36:32,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:36:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:36:36,650 | INFO | Metrics: {'cpu_usage': 30.1, 'memory_usage': 44.8, 'latency': 95.93856610023307, 'disk_io': 2958.521484375}
+2026-02-12 18:36:37,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:36:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:36:42,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:36:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:36:42,692 | INFO | Metrics: {'cpu_usage': 30.5, 'memory_usage': 46.1, 'latency': 16.26563798186556, 'disk_io': 2958.521484375}
+2026-02-12 18:36:47,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:36:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:36:48,734 | INFO | Metrics: {'cpu_usage': 30.7, 'memory_usage': 46.5, 'latency': 75.79647431710798, 'disk_io': 2958.521484375}
+2026-02-12 18:36:52,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:36:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:36:54,777 | INFO | Metrics: {'cpu_usage': 22.5, 'memory_usage': 47.8, 'latency': 79.5542838902323, 'disk_io': 2958.521484375}
+2026-02-12 18:36:57,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:36:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:36:59,976 | INFO | 127.0.0.1 - - [12/Feb/2026 18:36:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:36:59,984 | INFO | 127.0.0.1 - - [12/Feb/2026 18:36:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:37:00,838 | INFO | Metrics: {'cpu_usage': 18.1, 'memory_usage': 47.2, 'latency': 87.95139129562531, 'disk_io': 2958.521484375}
+2026-02-12 18:37:02,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:37:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:37:06,935 | INFO | Metrics: {'cpu_usage': 15.3, 'memory_usage': 44.0, 'latency': 15.040004012003175, 'disk_io': 2958.521484375}
+2026-02-12 18:37:07,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:37:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:37:12,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:37:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:37:12,980 | INFO | Metrics: {'cpu_usage': 10.1, 'memory_usage': 43.8, 'latency': 61.70168808437375, 'disk_io': 2958.521484375}
+2026-02-12 18:37:17,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:37:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:37:19,025 | INFO | Metrics: {'cpu_usage': 12.4, 'memory_usage': 43.5, 'latency': 2.2952985417362797, 'disk_io': 2958.521484375}
+2026-02-12 18:37:22,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:37:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:37:27,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:37:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:37:31,152 | INFO | Metrics: {'cpu_usage': 21.3, 'memory_usage': 44.1, 'latency': 68.5968159532026, 'disk_io': 2958.521484375}
+2026-02-12 18:37:32,518 | INFO | 127.0.0.1 - - [12/Feb/2026 18:37:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:37:37,217 | INFO | Metrics: {'cpu_usage': 16.9, 'memory_usage': 43.7, 'latency': 65.93748900168114, 'disk_io': 2958.521484375}
+2026-02-12 18:37:37,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:37:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:37:42,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:37:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:37:43,274 | INFO | Metrics: {'cpu_usage': 39.8, 'memory_usage': 44.1, 'latency': 53.33236709208254, 'disk_io': 2958.521484375}
+2026-02-12 18:37:47,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:37:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:37:49,323 | INFO | Metrics: {'cpu_usage': 6.9, 'memory_usage': 44.6, 'latency': 7.686944425516888, 'disk_io': 2958.876953125}
+2026-02-12 18:37:52,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:37:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:37:55,376 | INFO | Metrics: {'cpu_usage': 60.4, 'memory_usage': 44.7, 'latency': 94.90026107066608, 'disk_io': 2958.876953125}
+2026-02-12 18:37:57,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:37:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:37:59,973 | INFO | 127.0.0.1 - - [12/Feb/2026 18:37:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:37:59,978 | INFO | 127.0.0.1 - - [12/Feb/2026 18:37:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:38:01,462 | INFO | Metrics: {'cpu_usage': 17.6, 'memory_usage': 45.4, 'latency': 62.955747330278626, 'disk_io': 2958.876953125}
+2026-02-12 18:38:02,515 | INFO | 127.0.0.1 - - [12/Feb/2026 18:38:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:38:07,507 | INFO | Metrics: {'cpu_usage': 17.3, 'memory_usage': 44.9, 'latency': 51.90635570628479, 'disk_io': 2958.876953125}
+2026-02-12 18:38:07,563 | INFO | 127.0.0.1 - - [12/Feb/2026 18:38:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:38:12,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:38:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:38:13,564 | INFO | Metrics: {'cpu_usage': 13.3, 'memory_usage': 45.2, 'latency': 51.51997078747244, 'disk_io': 2958.876953125}
+2026-02-12 18:38:17,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:38:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:38:19,635 | INFO | Metrics: {'cpu_usage': 70.8, 'memory_usage': 45.4, 'latency': 45.09427313967064, 'disk_io': 2958.876953125}
+2026-02-12 18:38:22,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:38:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:38:25,710 | INFO | Metrics: {'cpu_usage': 24.2, 'memory_usage': 46.0, 'latency': 28.95755478689199, 'disk_io': 2958.876953125}
+2026-02-12 18:38:27,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:38:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:59:36,484 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 18:59:36,495 | INFO | [33mPress CTRL+C to quit[0m
+2026-02-12 18:59:37,479 | INFO | Metrics: {'cpu_usage': 3.5, 'memory_usage': 46.2, 'latency': 25.106420980250032, 'disk_io': 3563.216796875}
+2026-02-12 18:59:37,538 | INFO | 127.0.0.1 - - [12/Feb/2026 18:59:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:59:42,522 | INFO | 127.0.0.1 - - [12/Feb/2026 18:59:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:59:42,559 | INFO | 127.0.0.1 - - [12/Feb/2026 18:59:42] "[36mGET / HTTP/1.1[0m" 304 -
+2026-02-12 18:59:42,608 | INFO | 127.0.0.1 - - [12/Feb/2026 18:59:42] "GET /api/status HTTP/1.1" 200 -
+2026-02-12 18:59:42,610 | INFO | 127.0.0.1 - - [12/Feb/2026 18:59:42] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:59:43,567 | INFO | Metrics: {'cpu_usage': 15.7, 'memory_usage': 47.0, 'latency': 74.61929888744751, 'disk_io': 3563.568359375}
+2026-02-12 18:59:47,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:59:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:59:47,972 | INFO | 127.0.0.1 - - [12/Feb/2026 18:59:47] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:59:49,612 | INFO | Metrics: {'cpu_usage': 45.9, 'memory_usage': 46.8, 'latency': 87.1564119303402, 'disk_io': 3563.732421875}
+2026-02-12 18:59:52,516 | INFO | 127.0.0.1 - - [12/Feb/2026 18:59:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:59:52,974 | INFO | 127.0.0.1 - - [12/Feb/2026 18:59:52] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:59:57,517 | INFO | 127.0.0.1 - - [12/Feb/2026 18:59:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 18:59:57,972 | INFO | 127.0.0.1 - - [12/Feb/2026 18:59:57] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:59:59,973 | INFO | 127.0.0.1 - - [12/Feb/2026 18:59:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 18:59:59,978 | INFO | 127.0.0.1 - - [12/Feb/2026 18:59:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:00:02,516 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:00:02,973 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:02] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:00:07,518 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:00:07,584 | INFO | Metrics: {'cpu_usage': 5.5, 'memory_usage': 47.6, 'latency': 4.52024635080931, 'disk_io': 3570.041015625}
+2026-02-12 19:00:07,974 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:07] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:00:12,515 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:00:12,973 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:12] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:00:13,646 | INFO | Metrics: {'cpu_usage': 43.8, 'memory_usage': 48.2, 'latency': 29.792322644971073, 'disk_io': 3570.041015625}
+2026-02-12 19:00:17,515 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:00:17,973 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:17] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:00:19,695 | INFO | Metrics: {'cpu_usage': 26.1, 'memory_usage': 49.1, 'latency': 37.16551981185037, 'disk_io': 3570.326171875}
+2026-02-12 19:00:22,516 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:00:22,974 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:22] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:00:25,790 | INFO | Metrics: {'cpu_usage': 17.6, 'memory_usage': 47.8, 'latency': 84.7207668838723, 'disk_io': 3570.326171875}
+2026-02-12 19:00:27,517 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:00:27,973 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:27] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:00:31,839 | INFO | Metrics: {'cpu_usage': 31.5, 'memory_usage': 47.8, 'latency': 29.25923677492494, 'disk_io': 3570.349609375}
+2026-02-12 19:00:32,517 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:00:32,973 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:32] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:00:37,515 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:00:37,886 | INFO | Metrics: {'cpu_usage': 14.1, 'memory_usage': 47.2, 'latency': 26.595885232307467, 'disk_io': 3570.439453125}
+2026-02-12 19:00:37,977 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:37] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:00:42,551 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:00:42,974 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:42] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:00:43,933 | INFO | Metrics: {'cpu_usage': 27.7, 'memory_usage': 47.5, 'latency': 61.8867984853968, 'disk_io': 3570.439453125}
+2026-02-12 19:00:47,515 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:00:49,979 | INFO | Metrics: {'cpu_usage': 49.7, 'memory_usage': 48.0, 'latency': 41.53959176085414, 'disk_io': 3570.470703125}
+2026-02-12 19:00:52,517 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:00:57,516 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:00:59,985 | INFO | 127.0.0.1 - - [12/Feb/2026 19:00:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:01:00,023 | INFO | 127.0.0.1 - - [12/Feb/2026 19:01:00] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:01:00,040 | INFO | 127.0.0.1 - - [12/Feb/2026 19:01:00] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:01:00,928 | INFO | Metrics: {'cpu_usage': 50.5, 'memory_usage': 48.5, 'latency': 63.605995998402015, 'disk_io': 3570.646484375}
+2026-02-12 19:01:02,516 | INFO | 127.0.0.1 - - [12/Feb/2026 19:01:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:01:06,977 | INFO | Metrics: {'cpu_usage': 13.2, 'memory_usage': 48.8, 'latency': 32.27948165707001, 'disk_io': 3570.646484375}
+2026-02-12 19:01:07,517 | INFO | 127.0.0.1 - - [12/Feb/2026 19:01:07] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:01:12,517 | INFO | 127.0.0.1 - - [12/Feb/2026 19:01:12] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:01:13,034 | INFO | Metrics: {'cpu_usage': 73.7, 'memory_usage': 48.7, 'latency': 88.92886917118322, 'disk_io': 3570.646484375}
+2026-02-12 19:01:17,516 | INFO | 127.0.0.1 - - [12/Feb/2026 19:01:17] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:01:19,092 | INFO | Metrics: {'cpu_usage': 34.4, 'memory_usage': 48.3, 'latency': 27.447717206725727, 'disk_io': 3570.646484375}
+2026-02-12 19:01:22,517 | INFO | 127.0.0.1 - - [12/Feb/2026 19:01:22] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:01:25,142 | INFO | Metrics: {'cpu_usage': 31.1, 'memory_usage': 48.6, 'latency': 44.2276538263238, 'disk_io': 3570.646484375}
+2026-02-12 19:01:27,518 | INFO | 127.0.0.1 - - [12/Feb/2026 19:01:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:01:31,211 | INFO | Metrics: {'cpu_usage': 12.5, 'memory_usage': 48.9, 'latency': 72.76208581250913, 'disk_io': 3570.646484375}
+2026-02-12 19:01:32,517 | INFO | 127.0.0.1 - - [12/Feb/2026 19:01:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:01:37,273 | INFO | Metrics: {'cpu_usage': 11.9, 'memory_usage': 48.4, 'latency': 34.51031087128314, 'disk_io': 3570.646484375}
+2026-02-12 19:01:37,516 | INFO | 127.0.0.1 - - [12/Feb/2026 19:01:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:01:42,516 | INFO | 127.0.0.1 - - [12/Feb/2026 19:01:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:01:43,346 | INFO | Metrics: {'cpu_usage': 13.9, 'memory_usage': 48.4, 'latency': 32.193759433418, 'disk_io': 3570.646484375}
+2026-02-12 19:01:47,517 | INFO | 127.0.0.1 - - [12/Feb/2026 19:01:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:01:49,401 | INFO | Metrics: {'cpu_usage': 6.6, 'memory_usage': 48.3, 'latency': 65.44837356378281, 'disk_io': 3570.646484375}
+2026-02-12 19:01:52,517 | INFO | 127.0.0.1 - - [12/Feb/2026 19:01:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:01:55,457 | INFO | Metrics: {'cpu_usage': 23.9, 'memory_usage': 48.6, 'latency': 91.52144170635269, 'disk_io': 3570.646484375}
+2026-02-12 19:01:57,518 | INFO | 127.0.0.1 - - [12/Feb/2026 19:01:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:03:23,535 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 19:03:23,536 | INFO | [33mPress CTRL+C to quit[0m
+2026-02-12 19:03:24,532 | INFO | Metrics: {'cpu_usage': 13.8, 'memory_usage': 47.8, 'latency': 84.80128271496734, 'disk_io': 3571.193359375}
+2026-02-12 19:03:27,518 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:27] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:03:30,577 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:30] "[36mGET / HTTP/1.1[0m" 304 -
+2026-02-12 19:03:30,592 | INFO | Metrics: {'cpu_usage': 18.1, 'memory_usage': 48.1, 'latency': 85.50143522338249, 'disk_io': 3571.193359375}
+2026-02-12 19:03:30,680 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:30] "GET /api/status HTTP/1.1" 200 -
+2026-02-12 19:03:30,684 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:30] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:03:32,515 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:32] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:03:35,972 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:35] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:03:36,681 | INFO | Metrics: {'cpu_usage': 20.7, 'memory_usage': 48.7, 'latency': 37.319197038815865, 'disk_io': 3571.193359375}
+2026-02-12 19:03:37,517 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:37] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:03:40,973 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:40] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:03:42,518 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:42] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:03:42,755 | INFO | Metrics: {'cpu_usage': 61.5, 'memory_usage': 49.9, 'latency': 56.454134425373276, 'disk_io': 3571.193359375}
+2026-02-12 19:03:45,973 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:45] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:03:47,516 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:47] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:03:50,974 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:50] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:03:52,516 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:52] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:03:53,165 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:53] "[33mPOST /heal HTTP/1.1[0m" 404 -
+2026-02-12 19:03:55,004 | INFO | Metrics: {'cpu_usage': 17.6, 'memory_usage': 48.9, 'latency': 26.938526874930997, 'disk_io': 3571.193359375}
+2026-02-12 19:03:55,974 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:55] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:03:57,516 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:57] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:03:59,973 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:03:59,981 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:03:59,988 | INFO | 127.0.0.1 - - [12/Feb/2026 19:03:59] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:04:00,974 | INFO | 127.0.0.1 - - [12/Feb/2026 19:04:00] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:04:01,059 | INFO | Metrics: {'cpu_usage': 3.5, 'memory_usage': 48.7, 'latency': 28.735459059743775, 'disk_io': 3571.193359375}
+2026-02-12 19:04:02,517 | INFO | 127.0.0.1 - - [12/Feb/2026 19:04:02] "GET /metrics HTTP/1.1" 200 -
+2026-02-12 19:04:05,974 | INFO | 127.0.0.1 - - [12/Feb/2026 19:04:05] "GET /api/events HTTP/1.1" 200 -
+2026-02-12 19:04:07,101 | INFO | Metrics: {'cpu_usage': 23.6, 'memory_usage': 48.7, 'latency': 40.039865079561025, 'disk_io': 3571.193359375}
+2026-02-12 19:04:07,518 | INFO | 127.0.0.1 - - [12/Feb/2026 19:04:07] "GET /metrics HTTP/1.1" 200 -

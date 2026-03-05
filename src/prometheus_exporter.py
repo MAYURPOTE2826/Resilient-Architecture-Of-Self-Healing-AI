@@ -1,4 +1,4 @@
-from prometheus_client import start_http_server, Counter, Gauge
+from prometheus_client import  Counter, Gauge
 
 # Counter metrics
 anomalies_total = Counter(
@@ -17,6 +17,4 @@ system_state = Gauge(
     "System state: 0=NORMAL, 1=DEGRADED, 2=HEALING, 3=RECOVERED"
 )
 
-def start_exporter():
-    start_http_server(8000)
-    print("Prometheus exporter running on port 8000")
+
