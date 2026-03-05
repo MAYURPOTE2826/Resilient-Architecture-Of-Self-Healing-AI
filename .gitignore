@@ -24,3 +24,7 @@ Thumbs.db
 
 # Models (optional if large)
 *.pkl
+# Prometheus binaries
+prometheus/
+prometheus/prometheus
+prometheus/promtool
