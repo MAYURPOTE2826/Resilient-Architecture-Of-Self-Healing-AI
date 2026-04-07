@@ -96,6 +96,11 @@
       color: black;
     }
 
+    .anomaly {
+      background: #f59e0b;
+      color: black;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -143,40 +148,81 @@
   const API_BASE = "";
 
 
+  function setText(id, value) {
+    document.getElementById(id).textContent = value;
+  }
+
+  function createCell(text) {
+    const td = document.createElement("td");
+    td.textContent = text;
+    return td;
+  }
+
+  function createBadgeCell(text, cssClass) {
+    const td = document.createElement("td");
+    const span = document.createElement("span");
+    span.className = `badge ${cssClass}`;
+    span.textContent = text;
+    td.appendChild(span);
+    return td;
+  }
+
   async function loadStatus() {
-    const res = await fetch(`${API_BASE}/api/status`);
-    const data = await res.json();
-    document.getElementById("systemStatus").innerText = data.system;
+    try {
+      const res = await fetch(`${API_BASE}/api/status`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      setText("systemStatus", data.system);
+    } catch (err) {
+      setText("systemStatus", "Unavailable");
+      console.error("Status fetch failed:", err);
+    }
   }
 
   async function loadEvents() {
-    const res = await fetch(`${API_BASE}/api/events`);
-    const events = await res.json();
+    try {
+      const res = await fetch(`${API_BASE}/api/events`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const events = await res.json();
 
-    const table = document.getElementById("eventsTable");
-    table.innerHTML = "";
+      const table = document.getElementById("eventsTable");
+      table.innerHTML = "";
 
-    if (events.length === 0) {
-      table.innerHTML = "<tr><td colspan='5'>No events yet</td></tr>";
-      return;
+      if (events.length === 0) {
+        const tr = document.createElement("tr");
+        const td = document.createElement("td");
+        td.colSpan = 5;
+        td.textContent = "No events yet";
+        tr.appendChild(td);
+        table.appendChild(tr);
+        return;
+      }
+
+      events.forEach(e => {
+        const row = document.createElement("tr");
+        const badgeClass = e.event_type === "HEALING" ? "heal"
+                         : e.event_type === "ANOMALY"  ? "anomaly"
+                         : "normal";
+        row.appendChild(createCell(e.id));
+        row.appendChild(createBadgeCell(e.event_type, badgeClass));
+        row.appendChild(createCell(e.fault_type));
+        row.appendChild(createCell(
+          typeof e.confidence === "number"
+            ? (e.confidence * 100).toFixed(2) + "%"
+            : e.confidence
+        ));
+        row.appendChild(createCell(e.timestamp));
+        table.appendChild(row);
+      });
+    } catch (err) {
+      console.error("Events fetch failed:", err);
     }
-
-    events.forEach(e => {
-      const row = document.createElement("tr");
-      row.innerHTML = `
-        <td>${e.id}</td>
-        <td><span class="badge heal">${e.event_type}</span></td>
-        <td>${e.fault_type}</td>
-        <td>${(e.confidence * 100).toFixed(2)}%</td>
-        <td>${e.timestamp}</td>
-      `;
-      table.appendChild(row);
-    });
   }
 
   loadStatus();
   loadEvents();
 
+  setInterval(loadStatus, 5000);
   setInterval(loadEvents, 5000); // auto refresh
 </script>
 

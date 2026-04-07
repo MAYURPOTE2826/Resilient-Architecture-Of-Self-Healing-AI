@@ -7,53 +7,79 @@ from fault_classifier import classify_fault
 from healing_engine import heal
 from system_state import SystemState
 from logger import logger
+from database import init_db
 from prometheus_exporter import (
     start_exporter,
     anomalies_total,
     healings_total,
-    system_state
+    system_state,
 )
-
-# Start Prometheus exporter
-start_exporter()
 
 WINDOW_SIZE = 5
 MIN_ANOMALIES = 3
-CONFIDENCE_THRESHOLD = 0.01
+CONFIDENCE_THRESHOLD = 0.6   # Z-score: 2.5σ → 0.625 confidence
 
-history = deque(maxlen=WINDOW_SIZE)
-state = SystemState.NORMAL
 
-while True:
-    metrics = collect_metrics()
-    logger.info(f"Metrics: {metrics}")
+def main() -> None:
+    # Start Prometheus HTTP metrics server on port 8000
+    start_exporter()
 
-    anomaly = detect_anomaly(metrics)
-    logger.info(f"Anomaly: {anomaly}")
+    # Ensure database table exists
+    init_db()
 
-    if anomaly["status"] == "ANOMALY" and anomaly["confidence"] > CONFIDENCE_THRESHOLD:
-        anomalies_total.inc()
-        history.append(1)
-    else:
-        history.append(0)
+    history = deque(maxlen=WINDOW_SIZE)
+    state = SystemState.NORMAL
 
-    system_state.set(state.value)
+    logger.info("Self-Healing AI standalone engine started")
 
-    if sum(history) >= MIN_ANOMALIES:
-        state = SystemState.DEGRADED
-        system_state.set(state.value)
+    while True:
+        try:
+            metrics = collect_metrics()
+            logger.info(f"Metrics: {metrics}")
 
-        fault = classify_fault(metrics)
-        state = SystemState.HEALING
-        system_state.set(state.value)
+            anomaly = detect_anomaly(metrics)
+            logger.info(f"Anomaly: {anomaly}")
 
-        heal(fault, anomaly["confidence"])
+            if anomaly["status"] == "ANOMALY" and anomaly["confidence"] > CONFIDENCE_THRESHOLD:
+                fault = classify_fault(metrics)
+                logger.info(f"Fault classified: {fault}")
+                anomalies_total.inc()
+                history.append(1)
+            else:
+                fault = "normal"
+                history.append(0)
 
-        healings_total.inc()
+            system_state.set(state.value)
 
-        state = SystemState.RECOVERED
-        system_state.set(state.value)
+            if sum(history) >= MIN_ANOMALIES:
+                state = SystemState.DEGRADED
+                system_state.set(state.value)
 
-        history.clear()
+                state = SystemState.HEALING
+                system_state.set(state.value)
 
-    time.sleep(5)
+                heal(fault, anomaly["confidence"])
+                healings_total.inc()
+
+                state = SystemState.RECOVERED
+                system_state.set(state.value)
+
+                history.clear()
+
+                # Return to NORMAL after recovery
+                state = SystemState.NORMAL
+                system_state.set(state.value)
+
+        except Exception as e:
+            logger.error(f"Engine error: {e}")
+            # Reset state and history so next cycle starts clean
+            state = SystemState.NORMAL
+            system_state.set(state.value)
+            history.clear()
+
+        finally:
+            time.sleep(5)
+
+
+if __name__ == "__main__":
+    main()

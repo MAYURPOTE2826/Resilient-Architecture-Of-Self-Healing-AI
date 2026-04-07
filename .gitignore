@@ -21,10 +21,19 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+tempCodeRunnerFile.py
 
-# Models (optional if large)
+# Models — generated artifacts, regenerate with train.py
 *.pkl
+*.joblib
+
 # Prometheus binaries
 prometheus/
 prometheus/prometheus
 prometheus/promtool
+
+# Secrets — never commit
+.env
+
+# Database files
+*.db

@@ -4,7 +4,12 @@ charset-normalizer==3.4.4
 click==8.3.1
 contourpy==1.3.3
 cycler==0.12.1
+Deprecated==1.3.1
 Flask==3.1.2
+Flask-Limiter==4.1.1
+limits==5.8.0
+ordered-set==4.1.0
+wrapt==2.1.2
 fonttools==4.61.1
 idna==3.11
 itsdangerous==2.2.0
@@ -28,5 +33,6 @@ setuptools==82.0.0
 six==1.17.0
 threadpoolctl==3.6.0
 urllib3==2.6.3
+waitress==3.0.2
 Werkzeug==3.1.5
 wheel==0.46.3

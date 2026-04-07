@@ -1,49 +1,56 @@
+import threading
 import time
+from datetime import datetime, timezone
+
 from alert_service import send_alert
-from database import get_connection
-from datetime import datetime
+from database import get_connection, prune_events
+from logger import logger
 
-LAST_HEAL_TIME = 0
-COOLDOWN = 60  # seconds
+_heal_lock = threading.Lock()
+_last_heal_time: float = 0.0
+_COOLDOWN = 60  # seconds — prevent rapid re-healing storms
 
-def heal(fault_type, confidence):
-    global LAST_HEAL_TIME
+
+def heal(fault_type: str, confidence: float) -> None:
+    global _last_heal_time
     now = time.time()
 
-    if now - LAST_HEAL_TIME < COOLDOWN:
-        print("⏳ Healing skipped due to cooldown")
-        return
+    with _heal_lock:
+        if now - _last_heal_time < _COOLDOWN:
+            logger.warning("Healing skipped due to cooldown")
+            return
+        _last_heal_time = now
 
-    # === Healing Action ===
-    print(f"🔄 System healing triggered for fault: {fault_type}")
+    logger.info(f"System healing triggered for fault: {fault_type}")
 
-    # === Send Email Alert ===
-    subject = "🚨 Self-Healing System Alert"
+    subject = "Self-Healing System Alert"
     message = f"""
 Self-Healing Action Triggered
 
 Fault Detected : {fault_type}
-Confidence     : {confidence}
+Confidence     : {confidence:.4f}
 Action Taken   : System Recovery
 Time           : {time.ctime()}
 """
-
     send_alert(subject, message)
-
-    # === Save event to DB ===
     save_event("HEALING", fault_type, confidence)
 
-    LAST_HEAL_TIME = now
 
-
-def save_event(event_type, fault_type, confidence):
+def save_event(event_type: str, fault_type: str, confidence: float) -> None:
     conn = get_connection()
-    cur = conn.cursor()
+    try:
+        cur = conn.cursor()
+        cur.execute(
+            """
+            INSERT INTO events (event_type, fault_type, confidence, timestamp)
+            VALUES (?, ?, ?, ?)
+            """,
+            (event_type, fault_type, confidence, datetime.now(timezone.utc).isoformat()),
+        )
+        conn.commit()
+    except Exception as e:
+        logger.error(f"Failed to save event to database: {e}")
+    finally:
+        conn.close()
 
-    cur.execute("""
-    INSERT INTO events (event_type, fault_type, confidence, timestamp)
-    VALUES (?, ?, ?, ?)
-    """, (event_type, fault_type, confidence, datetime.now()))
-
-    conn.commit()
-    conn.close()
+    prune_events()   # keep DB from growing unbounded
