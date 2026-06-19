@@ -1,230 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Self-Healing System Dashboard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Self-Healing Infrastructure Platform</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg-color: #0b0c10;
+            --panel-bg: #1f2833;
+            --text-main: #c5c6c7;
+            --accent-cyan: #66fcf1;
+            --accent-blue: #45a29e;
+            --status-normal: #2ecc71;
+            --status-warning: #f1c40f;
+            --status-critical: #e74c3c;
+            --status-healing: #3498db;
+            --font-main: 'Consolas', 'Courier New', monospace;
+        }
 
-  <style>
-    body {
-      font-family: "Segoe UI", sans-serif;
-      background: linear-gradient(135deg, #1e293b, #0f172a);
-      color: #e5e7eb;
-      margin: 0;
-      padding: 0;
-    }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            margin: 0;
+            padding: 20px;
+        }
 
-    header {
-      background: #020617;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
-    }
+        h1, h2, h3 {
+            color: var(--accent-cyan);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
 
-    header h1 {
-      margin: 0;
-      font-size: 26px;
-      color: #38bdf8;
-    }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--accent-blue);
+            padding-bottom: 10px;
+        }
 
-    header p {
-      margin: 6px 0 0;
-      color: #94a3b8;
-    }
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
 
-    .container {
-      max-width: 1100px;
-      margin: 30px auto;
-      padding: 20px;
-    }
+        .panel {
+            background: var(--panel-bg);
+            border: 1px solid var(--accent-blue);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
 
-    .status {
-      background: #020617;
-      border-left: 6px solid #22c55e;
-      padding: 15px;
-      margin-bottom: 25px;
-      border-radius: 8px;
-    }
+        /* Top Section: Live Status */
+        .live-status {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .metric-box {
+            text-align: center;
+        }
+        .metric-value {
+            font-size: 2.5rem;
+            color: var(--accent-cyan);
+            margin-top: 10px;
+        }
 
-    .status span {
-      color: #22c55e;
-      font-weight: bold;
-    }
+        /* Middle Section: Logs & Processes */
+        .console-log {
+            background: #000;
+            color: #0f0;
+            height: 300px;
+            overflow-y: auto;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            border: 1px solid #333;
+        }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: #020617;
-      border-radius: 10px;
-      overflow: hidden;
-    }
+        .process-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        .process-table th, .process-table td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+        .process-table th {
+            color: var(--accent-blue);
+        }
 
-    table thead {
-      background: #020617;
-    }
+        /* Bottom Section: Charts & Stats */
+        .charts-row {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .stats-box {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            grid-column: 1 / -1;
+            background: var(--panel-bg);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--accent-blue);
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            color: var(--status-normal);
+        }
 
-    table th, table td {
-      padding: 14px;
-      text-align: center;
-      border-bottom: 1px solid #1e293b;
-    }
+        .blink {
+            animation: blinker 1.5s linear infinite;
+        }
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
 
-    table th {
-      color: #38bdf8;
-      font-size: 14px;
-      text-transform: uppercase;
-    }
-
-    table tr:hover {
-      background: #020617;
-    }
-
-    .badge {
-      padding: 6px 10px;
-      border-radius: 6px;
-      font-size: 13px;
-      font-weight: bold;
-    }
-
-    .heal {
-      background: #dc2626;
-      color: white;
-    }
-
-    .normal {
-      background: #22c55e;
-      color: black;
-    }
-
-    .anomaly {
-      background: #f59e0b;
-      color: black;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #64748b;
-      font-size: 13px;
-    }
-  </style>
+    </style>
 </head>
-
 <body>
 
-<header>
-  <h1>🛠️ Self-Healing System Dashboard</h1>
-  <p>ML-driven automated fault detection & recovery</p>
-</header>
+    <div class="header">
+        <h1>AI-Driven Autonomous Self-Healing Infrastructure</h1>
+    </div>
 
-<div class="container">
+    <div class="dashboard-grid">
+        
+        <!-- TOP SECTION: Live Status -->
+        <div class="panel live-status">
+            <div class="metric-box">
+                <div>SYSTEM STATE</div>
+                <div id="sys-state" class="metric-value status-normal">NORMAL</div>
+            </div>
+            <div class="metric-box">
+                <div>CPU</div>
+                <div id="sys-cpu" class="metric-value">0%</div>
+            </div>
+            <div class="metric-box">
+                <div>RAM</div>
+                <div id="sys-ram" class="metric-value">0%</div>
+            </div>
+            <div class="metric-box">
+                <div>DISK</div>
+                <div id="sys-disk" class="metric-value">0%</div>
+            </div>
+            <div class="metric-box">
+                <div>PING</div>
+                <div id="sys-ping" class="metric-value">0ms</div>
+            </div>
+        </div>
 
-  <div class="status">
-    System Status: <span id="systemStatus">Loading...</span>
-  </div>
+        <!-- MIDDLE SECTION: Logs -->
+        <div class="panel" style="grid-column: span 2;">
+            <h2>AI Decision Logs</h2>
+            <div class="console-log" id="console-log">
+                <div>[SYSTEM] Platform initialized...</div>
+                <div>[AI ENGINE] Monitoring active.</div>
+            </div>
+        </div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Event</th>
-        <th>Fault</th>
-        <th>Confidence</th>
-        <th>Time</th>
-      </tr>
-    </thead>
-    <tbody id="eventsTable">
-      <tr><td colspan="5">Loading events...</td></tr>
-    </tbody>
-  </table>
+        <!-- MIDDLE SECTION: Processes -->
+        <div class="panel">
+            <h2>Live Processes</h2>
+            <div style="max-height: 300px; overflow-y: auto;">
+                <table class="process-table" id="process-table">
+                    <thead>
+                        <tr>
+                            <th>PID</th>
+                            <th>Name</th>
+                            <th>CPU %</th>
+                            <th>RAM %</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Populated via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-</div>
+        <!-- BOTTOM SECTION: Stats -->
+        <div class="stats-box">
+            <div>
+                <h3>Anomalies Detected</h3>
+                <div class="stat-value" id="stat-anomalies">0</div>
+            </div>
+            <div>
+                <h3>Healing Actions</h3>
+                <div class="stat-value" id="stat-healings" style="color: var(--status-healing);">0</div>
+            </div>
+            <div>
+                <h3>Recovery Rate</h3>
+                <div class="stat-value" id="stat-recovery">100%</div>
+            </div>
+        </div>
 
-<footer>
-  © 2026 | Resilient Architecture for Self-Healing Systems
-</footer>
+        <!-- BOTTOM SECTION: Charts -->
+        <div class="charts-row">
+            <div class="panel">
+                <h2>Resource Usage (Live)</h2>
+                <canvas id="resourceChart"></canvas>
+            </div>
+            <div class="panel">
+                <h2>Fault Classification Distribution</h2>
+                <canvas id="faultChart"></canvas>
+            </div>
+        </div>
 
-<script>
-  const API_BASE = "";
+    </div>
 
+    <script>
+        const POLLING_INTERVAL = 3000;
+        
+        // Chart Setup
+        const ctxRes = document.getElementById('resourceChart').getContext('2d');
+        const resourceChart = new Chart(ctxRes, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [
+                    { label: 'CPU %', borderColor: '#e74c3c', data: [], tension: 0.4 },
+                    { label: 'RAM %', borderColor: '#2ecc71', data: [], tension: 0.4 }
+                ]
+            },
+            options: { responsive: true, scales: { y: { beginAtZero: true, max: 100 } } }
+        });
 
-  function setText(id, value) {
-    document.getElementById(id).textContent = value;
-  }
+        const ctxFault = document.getElementById('faultChart').getContext('2d');
+        const faultChart = new Chart(ctxFault, {
+            type: 'bar',
+            data: {
+                labels: ['CPU_OVERLOAD', 'MEMORY_OVERLOAD', 'DISK_OVERLOAD', 'NETWORK_LATENCY'],
+                datasets: [{
+                    label: 'Anomalies',
+                    backgroundColor: ['#e74c3c', '#f1c40f', '#e67e22', '#3498db'],
+                    data: [0, 0, 0, 0]
+                }]
+            },
+            options: { responsive: true, scales: { y: { beginAtZero: true } } }
+        });
 
-  function createCell(text) {
-    const td = document.createElement("td");
-    td.textContent = text;
-    return td;
-  }
+        let eventIds = new Set();
+        let faultCounts = { 'CPU_OVERLOAD': 0, 'MEMORY_OVERLOAD': 0, 'DISK_OVERLOAD': 0, 'NETWORK_LATENCY': 0 };
 
-  function createBadgeCell(text, cssClass) {
-    const td = document.createElement("td");
-    const span = document.createElement("span");
-    span.className = `badge ${cssClass}`;
-    span.textContent = text;
-    td.appendChild(span);
-    return td;
-  }
+        function updateLog(msg, type='info') {
+            const logBox = document.getElementById('console-log');
+            const time = new Date().toLocaleTimeString();
+            let color = '#c5c6c7';
+            if(type === 'warning') color = '#f1c40f';
+            if(type === 'critical') color = '#e74c3c';
+            if(type === 'healing') color = '#3498db';
+            if(type === 'success') color = '#2ecc71';
 
-  async function loadStatus() {
-    try {
-      const res = await fetch(`${API_BASE}/api/status`);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data = await res.json();
-      setText("systemStatus", data.system);
-    } catch (err) {
-      setText("systemStatus", "Unavailable");
-      console.error("Status fetch failed:", err);
-    }
-  }
+            logBox.innerHTML += `<div style="color: ${color}">[${time}] ${msg}</div>`;
+            logBox.scrollTop = logBox.scrollHeight;
+        }
 
-  async function loadEvents() {
-    try {
-      const res = await fetch(`${API_BASE}/api/events`);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const events = await res.json();
+        async function fetchData() {
+            try {
+                // 1. Live Status & Metrics
+                const statusRes = await fetch('/api/status');
+                const statusData = await statusRes.json();
+                
+                const metricsRes = await fetch('/api/metrics/latest');
+                const metrics = await metricsRes.json();
+                
+                document.getElementById('sys-state').innerText = statusData.system_state;
+                document.getElementById('sys-cpu').innerText = (metrics.cpu || 0).toFixed(1) + '%';
+                document.getElementById('sys-ram').innerText = (metrics.memory || 0).toFixed(1) + '%';
+                document.getElementById('sys-disk').innerText = (metrics.disk || 0).toFixed(1) + '%';
+                document.getElementById('sys-ping').innerText = (metrics.ping || 0) + 'ms';
 
-      const table = document.getElementById("eventsTable");
-      table.innerHTML = "";
+                // Update colors based on state
+                const stateEl = document.getElementById('sys-state');
+                stateEl.className = 'metric-value';
+                if(statusData.system_state === 'NORMAL') stateEl.style.color = 'var(--status-normal)';
+                else if(statusData.system_state === 'DEGRADED') { stateEl.style.color = 'var(--status-warning)'; stateEl.classList.add('blink'); }
+                else if(statusData.system_state === 'HEALING') { stateEl.style.color = 'var(--status-healing)'; stateEl.classList.add('blink'); }
+                else if(statusData.system_state === 'RECOVERED') stateEl.style.color = 'var(--accent-cyan)';
 
-      if (events.length === 0) {
-        const tr = document.createElement("tr");
-        const td = document.createElement("td");
-        td.colSpan = 5;
-        td.textContent = "No events yet";
-        tr.appendChild(td);
-        table.appendChild(tr);
-        return;
-      }
+                // Update Resource Chart
+                const now = new Date().toLocaleTimeString();
+                resourceChart.data.labels.push(now);
+                resourceChart.data.datasets[0].data.push(metrics.cpu);
+                resourceChart.data.datasets[1].data.push(metrics.memory);
+                if(resourceChart.data.labels.length > 20) {
+                    resourceChart.data.labels.shift();
+                    resourceChart.data.datasets[0].data.shift();
+                    resourceChart.data.datasets[1].data.shift();
+                }
+                resourceChart.update();
 
-      events.forEach(e => {
-        const row = document.createElement("tr");
-        const badgeClass = e.event_type === "HEALING" ? "heal"
-                         : e.event_type === "ANOMALY"  ? "anomaly"
-                         : "normal";
-        row.appendChild(createCell(e.id));
-        row.appendChild(createBadgeCell(e.event_type, badgeClass));
-        row.appendChild(createCell(e.fault_type));
-        row.appendChild(createCell(
-          typeof e.confidence === "number"
-            ? (e.confidence * 100).toFixed(2) + "%"
-            : e.confidence
-        ));
-        row.appendChild(createCell(e.timestamp));
-        table.appendChild(row);
-      });
-    } catch (err) {
-      console.error("Events fetch failed:", err);
-    }
-  }
+                // 2. Statistics
+                const statsRes = await fetch('/api/stats');
+                const stats = await statsRes.json();
+                document.getElementById('stat-anomalies').innerText = stats.anomalies_detected;
+                document.getElementById('stat-healings').innerText = stats.healing_actions;
+                document.getElementById('stat-recovery').innerText = stats.success_rate + '%';
 
-  loadStatus();
-  loadEvents();
+                // 3. Events & AI Logs
+                const eventsRes = await fetch('/api/events?limit=10');
+                const eventsData = await eventsRes.json();
+                
+                eventsData.events.reverse().forEach(ev => {
+                    if(!eventIds.has(ev.id)) {
+                        eventIds.add(ev.id);
+                        if(ev.event_type === 'ANOMALY') {
+                            updateLog(`[AI ENGINE] Anomaly Detected: ${ev.fault_type} (${(ev.confidence*100).toFixed(1)}% confidence)`, 'critical');
+                            if(faultCounts[ev.fault_type] !== undefined) faultCounts[ev.fault_type]++;
+                        } else if(ev.event_type === 'HEALING') {
+                            updateLog(`[AI ENGINE] Triggering Recovery for ${ev.fault_type}`, 'healing');
+                        } else if(ev.event_type === 'PROCESS_TERMINATED' || ev.event_type === 'PREVENTIVE_RECOVERY' || ev.event_type === 'CONTAINER_RESTARTED') {
+                            updateLog(`[AI ACTION] ${ev.fault_type}`, 'success');
+                        } else if(ev.event_type === 'RECOVERED') {
+                            updateLog(`[SYSTEM] System Stabilized.`, 'success');
+                        }
+                    }
+                });
 
-  setInterval(loadStatus, 5000);
-  setInterval(loadEvents, 5000); // auto refresh
-</script>
+                // Update Fault Chart
+                faultChart.data.datasets[0].data = [
+                    faultCounts['CPU_OVERLOAD'],
+                    faultCounts['MEMORY_OVERLOAD'],
+                    faultCounts['DISK_OVERLOAD'],
+                    faultCounts['NETWORK_LATENCY']
+                ];
+                faultChart.update();
 
+                // 4. Processes
+                const procRes = await fetch('/api/processes');
+                const processes = await procRes.json();
+                const tbody = document.querySelector('#process-table tbody');
+                tbody.innerHTML = '';
+                processes.slice(0, 10).forEach(p => {
+                    tbody.innerHTML += `<tr>
+                        <td>${p.pid}</td>
+                        <td>${p.name}</td>
+                        <td style="color: ${p.cpu_percent > 50 ? 'var(--status-critical)' : 'inherit'}">${(p.cpu_percent||0).toFixed(1)}</td>
+                        <td>${(p.memory_percent||0).toFixed(1)}</td>
+                    </tr>`;
+                });
+
+            } catch(e) {
+                console.error("Polling error:", e);
+                updateLog("[SYSTEM] Connection lost. Reconnecting...", "warning");
+            }
+        }
+
+        setInterval(fetchData, POLLING_INTERVAL);
+        fetchData();
+    </script>
 </body>
 </html>

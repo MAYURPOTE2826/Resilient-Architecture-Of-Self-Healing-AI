@@ -10,10 +10,37 @@ services:
     env_file: .env
     environment:
       - DATA_DIR=/app/data
+      - PING_TARGET=8.8.8.8
     ports:
       - "5000:5000"
     volumes:
       - app_data:/app/data
+    depends_on:
+      - postgres
+    restart: always
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: self_healing_db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: adminpassword
+      POSTGRES_DB: self_healing
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    restart: always
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx_proxy
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - app
     restart: always
 
   prometheus:
@@ -40,3 +67,4 @@ services:
 
 volumes:
   app_data:
+  pg_data:

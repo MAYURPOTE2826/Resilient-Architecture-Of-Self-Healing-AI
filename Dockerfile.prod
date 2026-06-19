@@ -1,0 +1,51 @@
+# -----------------------------------
+# Builder Stage
+# -----------------------------------
+FROM python:3.11-slim as builder
+
+WORKDIR /build
+
+# System dependencies for building wheels
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc python3-dev libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip wheel --no-cache-dir --no-deps --wheel-dir /build/wheels -r requirements.txt
+RUN pip install gunicorn
+
+# -----------------------------------
+# Production Stage
+# -----------------------------------
+FROM python:3.11-slim
+
+# Create non-root user
+RUN groupadd -r appuser && useradd -r -g appuser appuser
+
+WORKDIR /app
+
+# Install runtime dependencies (e.g., libpq for psycopg2)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libpq5 curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy wheels from builder
+COPY --from=builder /build/wheels /wheels
+RUN pip install --no-cache /wheels/* \
+    && rm -rf /wheels
+
+# Copy app code
+COPY src/ /app/src/
+COPY alembic.ini /app/
+COPY .env.example /app/.env.example
+
+RUN chown -R appuser:appuser /app
+
+USER appuser
+
+EXPOSE 5000
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
+  CMD curl -f http://localhost:5000/health || exit 1
+
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "4", "--threads", "4", "src.api:app"]

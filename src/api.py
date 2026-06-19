@@ -1,228 +1,716 @@
+import hmac
 import ipaddress
 import threading
 import time
 from collections import deque
+from datetime import datetime
 
-from flask import Flask, jsonify, Response, request, send_from_directory
+from flask import (
+    Flask,
+    jsonify,
+    Response,
+    request,
+    send_from_directory
+)
 
-from database import get_connection, init_db
+from prometheus_client import (
+    generate_latest,
+    CONTENT_TYPE_LATEST
+)
+
+from database import (
+    get_connection,
+    get_db_session,
+    init_db,
+    DB_URL,
+    Event
+)
+
 from metrics_collector import collect_metrics
 from anomaly_detector import detect_anomaly
 from fault_classifier import classify_fault
-from healing_engine import heal, save_event
+
+from healing_engine import (
+    heal,
+    save_event
+)
+
 from system_state import SystemState
 from logger import logger
-from prometheus_client import generate_latest, CONTENT_TYPE_LATEST
-from flask_limiter import Limiter
-from flask_limiter.util import get_remote_address
-from prometheus_exporter import anomalies_total, healings_total, system_state as prom_state, start_exporter
+import psutil
+
+from prometheus_exporter import (
+    anomalies_total,
+    healings_total,
+    system_state as prom_state,
+    start_exporter
+)
+
+from config import settings
+from auth import require_jwt, require_role, create_access_token, create_refresh_token
+from middleware import init_security, require_json_body, limiter
+from error_handler import init_error_handlers
+from health_checks import get_health_checker
+from shutdown_manager import setup_signal_handlers, register_shutdown_handler
+from token_manager import revoke_token
+from security_utils import RequestContextManager
+
+# ==========================================
+# Flask App
+# ==========================================
 
 app = Flask(__name__)
 
-# ── Rate limiting ──────────────────────────────────────────────────────────────
-limiter = Limiter(get_remote_address, app=app, default_limits=["60 per minute"])
+# Initialize Security (CORS, Headers, Limiter)
+init_security(app, settings)
 
-# ── Security headers on every response ────────────────────────────────────────
-@app.after_request
-def _set_security_headers(response):
-    response.headers["X-Content-Type-Options"] = "nosniff"
-    response.headers["X-Frame-Options"] = "DENY"
-    response.headers["Content-Security-Policy"] = (
-        "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'"
+# Initialize Error Handlers
+init_error_handlers(app)
+
+# Initialize OpenTelemetry
+from middleware import init_tracing
+init_tracing(app)
+
+# Initialize Signal Handlers for Graceful Shutdown
+setup_signal_handlers()
+register_shutdown_handler(lambda: init_db(), "database_init")
+
+
+@app.route("/api/auth/login", methods=["POST"])
+@require_json_body
+def login():
+    data = request.get_json()
+    username = data.get("username", "")
+    password = data.get("password", "")
+
+    if not username or not password:
+        return jsonify({"error": "username and password are required"}), 400
+
+    # Constant-time comparison to prevent timing attacks
+    # Credentials are loaded from settings/environment variables
+    valid_user = hmac.compare_digest(
+        str(username), str(settings.ADMIN_USERNAME)
     )
-    return response
+    valid_pass = hmac.compare_digest(
+        str(password), str(settings.ADMIN_PASSWORD)
+    )
+
+    if valid_user and valid_pass:
+        access_token = create_access_token(identity=username, role="admin")
+        refresh_token = create_refresh_token(identity=username)
+        logger.info("User login successful", username=username)
+        return jsonify({
+            "access_token": access_token,
+            "refresh_token": refresh_token,
+            "token_type": "Bearer",
+            "expires_in": settings.JWT_ACCESS_EXPIRE_MINUTES * 60
+        }), 200
+
+    logger.warning("Failed login attempt", username=username, remote_addr=request.remote_addr)
+    return jsonify({"error": "Invalid credentials"}), 401
 
 
-# ===============================
-# SHARED STATE (thread-safe)
-# ===============================
+@app.route("/api/auth/refresh", methods=["POST"])
+@require_json_body
+def refresh_token_endpoint():
+    """Exchange a valid refresh token for a new access token."""
+    data = request.get_json()
+    token = data.get("refresh_token", "")
+
+    if not token:
+        return jsonify({"error": "refresh_token is required"}), 400
+
+    from auth import decode_token
+    payload = decode_token(token)
+
+    if "error" in payload:
+        return jsonify({"error": payload["error"]}), 401
+
+    if payload.get("type") != "refresh":
+        return jsonify({"error": "Invalid token type — must be a refresh token"}), 401
+
+    identity = payload.get("sub")
+    new_access = create_access_token(identity=identity, role="admin")
+    logger.info("Access token refreshed", username=identity)
+    return jsonify({
+        "access_token": new_access,
+        "token_type": "Bearer",
+        "expires_in": settings.JWT_ACCESS_EXPIRE_MINUTES * 60
+    }), 200
+
+
+@app.route("/api/auth/logout", methods=["POST"])
+@require_jwt
+def logout():
+    """Logout and revoke access token."""
+    token = getattr(request, 'token', None)
+    user = getattr(request, 'user', None)
+    
+    if token:
+        revoke_token(token, reason="logout")
+    
+    if user:
+        logger.info("User logged out", username=user.get("sub"))
+    
+    return jsonify({"message": "Logged out successfully"}), 200
+
+
+# ==========================================
+# Health Checks - Kubernetes/Container Probes
+# ==========================================
+
+@app.route("/health", methods=["GET"])
+def health():
+    """
+    Detailed health check endpoint.
+    Returns comprehensive health status of all components.
+    """
+    checker = get_health_checker()
+    status = checker.get_health()
+    
+    # Return 503 if unhealthy, 200 otherwise
+    status_code = 200 if status["status"] == "healthy" else (503 if status["status"] == "unhealthy" else 200)
+    
+    return jsonify(status), status_code
+
+
+@app.route("/live", methods=["GET"])
+def live():
+    """
+    Liveness probe endpoint.
+    Returns whether the service process is alive.
+    Used by container orchestrators to restart dead processes.
+    """
+    checker = get_health_checker()
+    status = checker.get_liveness()
+    
+    # Return 200 if alive, 503 if not
+    status_code = 200 if status["alive"] else 503
+    
+    return jsonify(status), status_code
+
+
+@app.route("/ready", methods=["GET"])
+def ready():
+    """
+    Readiness probe endpoint.
+    Returns whether the service is ready to accept requests.
+    Used by load balancers to route traffic.
+    """
+    checker = get_health_checker()
+    status = checker.get_readiness()
+    
+    # Return 200 if ready, 503 if not
+    status_code = 200 if status["ready"] else 503
+    
+    return jsonify(status), status_code
+
+
+@app.route("/startup", methods=["GET"])
+def startup():
+    """
+    Startup probe endpoint.
+    Returns whether the service has completed startup initialization.
+    """
+    checker = get_health_checker()
+    status = checker.get_readiness()
+    
+    status_code = 200 if status["ready"] else 503
+    return jsonify(status), status_code
+
+
+
+# ==========================================
+# Shared State
+# ==========================================
 
 _state_lock = threading.Lock()
+
 _current_state: SystemState = SystemState.NORMAL
 
+_latest_metrics: dict = {}
 
-def _set_state(s: SystemState) -> None:
+_latest_fault: str = "NONE"
+
+_healing_active = False
+
+
+# ==========================================
+# Thread Safe State Functions
+# ==========================================
+
+def _set_state(state: SystemState):
+
     global _current_state
+
     with _state_lock:
-        _current_state = s
-    prom_state.set(s.value)
+
+        _current_state = state
+
+    prom_state.set(state.value)
 
 
-def _get_state() -> SystemState:
+def _get_state():
+
     with _state_lock:
+
         return _current_state
 
 
-# ===============================
-# ML ENGINE BACKGROUND THREAD
-# ===============================
+def _set_latest_metrics(metrics: dict):
+
+    global _latest_metrics
+
+    with _state_lock:
+
+        _latest_metrics = metrics
+
+
+def _get_latest_metrics():
+
+    with _state_lock:
+
+        return _latest_metrics.copy()
+
+
+def _set_latest_fault(fault: str):
+
+    global _latest_fault
+
+    with _state_lock:
+
+        _latest_fault = fault
+
+
+def _get_latest_fault():
+
+    with _state_lock:
+
+        return _latest_fault
+
+
+def _set_healing_status(status: bool):
+
+    global _healing_active
+
+    with _state_lock:
+
+        _healing_active = status
+
+
+def _get_healing_status():
+
+    with _state_lock:
+
+        return _healing_active
+
+
+# ==========================================
+# ML ENGINE CONFIG
+# ==========================================
 
 WINDOW_SIZE = 5
+
 MIN_ANOMALIES = 3
-CONFIDENCE_THRESHOLD = 0.6      # Z-score: 2.5σ → 0.625 confidence
-MAX_CONSECUTIVE_ERRORS = 10     # circuit breaker threshold
+
+CONFIDENCE_THRESHOLD = 0.60
+
+MAX_CONSECUTIVE_ERRORS = 10
 
 
-def start_ml_engine() -> None:
+# ==========================================
+# ML ENGINE
+# ==========================================
+
+def start_ml_engine():
+
     history = deque(maxlen=WINDOW_SIZE)
+    history_metrics = deque(maxlen=WINDOW_SIZE)
+
     consecutive_errors = 0
-    last_fault_type = "unknown"   # always tracks the most recent classified fault
+
+    last_fault_type = "UNKNOWN"
+
+    logger.info("ML Engine Started")
 
     while True:
+
         try:
+
+            # ==================================
+            # Collect Metrics
+            # ==================================
+
             metrics = collect_metrics()
+
+            _set_latest_metrics(metrics)
+            history_metrics.append(metrics)
+
             logger.info(f"Metrics: {metrics}")
 
-            anomaly = detect_anomaly(metrics)
-            consecutive_errors = 0   # reset circuit breaker on success
+            # ==================================
+            # Predictive Healing
+            # ==================================
+            cpu_history = [m.get("cpu", 0) for m in history_metrics]
+            if len(cpu_history) >= 4:
+                last_4 = cpu_history[-4:]
+                if all(last_4[i] < last_4[i+1] for i in range(3)) and last_4[-1] >= 80:
+                    logger.warning("Predictive Analytics: CPU strictly increasing and >80%. Triggering Preventive Recovery.")
+                    
+                    _set_state(SystemState.DEGRADED)
+                    time.sleep(1)
+                    
+                    _set_state(SystemState.HEALING)
+                    _set_healing_status(True)
+                    
+                    last_fault_type = "CPU_OVERLOAD"
+                    _set_latest_fault(last_fault_type)
+                    
+                    heal(last_fault_type, 1.0)
+                    healings_total.inc()
+                    time.sleep(2)
+                    
+                    _set_state(SystemState.RECOVERED)
+                    save_event("PREVENTIVE_RECOVERY", last_fault_type, 1.0)
+                    time.sleep(1)
+                    
+                    _set_state(SystemState.NORMAL)
+                    _set_healing_status(False)
+                    
+                    history.clear()
+                    history_metrics.clear()
+                    continue
 
-            if anomaly["status"] == "ANOMALY" and anomaly["confidence"] > CONFIDENCE_THRESHOLD:
+            # ==================================
+            # Detect Anomaly
+            # ==================================
+
+            anomaly = detect_anomaly(metrics)
+
+            consecutive_errors = 0
+
+            # ==================================
+            # Anomaly Handling
+            # ==================================
+
+            if (
+                anomaly["status"] == "ANOMALY"
+                and anomaly["confidence"] > CONFIDENCE_THRESHOLD
+            ):
+
                 last_fault_type = classify_fault(metrics)
-                save_event(
-                    event_type=anomaly["status"],
-                    fault_type=last_fault_type,
-                    confidence=anomaly["confidence"],
+
+                _set_latest_fault(last_fault_type)
+
+                logger.warning(
+                    f"Anomaly Detected | "
+                    f"Fault={last_fault_type} | "
+                    f"Confidence={anomaly['confidence']}"
                 )
+
+                save_event(
+                    event_type="ANOMALY",
+                    fault_type=last_fault_type,
+                    confidence=anomaly["confidence"]
+                )
+
                 anomalies_total.inc()
+
                 history.append(1)
+
             else:
+
                 history.append(0)
 
+            # ==================================
+            # Trigger Healing
+            # ==================================
+
             if sum(history) >= MIN_ANOMALIES:
+
+                logger.warning(
+                    "Multiple anomalies detected. "
+                    "Starting healing workflow."
+                )
+
                 _set_state(SystemState.DEGRADED)
-                time.sleep(2)
+
+                time.sleep(1)
 
                 _set_state(SystemState.HEALING)
-                heal(last_fault_type, anomaly["confidence"])
+
+                _set_healing_status(True)
+
+                heal(
+                    last_fault_type,
+                    anomaly["confidence"]
+                )
+
                 healings_total.inc()
+
                 time.sleep(2)
 
                 _set_state(SystemState.RECOVERED)
-                history.clear()
+
+                save_event(
+                    event_type="RECOVERED",
+                    fault_type=last_fault_type,
+                    confidence=anomaly["confidence"]
+                )
+
                 time.sleep(1)
 
                 _set_state(SystemState.NORMAL)
 
+                _set_healing_status(False)
+
+                history.clear()
+
+                logger.info("Healing workflow completed")
+
         except (KeyboardInterrupt, SystemExit):
-            raise   # never swallow shutdown signals
+
+            raise
 
         except Exception as e:
+
             consecutive_errors += 1
+
             logger.error(
-                f"ML engine error ({consecutive_errors}/{MAX_CONSECUTIVE_ERRORS}): {e}"
+                f"ML Engine Error "
+                f"({consecutive_errors}/"
+                f"{MAX_CONSECUTIVE_ERRORS}): {e}"
             )
+
             _set_state(SystemState.NORMAL)
+
             history.clear()
 
             if consecutive_errors >= MAX_CONSECUTIVE_ERRORS:
+
                 logger.critical(
-                    "ML engine: too many consecutive errors — stopping engine to prevent runaway loop"
+                    "Too many ML engine failures. "
+                    "Stopping engine."
                 )
-                break   # exit the loop; daemon thread ends cleanly
+
+                break
 
         time.sleep(5)
 
 
-# ===============================
-# HELPERS
-# ===============================
+# ==========================================
+# Internal Metrics Protection
+# ==========================================
 
-def _is_internal_ip(ip: str) -> bool:
-    """Allow localhost and RFC-1918 private ranges only."""
+def _is_internal_ip(ip: str):
+
     try:
+
         addr = ipaddress.ip_address(ip)
-        return addr.is_loopback or addr.is_private
+
+        return (
+            addr.is_loopback
+            or addr.is_private
+        )
+
     except ValueError:
+
         return False
 
 
-# ===============================
-# ROUTES
-# ===============================
+# ==========================================
+# FRONTEND ROUTES
+# ==========================================
 
 @app.route("/")
 def ui():
-    return send_from_directory("../frontend", "index.html")
+
+    return send_from_directory(
+        "../frontend",
+        "index.html"
+    )
+
+
+@app.route("/<path:filename>")
+def static_files(filename):
+
+    return send_from_directory(
+        "../frontend",
+        filename
+    )
+
+
+# ==========================================
+# API ROUTES
+# ==========================================
+
+@app.route("/api/status")
+@limiter.limit("30 per minute")
+def status():
+
+    return jsonify({
+
+        "system_state": _get_state().name,
+
+        "latest_fault": _get_latest_fault(),
+
+        "healing_active": _get_healing_status(),
+
+        "ml_engine": "ACTIVE"
+    })
+
+
+@app.route("/api/metrics/latest")
+@limiter.limit("60 per minute")
+def latest_metrics():
+
+    return jsonify(
+        _get_latest_metrics()
+    )
 
 
 @app.route("/api/events")
 @limiter.limit("30 per minute")
 def get_events():
-    conn = get_connection()
+
     try:
-        cur = conn.cursor()
-        cur.execute("SELECT * FROM events ORDER BY id DESC LIMIT 10")
-        rows = cur.fetchall()
+        limit = int(request.args.get("limit", 50))
+        if not 1 <= limit <= 1000:
+            limit = 50
+    except ValueError:
+        limit = 50
+
+    session = get_db_session()
+    try:
+        rows = session.query(Event).order_by(Event.id.desc()).limit(limit).all()
+        events = [
+            {
+                "id": r.id,
+                "event_type": r.event_type,
+                "fault_type": r.fault_type,
+                "confidence": r.confidence,
+                "timestamp": r.timestamp,
+            }
+            for r in rows
+        ]
     finally:
-        conn.close()
+        session.close()
 
-    return jsonify([
-        {
-            "id":         r[0],
-            "event_type": r[1],
-            "fault_type": r[2],
-            "confidence": r[3],
-            "timestamp":  r[4],
-        }
-        for r in rows
-    ])
+    return jsonify({"events": events})
 
 
-@app.route("/api/status")
-@limiter.limit("30 per minute")
-def status():
+
+
+
+# ==========================================
+# Process Monitoring API
+# ==========================================
+
+from cachetools import cached, TTLCache
+_process_cache = TTLCache(maxsize=1, ttl=2)
+
+@app.route("/api/processes")
+@limiter.limit("60 per minute")
+def processes():
+    return jsonify(_fetch_processes_cached())
+
+@cached(_process_cache)
+def _fetch_processes_cached():
+    process_list = []
+    try:
+        for proc in psutil.process_iter(['pid', 'name', 'cpu_percent', 'memory_percent']):
+            process_list.append(proc.info)
+        # Sort by CPU descending
+        process_list.sort(key=lambda x: x.get('cpu_percent', 0) or 0, reverse=True)
+    except Exception as e:
+        logger.error(f"Failed to fetch processes: {e}")
+    return process_list[:50]
+
+# ==========================================
+# Recovery Statistics API
+# ==========================================
+
+@app.route("/api/stats")
+@limiter.limit("20 per minute")
+def stats():
+
+    session = get_db_session()
+    try:
+        anomalies = session.query(Event).filter(Event.event_type == 'ANOMALY').count()
+        healings = session.query(Event).filter(Event.event_type == 'HEALING').count()
+        recovered = session.query(Event).filter(Event.event_type == 'RECOVERED').count()
+    finally:
+        session.close()
+
+    success_rate = 0
+    if healings > 0:
+        success_rate = round((recovered / healings) * 100, 2)
+
     return jsonify({
-        "system":    _get_state().name,
-        "ml_engine": "ACTIVE",
+        "anomalies_detected": anomalies,
+        "healing_actions": healings,
+        "successful_recoveries": recovered,
+        "success_rate": success_rate
     })
 
 
+# ==========================================
+# Prometheus Metrics
+# ==========================================
+
 @app.route("/metrics")
 def metrics():
-    if not _is_internal_ip(request.remote_addr):
-        return Response("Forbidden", status=403)
-    return Response(generate_latest(), mimetype=CONTENT_TYPE_LATEST)
+
+    if not _is_internal_ip(
+        request.remote_addr
+    ):
+
+        return Response(
+            "Forbidden",
+            status=403
+        )
+
+    return Response(
+        generate_latest(),
+        mimetype=CONTENT_TYPE_LATEST
+    )
 
 
-# ===============================
-# STARTUP HELPERS
-# ===============================
+# ==========================================
+# Startup Helpers
+# ==========================================
 
-def _init_counters_from_db() -> None:
-    """Restore Prometheus counters from DB so Grafana shows history after restart."""
-    conn = get_connection()
-    try:
-        cur = conn.cursor()
-        cur.execute("SELECT COUNT(*) FROM events WHERE event_type = 'ANOMALY'")
-        anomaly_count = cur.fetchone()[0]
-        cur.execute("SELECT COUNT(*) FROM events WHERE event_type = 'HEALING'")
-        healing_count = cur.fetchone()[0]
-    finally:
-        conn.close()
+def initialize_system():
 
-    if anomaly_count > 0:
-        anomalies_total.inc(anomaly_count)
-    if healing_count > 0:
-        healings_total.inc(healing_count)
-    logger.info(f"Counters restored from DB: anomalies={anomaly_count}, healings={healing_count}")
+    logger.info(
+        "Initializing Self-Healing System"
+    )
+
+    init_db()
+
+    start_exporter()
+
+    ml_thread = threading.Thread(
+        target=start_ml_engine,
+        daemon=True
+    )
+
+    ml_thread.start()
+
+    logger.info(
+        "ML Engine Background Thread Started"
+    )
 
 
-# ===============================
-# ENTRY POINT
-# ===============================
+# ==========================================
+# MAIN
+# ==========================================
 
 if __name__ == "__main__":
-    init_db()
-    _init_counters_from_db()
-    start_exporter(port=8000)
-    threading.Thread(target=start_ml_engine, daemon=True).start()
 
-    logger.info("Self-Healing AI System started on http://0.0.0.0:5000")
+    initialize_system()
 
-    try:
-        from waitress import serve
-        logger.info("Serving with waitress (production WSGI server)")
-        serve(app, host="0.0.0.0", port=5000, threads=4)
-    except ImportError:
-        logger.warning("waitress not installed — falling back to Flask dev server. Run: pip install waitress")
-        app.run(host="0.0.0.0", port=5000, use_reloader=False)
+    # Use Waitress for production WSGI serving instead of Flask's built-in dev server
+    from waitress import serve
+    logger.info("Starting Production WSGI Server (Waitress) on port 5000...")
+    serve(app, host="0.0.0.0", port=5000, threads=6)

@@ -1,9 +1,14 @@
 apiVersion: 1
 
 providers:
-  - name: default
+  - name: self-healing-engine
     orgId: 1
-    folder: ""
+    folder: "Self-Healing Engine"
+    folderUid: self-healing
     type: file
+    disableDeletion: true
+    updateIntervalSeconds: 30
+    allowUiUpdates: false
     options:
-      path: /etc/grafana/provisioning/dashboards
+      path: /var/lib/grafana/dashboards
+      foldersFromFilesStructure: false

@@ -1,0 +1,265 @@
+name: Enterprise CI/CD Pipeline
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  PYTHON_VERSION: "3.11"
+  # Test environment secrets (safe for CI — not production values)
+  APP_ENV: testing
+  SECRET_KEY: ci-test-secret-key-32chars-minimum!!
+  JWT_SECRET: ci-test-jwt-secret-32chars-minimum!!!
+  ADMIN_API_KEY: ci-test-admin-api-key-for-testing
+
+jobs:
+  # ────────────────────────────────────────────────────────────
+  # JOB 1: Code Quality & Security Scan
+  # ────────────────────────────────────────────────────────────
+  lint-and-security:
+    name: Lint · Type Check · Security Scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+
+      - name: Install quality tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install black isort flake8 mypy bandit
+
+      - name: Formatting check (Black)
+        run: black --check --diff src/ tests/
+        continue-on-error: false
+
+      - name: Import order check (isort)
+        run: isort --check-only --diff src/ tests/
+        continue-on-error: false
+
+      - name: Linting (Flake8)
+        run: |
+          flake8 src/ tests/ \
+            --max-line-length=100 \
+            --exclude=src/venv,src/__pycache__,src/alembic \
+            --count --statistics
+        continue-on-error: false
+
+      - name: Type checking (MyPy)
+        run: |
+          mypy src/ \
+            --ignore-missing-imports \
+            --exclude 'src/venv|src/alembic|src/train.py|src/stress_test.py'
+        continue-on-error: true  # Non-blocking — mypy issues are warnings in this phase
+
+      - name: Security scan (Bandit)
+        run: |
+          bandit -r src/ \
+            --exclude src/venv,src/alembic \
+            --severity-level medium \
+            --confidence-level medium \
+            -f json -o bandit-report.json || true
+          bandit -r src/ \
+            --exclude src/venv,src/alembic \
+            --severity-level high \
+            --confidence-level high
+        continue-on-error: false
+
+      - name: Upload Bandit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bandit-security-report
+          path: bandit-report.json
+          retention-days: 30
+
+  # ────────────────────────────────────────────────────────────
+  # JOB 2: Dependency Security Check
+  # ────────────────────────────────────────────────────────────
+  dependency-check:
+    name: Dependency Vulnerability Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+
+      - name: Install pip-audit
+        run: pip install pip-audit
+
+      - name: Audit dependencies
+        run: |
+          pip-audit -r requirements.txt \
+            --ignore-vuln PYSEC-2022-42969 \
+            --format json --output pip-audit-report.json || true
+          # Fail only on HIGH or CRITICAL
+          pip-audit -r requirements.txt \
+            --severity high \
+            --ignore-vuln PYSEC-2022-42969
+
+      - name: Upload audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pip-audit-report
+          path: pip-audit-report.json
+          retention-days: 30
+
+  # ────────────────────────────────────────────────────────────
+  # JOB 3: Test Suite with Coverage
+  # ────────────────────────────────────────────────────────────
+  test:
+    name: Test Suite (${{ matrix.os }})
+    needs: [lint-and-security]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]  # Add windows-latest if needed
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest pytest-cov pytest-mock pytest-timeout
+
+      - name: Set test environment variables
+        run: |
+          echo "DATA_DIR=${{ github.workspace }}/src/data" >> $GITHUB_ENV
+
+      - name: Create data directory
+        run: mkdir -p src/data
+
+      - name: Run test suite
+        env:
+          APP_ENV: testing
+          SECRET_KEY: ${{ env.SECRET_KEY }}
+          JWT_SECRET: ${{ env.JWT_SECRET }}
+          ADMIN_API_KEY: ${{ env.ADMIN_API_KEY }}
+          DATA_DIR: ${{ github.workspace }}/src/data
+          DATABASE_URL: sqlite:///test.db
+          SENDER_EMAIL: test@test.com
+          SENDER_PASSWORD: ""
+          ADMIN_EMAIL: admin@test.com
+        run: |
+          pytest tests/ \
+            -v \
+            --tb=short \
+            --cov=src \
+            --cov-report=term-missing \
+            --cov-report=xml:coverage.xml \
+            --cov-report=html:htmlcov \
+            --cov-fail-under=70 \
+            --timeout=60
+
+      - name: Upload coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: |
+            coverage.xml
+            htmlcov/
+          retention-days: 30
+
+      - name: Upload coverage to Codecov
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: codecov/codecov-action@v4
+        with:
+          file: coverage.xml
+          fail_ci_if_error: false
+
+  # ────────────────────────────────────────────────────────────
+  # JOB 4: Docker Build & Scan
+  # ────────────────────────────────────────────────────────────
+  docker-build:
+    name: Docker Build & Image Scan
+    needs: [test]
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: Dockerfile.prod
+          push: false
+          tags: self-healing-engine:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          load: true
+
+      - name: Scan image with Trivy
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: self-healing-engine:${{ github.sha }}
+          format: table
+          exit-code: '1'
+          ignore-unfixed: true
+          severity: CRITICAL
+
+      - name: Upload Trivy scan results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: trivy-scan-results
+          path: trivy-results.sarif
+          retention-days: 30
+
+  # ────────────────────────────────────────────────────────────
+  # JOB 5: Release (tag-triggered)
+  # ────────────────────────────────────────────────────────────
+  release:
+    name: Release Docker Image
+    needs: [docker-build]
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v')
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push release image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: Dockerfile.prod
+          push: true
+          tags: |
+            ghcr.io/${{ github.repository }}:latest
+            ghcr.io/${{ github.repository }}:${{ github.ref_name }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

@@ -1,0 +1,91 @@
+groups:
+  - name: self_healing_engine_alerts
+    interval: 30s
+    rules:
+
+      # ── Service Down ──────────────────────────────────────────
+      - alert: ServiceDown
+        expr: up{job="self_healing_engine"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          team: platform
+        annotations:
+          summary: "Self-Healing Engine is DOWN"
+          description: >
+            The self-healing engine service has been unreachable for more than 1 minute.
+            Instance: {{ $labels.instance }}
+
+      # ── High Error Rate ───────────────────────────────────────
+      - alert: HighErrorRate
+        expr: |
+          rate(anomalies_total[5m]) > 5
+        for: 2m
+        labels:
+          severity: warning
+          team: platform
+        annotations:
+          summary: "High anomaly rate detected"
+          description: >
+            More than 5 anomalies per second detected over the past 5 minutes.
+            Current rate: {{ $value | printf "%.2f" }}/s
+
+      # ── High CPU Usage ────────────────────────────────────────
+      - alert: HighCPUUsage
+        expr: 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 85
+        for: 5m
+        labels:
+          severity: warning
+          team: platform
+        annotations:
+          summary: "High CPU usage on {{ $labels.instance }}"
+          description: "CPU usage is above 85% for more than 5 minutes. Current value: {{ $value | printf \"%.1f\" }}%"
+
+      # ── High Memory Usage ─────────────────────────────────────
+      - alert: HighMemoryUsage
+        expr: (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100 > 90
+        for: 5m
+        labels:
+          severity: warning
+          team: platform
+        annotations:
+          summary: "High memory usage on {{ $labels.instance }}"
+          description: "Memory usage is above 90% for more than 5 minutes. Current value: {{ $value | printf \"%.1f\" }}%"
+
+      # ── Recovery Failure ──────────────────────────────────────
+      - alert: HealingWithNoRecovery
+        expr: |
+          increase(healings_total[30m]) > 3
+          and
+          system_state != 0
+        for: 10m
+        labels:
+          severity: critical
+          team: platform
+        annotations:
+          summary: "Multiple healing attempts without recovery"
+          description: >
+            More than 3 healing attempts in 30 minutes and the system is still not NORMAL.
+            System is stuck in state {{ $value }}.
+
+      # ── System Not Normal ─────────────────────────────────────
+      - alert: SystemDegraded
+        expr: system_state > 0
+        for: 5m
+        labels:
+          severity: warning
+          team: platform
+        annotations:
+          summary: "System has been in non-NORMAL state for 5 minutes"
+          description: "System state is {{ $value }} (0=NORMAL, 1=DEGRADED, 2=HEALING, 3=RECOVERED)"
+
+      # ── Prometheus Scrape Failure ─────────────────────────────
+      - alert: PrometheusScrapeFailure
+        expr: up == 0
+        for: 2m
+        labels:
+          severity: warning
+          team: platform
+        annotations:
+          summary: "Prometheus cannot scrape target {{ $labels.job }}"
+          description: "Target {{ $labels.instance }} has been down for more than 2 minutes."

@@ -1,5 +1,6 @@
 import hashlib
 import os
+from typing import Dict, Tuple, Any, Optional
 
 import joblib
 import pandas as pd
@@ -10,12 +11,12 @@ BASE_DIR      = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR      = os.environ.get("DATA_DIR", BASE_DIR)
 ARTIFACT_PATH = os.path.join(DATA_DIR, "artifacts.joblib")
 
-_stats = None
+_stats: Optional[Dict[str, Tuple[float, float]]] = None
 
 ZSCORE_THRESHOLD = 2.5   # flag if any feature is 2.5+ std devs from baseline mean
 
 
-def _load_stats():
+def _load_stats() -> Dict[str, Tuple[float, float]]:
     global _stats
     if _stats is not None:
         return _stats
