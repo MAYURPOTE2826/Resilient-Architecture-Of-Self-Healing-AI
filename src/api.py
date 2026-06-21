@@ -55,11 +55,14 @@ from shutdown_manager import setup_signal_handlers, register_shutdown_handler
 from token_manager import revoke_token
 from security_utils import RequestContextManager
 
+from werkzeug.middleware.proxy_fix import ProxyFix
+
 # ==========================================
 # Flask App
 # ==========================================
 
 app = Flask(__name__)
+app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)
 
 # Initialize Security (CORS, Headers, Limiter)
 init_security(app, settings)
@@ -545,7 +548,7 @@ def static_files(filename):
 # ==========================================
 
 @app.route("/api/status")
-@limiter.limit("30 per minute")
+@limiter.limit("120 per minute")
 def status():
 
     return jsonify({
@@ -561,7 +564,7 @@ def status():
 
 
 @app.route("/api/metrics/latest")
-@limiter.limit("60 per minute")
+@limiter.limit("120 per minute")
 def latest_metrics():
 
     return jsonify(
@@ -570,7 +573,7 @@ def latest_metrics():
 
 
 @app.route("/api/events")
-@limiter.limit("30 per minute")
+@limiter.limit("120 per minute")
 def get_events():
 
     try:
@@ -610,7 +613,7 @@ from cachetools import cached, TTLCache
 _process_cache = TTLCache(maxsize=1, ttl=2)
 
 @app.route("/api/processes")
-@limiter.limit("60 per minute")
+@limiter.limit("120 per minute")
 def processes():
     return jsonify(_fetch_processes_cached())
 
@@ -631,7 +634,7 @@ def _fetch_processes_cached():
 # ==========================================
 
 @app.route("/api/stats")
-@limiter.limit("20 per minute")
+@limiter.limit("120 per minute")
 def stats():
 
     session = get_db_session()
