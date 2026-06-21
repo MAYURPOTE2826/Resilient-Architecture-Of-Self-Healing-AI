@@ -622,12 +622,45 @@ def _fetch_processes_cached():
     process_list = []
     try:
         for proc in psutil.process_iter(['pid', 'name', 'cpu_percent', 'memory_percent']):
-            process_list.append(proc.info)
+            try:
+                info = proc.info
+                # Some environments return None for cpu_percent or memory_percent
+                if info.get('cpu_percent') is None:
+                    info['cpu_percent'] = 0.0
+                if info.get('memory_percent') is None:
+                    info['memory_percent'] = 0.0
+                process_list.append(info)
+            except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+                continue
         # Sort by CPU descending
         process_list.sort(key=lambda x: x.get('cpu_percent', 0) or 0, reverse=True)
     except Exception as e:
-        logger.error(f"Failed to fetch processes: {e}")
+        logger.error(f"Failed to fetch processes loop: {e}")
     return process_list[:50]
+
+import json
+@app.route("/api/stream")
+def stream():
+    def event_stream():
+        while True:
+            metrics = _get_latest_metrics()
+            state = _get_state().name
+            healing = _get_healing_status()
+            fault = _get_latest_fault()
+            
+            data = {
+                "metrics": metrics,
+                "status": {
+                    "system_state": state,
+                    "latest_fault": fault,
+                    "healing_active": healing,
+                    "ml_engine": "ACTIVE"
+                }
+            }
+            yield f"data: {json.dumps(data)}\n\n"
+            time.sleep(2)
+            
+    return Response(event_stream(), mimetype="text/event-stream")
 
 # ==========================================
 # Recovery Statistics API
@@ -705,15 +738,28 @@ def initialize_system():
     )
 
 
+_system_initialized = False
+_init_lock = threading.Lock()
+
+def ensure_system_initialized():
+    global _system_initialized
+    with _init_lock:
+        if not _system_initialized:
+            # Delay slightly to ensure DB connects properly
+            time.sleep(0.5)
+            initialize_system()
+            _system_initialized = True
+
+# Start the background tasks synchronously when the app is imported
+# This ensures it runs regardless of WSGI server, as long as workers=1
+ensure_system_initialized()
+
 # ==========================================
 # MAIN
 # ==========================================
 
 if __name__ == "__main__":
-
     import os
-    initialize_system()
-
     # Use Waitress for production WSGI serving instead of Flask's built-in dev server
     from waitress import serve
     port = int(os.environ.get("PORT", 5000))

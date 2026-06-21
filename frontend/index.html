@@ -3,132 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Self-Healing Infrastructure Platform</title>
+    <title>Enterprise AI Self-Healing Infrastructure</title>
+    <!-- Modern Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         :root {
-            --bg-color: #0b0c10;
-            --panel-bg: #1f2833;
-            --text-main: #c5c6c7;
-            --accent-cyan: #66fcf1;
-            --accent-blue: #45a29e;
-            --status-normal: #2ecc71;
-            --status-warning: #f1c40f;
-            --status-critical: #e74c3c;
-            --status-healing: #3498db;
-            --font-main: 'Consolas', 'Courier New', monospace;
+            --bg-color: #0d1117;
+            --panel-bg: rgba(22, 27, 34, 0.7);
+            --panel-border: rgba(48, 54, 61, 0.8);
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent-cyan: #58a6ff;
+            --accent-glow: rgba(88, 166, 255, 0.4);
+            --status-normal: #2ea043;
+            --status-warning: #d29922;
+            --status-critical: #f85149;
+            --status-healing: #a371f7;
+            --font-main: 'Inter', sans-serif;
+            --font-mono: 'Consolas', 'Courier New', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            transition: all 0.3s ease;
         }
 
         body {
             background-color: var(--bg-color);
+            background-image: radial-gradient(circle at top right, rgba(88, 166, 255, 0.1), transparent 40%),
+                              radial-gradient(circle at bottom left, rgba(163, 113, 247, 0.1), transparent 40%);
+            background-attachment: fixed;
             color: var(--text-main);
             font-family: var(--font-main);
             margin: 0;
-            padding: 20px;
+            padding: 20px 40px;
+            min-height: 100vh;
         }
 
         h1, h2, h3 {
-            color: var(--accent-cyan);
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            margin: 0 0 15px 0;
+            font-weight: 600;
         }
 
         .header {
-            text-align: center;
-            margin-bottom: 30px;
-            border-bottom: 2px solid var(--accent-blue);
-            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--panel-border);
+        }
+
+        .header h1 {
+            color: var(--accent-cyan);
+            font-size: 2rem;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .pulse-indicator {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            color: var(--status-normal);
+        }
+
+        .pulse-dot {
+            width: 12px;
+            height: 12px;
+            background-color: var(--status-normal);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--status-normal);
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(46, 160, 67, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(46, 160, 67, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(46, 160, 67, 0); }
         }
 
         .dashboard-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 20px;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
         }
 
         .panel {
             background: var(--panel-bg);
-            border: 1px solid var(--accent-blue);
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-        }
-
-        /* Top Section: Live Status */
-        .live-status {
-            grid-column: 1 / -1;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            font-size: 1.5rem;
-            font-weight: bold;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid var(--panel-border);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
         }
         
-        .metric-box {
-            text-align: center;
-        }
-        .metric-value {
-            font-size: 2.5rem;
-            color: var(--accent-cyan);
-            margin-top: 10px;
+        .panel:hover {
+            border-color: var(--accent-cyan);
+            box-shadow: 0 8px 32px 0 var(--accent-glow);
         }
 
-        /* Middle Section: Logs & Processes */
-        .console-log {
-            background: #000;
-            color: #0f0;
-            height: 300px;
-            overflow-y: auto;
-            padding: 10px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            border: 1px solid #333;
-        }
-
-        .process-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.9rem;
-        }
-        .process-table th, .process-table td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #333;
-        }
-        .process-table th {
-            color: var(--accent-blue);
-        }
-
-        /* Bottom Section: Charts & Stats */
-        .charts-row {
-            grid-column: 1 / -1;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+        /* Metrics Row */
+        .metrics-row {
+            grid-column: span 12;
+            display: flex;
+            justify-content: space-between;
             gap: 20px;
         }
-        
-        .stats-box {
-            display: flex;
-            justify-content: space-around;
-            text-align: center;
-            grid-column: 1 / -1;
-            background: var(--panel-bg);
-            padding: 20px;
+
+        .metric-card {
+            flex: 1;
+            background: rgba(33, 38, 45, 0.5);
             border-radius: 8px;
-            border: 1px solid var(--accent-blue);
+            padding: 20px;
+            text-align: center;
+            border: 1px solid var(--panel-border);
+            position: relative;
+            overflow: hidden;
         }
         
-        .stat-value {
-            font-size: 2rem;
-            color: var(--status-normal);
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 3px;
+            background: var(--accent-cyan);
+            opacity: 0.5;
         }
 
-        .blink {
-            animation: blinker 1.5s linear infinite;
+        .metric-title {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
         }
-        @keyframes blinker {
-            50% { opacity: 0; }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #ffffff;
         }
+
+        .status-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Central Columns */
+        .logs-panel { grid-column: span 7; }
+        .processes-panel { grid-column: span 5; }
+        .charts-panel { grid-column: span 12; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+
+        .console-container {
+            background: #010409;
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            padding: 15px;
+            height: 350px;
+            overflow-y: auto;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .log-entry {
+            margin-bottom: 5px;
+            padding-left: 10px;
+            border-left: 2px solid transparent;
+            animation: slideIn 0.3s ease-out forwards;
+            opacity: 0;
+            transform: translateX(-10px);
+        }
+
+        @keyframes slideIn {
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .table-container {
+            height: 350px;
+            overflow-y: auto;
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            background: #010409;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th {
+            position: sticky;
+            top: 0;
+            background: #161b22;
+            color: var(--text-muted);
+            padding: 12px 15px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--panel-border);
+        }
+
+        td {
+            padding: 10px 15px;
+            border-bottom: 1px solid rgba(48, 54, 61, 0.5);
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+        }
+
+        tr:hover {
+            background: rgba(88, 166, 255, 0.05);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #30363d; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #8b949e; }
 
     </style>
 </head>
@@ -136,48 +236,51 @@
 
     <div class="header">
         <h1>AI-Driven Autonomous Self-Healing Infrastructure</h1>
+        <div class="pulse-indicator">
+            <div class="pulse-dot" id="pulse-dot"></div>
+            <span id="connection-status">Live Stream Active</span>
+        </div>
     </div>
 
     <div class="dashboard-grid">
         
-        <!-- TOP SECTION: Live Status -->
-        <div class="panel live-status">
-            <div class="metric-box">
-                <div>SYSTEM STATE</div>
-                <div id="sys-state" class="metric-value status-normal">NORMAL</div>
+        <!-- Metrics Row -->
+        <div class="metrics-row">
+            <div class="panel metric-card" style="border-top-color: var(--status-normal);">
+                <div class="metric-title">System State</div>
+                <div id="sys-state" class="status-badge" style="background: rgba(46, 160, 67, 0.2); color: var(--status-normal); border: 1px solid var(--status-normal); margin-top: 10px;">NORMAL</div>
             </div>
-            <div class="metric-box">
-                <div>CPU</div>
-                <div id="sys-cpu" class="metric-value">0%</div>
+            <div class="panel metric-card">
+                <div class="metric-title">CPU Usage</div>
+                <div id="sys-cpu" class="metric-value">0.0%</div>
             </div>
-            <div class="metric-box">
-                <div>RAM</div>
-                <div id="sys-ram" class="metric-value">0%</div>
+            <div class="panel metric-card">
+                <div class="metric-title">RAM Usage</div>
+                <div id="sys-ram" class="metric-value">0.0%</div>
             </div>
-            <div class="metric-box">
-                <div>DISK</div>
-                <div id="sys-disk" class="metric-value">0%</div>
+            <div class="panel metric-card">
+                <div class="metric-title">Disk Usage</div>
+                <div id="sys-disk" class="metric-value">0.0%</div>
             </div>
-            <div class="metric-box">
-                <div>PING</div>
+            <div class="panel metric-card">
+                <div class="metric-title">Network Latency</div>
                 <div id="sys-ping" class="metric-value">0ms</div>
             </div>
         </div>
 
-        <!-- MIDDLE SECTION: Logs -->
-        <div class="panel" style="grid-column: span 2;">
-            <h2>AI Decision Logs</h2>
-            <div class="console-log" id="console-log">
-                <div>[SYSTEM] Platform initialized...</div>
-                <div>[AI ENGINE] Monitoring active.</div>
+        <!-- Logs Panel -->
+        <div class="panel logs-panel">
+            <h2>AI Decision Engine Logs</h2>
+            <div class="console-container" id="console-log">
+                <div class="log-entry" style="color: var(--text-muted); border-left-color: var(--text-muted);">[SYSTEM] Platform initialized. Waiting for stream...</div>
             </div>
         </div>
 
-        <!-- MIDDLE SECTION: Processes -->
-        <div class="panel">
-            <h2>Live Processes</h2>
-            <div style="max-height: 300px; overflow-y: auto;">
-                <table class="process-table" id="process-table">
+        <!-- Processes Panel -->
+        <div class="panel processes-panel">
+            <h2>Live Processes Top 50</h2>
+            <div class="table-container">
+                <table id="process-table">
                     <thead>
                         <tr>
                             <th>PID</th>
@@ -187,32 +290,16 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- Populated via JS -->
+                        <!-- Populated via SSE -->
                     </tbody>
                 </table>
             </div>
         </div>
 
-        <!-- BOTTOM SECTION: Stats -->
-        <div class="stats-box">
-            <div>
-                <h3>Anomalies Detected</h3>
-                <div class="stat-value" id="stat-anomalies">0</div>
-            </div>
-            <div>
-                <h3>Healing Actions</h3>
-                <div class="stat-value" id="stat-healings" style="color: var(--status-healing);">0</div>
-            </div>
-            <div>
-                <h3>Recovery Rate</h3>
-                <div class="stat-value" id="stat-recovery">100%</div>
-            </div>
-        </div>
-
-        <!-- BOTTOM SECTION: Charts -->
-        <div class="charts-row">
+        <!-- Charts Panel -->
+        <div class="charts-panel">
             <div class="panel">
-                <h2>Resource Usage (Live)</h2>
+                <h2>Resource Usage Timeline</h2>
                 <canvas id="resourceChart"></canvas>
             </div>
             <div class="panel">
@@ -224,145 +311,211 @@
     </div>
 
     <script>
-        const POLLING_INTERVAL = 3000;
+        // Chart Initialization
+        Chart.defaults.color = '#8b949e';
+        Chart.defaults.font.family = "'Inter', sans-serif";
         
-        // Chart Setup
         const ctxRes = document.getElementById('resourceChart').getContext('2d');
         const resourceChart = new Chart(ctxRes, {
             type: 'line',
             data: {
                 labels: [],
                 datasets: [
-                    { label: 'CPU %', borderColor: '#e74c3c', data: [], tension: 0.4 },
-                    { label: 'RAM %', borderColor: '#2ecc71', data: [], tension: 0.4 }
+                    { 
+                        label: 'CPU %', 
+                        borderColor: '#f85149', 
+                        backgroundColor: 'rgba(248, 81, 73, 0.1)',
+                        data: [], 
+                        tension: 0.4,
+                        fill: true
+                    },
+                    { 
+                        label: 'RAM %', 
+                        borderColor: '#2ea043', 
+                        backgroundColor: 'rgba(46, 160, 67, 0.1)',
+                        data: [], 
+                        tension: 0.4,
+                        fill: true
+                    }
                 ]
             },
-            options: { responsive: true, scales: { y: { beginAtZero: true, max: 100 } } }
+            options: { 
+                responsive: true, 
+                maintainAspectRatio: false,
+                scales: { 
+                    y: { beginAtZero: true, max: 100, grid: { color: 'rgba(48, 54, 61, 0.5)' } },
+                    x: { grid: { display: false } }
+                },
+                plugins: { legend: { position: 'top' } }
+            }
         });
 
         const ctxFault = document.getElementById('faultChart').getContext('2d');
         const faultChart = new Chart(ctxFault, {
-            type: 'bar',
+            type: 'doughnut',
             data: {
-                labels: ['CPU_OVERLOAD', 'MEMORY_OVERLOAD', 'DISK_OVERLOAD', 'NETWORK_LATENCY'],
+                labels: ['CPU OVERLOAD', 'MEMORY LEAK', 'DISK THRESHOLD', 'NETWORK LATENCY'],
                 datasets: [{
-                    label: 'Anomalies',
-                    backgroundColor: ['#e74c3c', '#f1c40f', '#e67e22', '#3498db'],
-                    data: [0, 0, 0, 0]
+                    backgroundColor: ['#f85149', '#d29922', '#e67e22', '#58a6ff'],
+                    borderColor: '#0d1117',
+                    borderWidth: 2,
+                    data: [1, 1, 1, 1] // Dummy data until API events load properly
                 }]
             },
-            options: { responsive: true, scales: { y: { beginAtZero: true } } }
+            options: { 
+                responsive: true, 
+                maintainAspectRatio: false,
+                plugins: { legend: { position: 'right' } },
+                cutout: '70%'
+            }
         });
 
-        let eventIds = new Set();
+        const logBox = document.getElementById('console-log');
+        let displayedEvents = new Set();
         let faultCounts = { 'CPU_OVERLOAD': 0, 'MEMORY_OVERLOAD': 0, 'DISK_OVERLOAD': 0, 'NETWORK_LATENCY': 0 };
 
-        function updateLog(msg, type='info') {
-            const logBox = document.getElementById('console-log');
+        function addLog(msg, level='info') {
             const time = new Date().toLocaleTimeString();
-            let color = '#c5c6c7';
-            if(type === 'warning') color = '#f1c40f';
-            if(type === 'critical') color = '#e74c3c';
-            if(type === 'healing') color = '#3498db';
-            if(type === 'success') color = '#2ecc71';
-
-            logBox.innerHTML += `<div style="color: ${color}">[${time}] ${msg}</div>`;
+            const colors = {
+                'info': '#c9d1d9',
+                'warning': '#d29922',
+                'critical': '#f85149',
+                'healing': '#a371f7',
+                'success': '#2ea043'
+            };
+            const color = colors[level] || colors['info'];
+            
+            const div = document.createElement('div');
+            div.className = 'log-entry';
+            div.style.color = color;
+            div.style.borderLeftColor = color;
+            div.innerHTML = `[${time}] ${msg}`;
+            
+            logBox.appendChild(div);
+            if (logBox.children.length > 100) logBox.removeChild(logBox.firstChild);
             logBox.scrollTop = logBox.scrollHeight;
         }
 
-        async function fetchData() {
-            try {
-                // 1. Live Status & Metrics
-                const statusRes = await fetch('/api/status');
-                const statusData = await statusRes.json();
-                
-                const metricsRes = await fetch('/api/metrics/latest');
-                const metrics = await metricsRes.json();
-                
-                document.getElementById('sys-state').innerText = statusData.system_state;
-                document.getElementById('sys-cpu').innerText = (metrics.cpu || 0).toFixed(1) + '%';
-                document.getElementById('sys-ram').innerText = (metrics.memory || 0).toFixed(1) + '%';
-                document.getElementById('sys-disk').innerText = (metrics.disk || 0).toFixed(1) + '%';
-                document.getElementById('sys-ping').innerText = (metrics.ping || 0) + 'ms';
+        // Setup SSE Connection
+        const connectionStatus = document.getElementById('connection-status');
+        const pulseDot = document.getElementById('pulse-dot');
+        
+        function connectSSE() {
+            const eventSource = new EventSource('/api/stream');
 
-                // Update colors based on state
+            eventSource.onopen = () => {
+                connectionStatus.innerText = 'Live Stream Active';
+                connectionStatus.style.color = 'var(--status-normal)';
+                pulseDot.style.backgroundColor = 'var(--status-normal)';
+                pulseDot.style.boxShadow = '0 0 10px var(--status-normal)';
+            };
+
+            eventSource.onerror = () => {
+                connectionStatus.innerText = 'Connection Lost. Reconnecting...';
+                connectionStatus.style.color = 'var(--status-critical)';
+                pulseDot.style.backgroundColor = 'var(--status-critical)';
+                pulseDot.style.boxShadow = '0 0 10px var(--status-critical)';
+                eventSource.close();
+                setTimeout(connectSSE, 3000);
+            };
+
+            eventSource.onmessage = (event) => {
+                const data = JSON.parse(event.data);
+                
+                // Update Metrics
+                document.getElementById('sys-cpu').innerText = (data.metrics.cpu || 0).toFixed(1) + '%';
+                document.getElementById('sys-ram').innerText = (data.metrics.memory || 0).toFixed(1) + '%';
+                document.getElementById('sys-disk').innerText = (data.metrics.disk || 0).toFixed(1) + '%';
+                document.getElementById('sys-ping').innerText = (data.metrics.ping || 0) + 'ms';
+
+                // Update State Badge
                 const stateEl = document.getElementById('sys-state');
-                stateEl.className = 'metric-value';
-                if(statusData.system_state === 'NORMAL') stateEl.style.color = 'var(--status-normal)';
-                else if(statusData.system_state === 'DEGRADED') { stateEl.style.color = 'var(--status-warning)'; stateEl.classList.add('blink'); }
-                else if(statusData.system_state === 'HEALING') { stateEl.style.color = 'var(--status-healing)'; stateEl.classList.add('blink'); }
-                else if(statusData.system_state === 'RECOVERED') stateEl.style.color = 'var(--accent-cyan)';
+                stateEl.innerText = data.status.system_state;
+                
+                const states = {
+                    'NORMAL': { color: 'var(--status-normal)', bg: 'rgba(46, 160, 67, 0.2)' },
+                    'DEGRADED': { color: 'var(--status-warning)', bg: 'rgba(210, 153, 34, 0.2)' },
+                    'HEALING': { color: 'var(--status-healing)', bg: 'rgba(163, 113, 247, 0.2)' },
+                    'RECOVERED': { color: 'var(--accent-cyan)', bg: 'rgba(88, 166, 255, 0.2)' }
+                };
+                
+                const style = states[data.status.system_state] || states['NORMAL'];
+                stateEl.style.color = style.color;
+                stateEl.style.borderColor = style.color;
+                stateEl.style.background = style.bg;
 
-                // Update Resource Chart
+                // Update Charts
                 const now = new Date().toLocaleTimeString();
                 resourceChart.data.labels.push(now);
-                resourceChart.data.datasets[0].data.push(metrics.cpu);
-                resourceChart.data.datasets[1].data.push(metrics.memory);
+                resourceChart.data.datasets[0].data.push(data.metrics.cpu);
+                resourceChart.data.datasets[1].data.push(data.metrics.memory);
                 if(resourceChart.data.labels.length > 20) {
                     resourceChart.data.labels.shift();
                     resourceChart.data.datasets[0].data.shift();
                     resourceChart.data.datasets[1].data.shift();
                 }
-                resourceChart.update();
-
-                // 2. Statistics
-                const statsRes = await fetch('/api/stats');
-                const stats = await statsRes.json();
-                document.getElementById('stat-anomalies').innerText = stats.anomalies_detected;
-                document.getElementById('stat-healings').innerText = stats.healing_actions;
-                document.getElementById('stat-recovery').innerText = stats.success_rate + '%';
-
-                // 3. Events & AI Logs
-                const eventsRes = await fetch('/api/events?limit=10');
-                const eventsData = await eventsRes.json();
+                resourceChart.update('none'); 
                 
-                eventsData.events.reverse().forEach(ev => {
-                    if(!eventIds.has(ev.id)) {
-                        eventIds.add(ev.id);
+                fetchEvents();
+                fetchProcesses();
+            };
+        }
+
+        async function fetchEvents() {
+            try {
+                const res = await fetch('/api/events?limit=10');
+                if(!res.ok) return;
+                const data = await res.json();
+                
+                data.events.reverse().forEach(ev => {
+                    if(!displayedEvents.has(ev.id)) {
+                        displayedEvents.add(ev.id);
                         if(ev.event_type === 'ANOMALY') {
-                            updateLog(`[AI ENGINE] Anomaly Detected: ${ev.fault_type} (${(ev.confidence*100).toFixed(1)}% confidence)`, 'critical');
+                            addLog(`[AI ENGINE] Anomaly Detected: ${ev.fault_type} (${(ev.confidence*100).toFixed(1)}% confidence)`, 'critical');
                             if(faultCounts[ev.fault_type] !== undefined) faultCounts[ev.fault_type]++;
                         } else if(ev.event_type === 'HEALING') {
-                            updateLog(`[AI ENGINE] Triggering Recovery for ${ev.fault_type}`, 'healing');
-                        } else if(ev.event_type === 'PROCESS_TERMINATED' || ev.event_type === 'PREVENTIVE_RECOVERY' || ev.event_type === 'CONTAINER_RESTARTED') {
-                            updateLog(`[AI ACTION] ${ev.fault_type}`, 'success');
+                            addLog(`[AI ENGINE] Triggering Recovery for ${ev.fault_type}`, 'healing');
+                        } else if(['PROCESS_TERMINATED', 'PREVENTIVE_RECOVERY', 'CONTAINER_RESTARTED'].includes(ev.event_type)) {
+                            addLog(`[AI ACTION] ${ev.fault_type}`, 'success');
                         } else if(ev.event_type === 'RECOVERED') {
-                            updateLog(`[SYSTEM] System Stabilized.`, 'success');
+                            addLog(`[SYSTEM] System Stabilized.`, 'success');
                         }
                     }
                 });
 
-                // Update Fault Chart
                 faultChart.data.datasets[0].data = [
-                    faultCounts['CPU_OVERLOAD'],
-                    faultCounts['MEMORY_OVERLOAD'],
-                    faultCounts['DISK_OVERLOAD'],
-                    faultCounts['NETWORK_LATENCY']
+                    Math.max(1, faultCounts['CPU_OVERLOAD'] || 0),
+                    Math.max(1, faultCounts['MEMORY_OVERLOAD'] || 0),
+                    Math.max(1, faultCounts['DISK_OVERLOAD'] || 0),
+                    Math.max(1, faultCounts['NETWORK_LATENCY'] || 0)
                 ];
                 faultChart.update();
 
-                // 4. Processes
-                const procRes = await fetch('/api/processes');
-                const processes = await procRes.json();
-                const tbody = document.querySelector('#process-table tbody');
-                tbody.innerHTML = '';
-                processes.slice(0, 10).forEach(p => {
-                    tbody.innerHTML += `<tr>
-                        <td>${p.pid}</td>
-                        <td>${p.name}</td>
-                        <td style="color: ${p.cpu_percent > 50 ? 'var(--status-critical)' : 'inherit'}">${(p.cpu_percent||0).toFixed(1)}</td>
-                        <td>${(p.memory_percent||0).toFixed(1)}</td>
-                    </tr>`;
-                });
-
-            } catch(e) {
-                console.error("Polling error:", e);
-                updateLog("[SYSTEM] Connection lost. Reconnecting...", "warning");
-            }
+            } catch(e) {}
         }
 
-        setInterval(fetchData, POLLING_INTERVAL);
-        fetchData();
+        async function fetchProcesses() {
+            try {
+                const res = await fetch('/api/processes');
+                if(!res.ok) return;
+                const processes = await res.json();
+                
+                const tbody = document.querySelector('#process-table tbody');
+                let rowsHtml = '';
+                processes.slice(0, 15).forEach(p => {
+                    const isHighCpu = p.cpu_percent > 50;
+                    rowsHtml += `<tr>
+                        <td style="color: var(--accent-cyan)">${p.pid}</td>
+                        <td style="font-weight: 600">${p.name}</td>
+                        <td style="color: ${isHighCpu ? 'var(--status-critical)' : 'inherit'}">${(p.cpu_percent||0).toFixed(1)}%</td>
+                        <td>${(p.memory_percent||0).toFixed(1)}%</td>
+                    </tr>`;
+                });
+                tbody.innerHTML = rowsHtml;
+            } catch(e) {}
+        }
+
+        connectSSE();
     </script>
 </body>
 </html>

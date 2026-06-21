@@ -35,19 +35,39 @@ def get_ping() -> int:
 
 def collect_metrics() -> dict:
     global _last_disk_bytes
-    counters = psutil.disk_io_counters()
-    current_bytes = counters.read_bytes + counters.write_bytes
-    delta_mb = max(0.0, (current_bytes - _last_disk_bytes) / (1024 * 1024))
-    _last_disk_bytes = current_bytes
+    
+    try:
+        counters = psutil.disk_io_counters()
+        if counters:
+            current_bytes = counters.read_bytes + counters.write_bytes
+            delta_mb = max(0.0, (current_bytes - _last_disk_bytes) / (1024 * 1024))
+            _last_disk_bytes = current_bytes
+        else:
+            delta_mb = 0.0
+    except Exception:
+        delta_mb = 0.0
 
     ping = get_ping()
-    cpu = psutil.cpu_percent(interval=1)
-    mem = psutil.virtual_memory().percent
+    
+    try:
+        cpu = psutil.cpu_percent(interval=1)
+    except Exception:
+        cpu = 0.0
+        
+    try:
+        mem = psutil.virtual_memory().percent
+    except Exception:
+        mem = 0.0
     
     try:
         disk_pct = psutil.disk_usage('/').percent
     except Exception:
         disk_pct = 0.0
+        
+    try:
+        proc_count = len(psutil.pids())
+    except Exception:
+        proc_count = 0
 
     return {
         # Old keys (Backward Compatibility for ML Anomaly Detector)
@@ -60,7 +80,7 @@ def collect_metrics() -> dict:
         "cpu": cpu,
         "memory": mem,
         "disk": disk_pct,
-        "process_count": len(psutil.pids()),
+        "process_count": proc_count,
         "ping": ping
     }
 

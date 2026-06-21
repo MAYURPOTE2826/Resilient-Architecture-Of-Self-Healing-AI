@@ -36,7 +36,9 @@ RUN pip install --no-cache /wheels/* \
 
 # Copy app code
 COPY src/ /app/src/
+COPY frontend/ /app/frontend/
 COPY alembic.ini /app/
+COPY gunicorn.conf.py /app/
 COPY .env.example /app/.env.example
 
 RUN chown -R appuser:appuser /app
@@ -48,4 +50,4 @@ EXPOSE 5000
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
   CMD sh -c 'curl -f http://localhost:${PORT:-5000}/health || exit 1'
 
-CMD ["python", "src/api.py"]
+CMD ["gunicorn", "--config", "gunicorn.conf.py", "src.wsgi:app"]
