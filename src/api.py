@@ -708,9 +708,11 @@ def initialize_system():
 
 if __name__ == "__main__":
 
+    import os
     initialize_system()
 
     # Use Waitress for production WSGI serving instead of Flask's built-in dev server
     from waitress import serve
-    logger.info("Starting Production WSGI Server (Waitress) on port 5000...")
-    serve(app, host="0.0.0.0", port=5000, threads=6)
+    port = int(os.environ.get("PORT", 5000))
+    logger.info(f"Starting Production WSGI Server (Waitress) on port {port}...")
+    serve(app, host="0.0.0.0", port=port, threads=6)
